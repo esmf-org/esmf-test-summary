@@ -1,0 +1,60 @@
+name: ESMF Test Results Summarizer
+
+on:
+  schedule:
+   - cron: '*/10 * * * *'
+  workflow_dispatch:
+  
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    
+    - name: Checkout esmf-test-summary
+      uses: actions/checkout@v3
+      with:
+        path: esmf-test-summary
+    
+    - name: Checkout summarizer scripts
+      uses: actions/checkout@v3
+      with:
+        repository: esmf-org/esmf-test-scripts
+        path: esmf-test-scripts
+        ref: main
+    
+    - name: Restore esmf-test-artifacts
+      uses: actions/cache@v2
+      with:
+        path: esmf-test-artifacts
+        key: esmf-test-artifacts-cache-key
+       
+    - name: Checkout ESMF test artifacts
+      uses: actions/checkout@v3
+      with:
+        repository: esmf-org/esmf-test-artifacts
+        path: esmf-test-artifacts
+        ref: main
+        fetch-depth: 0
+    
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyyaml
+        pip install jinja2
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    
+    - name: Generate summaries
+      run: $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -a $GITHUB_WORKSPACE/esmf-test-artifacts -d $GITHUB_WORKSPACE --output-dir $GITHUB_WORKSPACE/esmf-test-summary
+    
+    - name: Commit and push summaries
+      uses: actions-js/push@master
+      with:
+        directory: ${{ github.workspace }}/esmf-test-summary
+        github_token: ${{ secrets.GITHUB_TOKEN }}
