@@ -1,0 +1,153 @@
+
+
+<html>
+  <head>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+    
+    <script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+            $('[data-bs-toggle="popover"]').popover();
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+    <h3 class="mb-2">ESMF Branch: develop</h3><p><a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="container">
+        
+  <table id="results" class="table table-bordered table-hover text-nowrap">
+    <thead class="table-light">
+    <tr>
+      <th colspan="8" class="text-center">Combination</th>
+      <th colspan="1" class="text-center">ESMF Tested Hash</th>
+    </tr>
+    <tr>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>Compiler</th>
+      <th>Version</th>
+      <th>MPI</th>
+      <th>Version</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      
+      
+      <th><a href="v8.4.0b07.html">v8.4.0b07</a></th>
+      
+      
+    </tr>
+    </thead>
+    <tbody>
+    
+      <tr>
+        <td><a href="../combos/1.html">1</a></td>
+        <td>catania</td>
+        <td>gfortran</td>
+        <td>11.2.0</td>
+        <td>openmpi</td>
+        <td>4.1.0</td>
+        <td>O</td>
+        <td>4.7.4</td>
+        
+        
+        
+        <td class="table-warning
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-placement="right" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: None/None</li>
+  <li>STests: None/None</li>
+  <li>ETests: None/None</li>
+  <li>NUOPC: None/None</li>
+  <li>Collected time: 07-22 19:38</li>
+  <li>Build time: 07-22 13:38</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/a3b777756235ccc99b197fd9fae228943677a1f7/develop/gfortran/11.2.0/O/openmpi/4.1.0" target="_blank">a3b7777</a>
+</td>
+        
+        
+    
+      <tr>
+        <td><a href="../combos/3.html">3</a></td>
+        <td>cheyenne</td>
+        <td>gfortran</td>
+        <td>10.1.0</td>
+        <td>openmpi</td>
+        <td>4.0.5</td>
+        <td>O</td>
+        <td>4.7.4</td>
+        
+        
+        
+        <td class="table-warning
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-placement="right" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: None/None</li>
+  <li>STests: None/None</li>
+  <li>ETests: None/None</li>
+  <li>NUOPC: None/None</li>
+  <li>Collected time: 07-22 19:42</li>
+  <li>Build time: 07-22 13:41</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d13354d1a3aa4d0bc6e341f94be4a22bab317ff8/develop/gfortran/10.1.0/O/openmpi/4.0.5" target="_blank">d13354d</a>
+</td>
+        
+        
+    
+      <tr>
+        <td><a href="../combos/2.html">2</a></td>
+        <td>cheyenne</td>
+        <td>gfortran</td>
+        <td>10.1.0</td>
+        <td>openmpi</td>
+        <td>4.0.5</td>
+        <td>g</td>
+        <td>4.7.4</td>
+        
+        
+        
+        <td class="table-warning
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-placement="right" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: None/None</li>
+  <li>STests: None/None</li>
+  <li>ETests: None/None</li>
+  <li>NUOPC: None/None</li>
+  <li>Collected time: 07-22 19:42</li>
+  <li>Build time: 07-22 13:41</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/71f41f37204ae112f5c4d6ab551a6feb1335f9b8/develop/gfortran/10.1.0/g/openmpi/4.0.5" target="_blank">71f41f3</a>
+</td>
+        
+        
+    
+    </tbody>
+  </table>
+
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2022-58-22 13:58:20 MDT.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
