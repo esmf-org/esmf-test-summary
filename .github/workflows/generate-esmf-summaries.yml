@@ -15,7 +15,7 @@ jobs:
     - name: Checkout esmf-test-summary
       uses: actions/checkout@v3
       with:
-        repository: esmf-org/esmf-test-scripts
+        repository: esmf-org/esmf-test-summary
         path: esmf-test-summary
         ref: main
     
