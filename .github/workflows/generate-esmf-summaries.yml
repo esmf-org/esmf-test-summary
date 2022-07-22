@@ -30,7 +30,7 @@ jobs:
       uses: actions/cache@v2
       with:
         path: esmf-test-artifacts
-        key: esmf-test-artifacts-cache-key
+        key: esmf-test-artifacts-cache-key-v2
        
     - name: Checkout ESMF test artifacts
       uses: actions/checkout@v3
