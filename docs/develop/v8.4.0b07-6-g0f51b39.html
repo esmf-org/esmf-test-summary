@@ -1,0 +1,426 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+    
+    <script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+    <h3 class="mb-2">ESMF Hash: v8.4.0b07-6-g0f51b39 (branch: <a href="index.html">develop</a>)</h3><p><a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="container">
+        
+  <table id="results" class="table table-bordered table-hover">
+    <thead class="table-light">
+    <tr>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
+      <th>Build Time</th>
+      <th>Collect Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>Artifacts</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td><a href="../combos/3.html">3</a></td>
+      <td>acorn</td>
+      <td>gfortran/10.3.0</td>
+      <td>mpi/8.1.7</td>
+      <td>g</td>
+      <td>4.7.4</td>
+      <td>07-28 01:17</td>
+      <td>None</td>
+      <td>07-28 01:21</td>
+      <td class="table-danger
+">FAIL</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/6d7baa11e52fd4db2b673a218ed95a8fb12dc1d2/develop/gfortran/10.3.0/g/mpi/8.1.7" target="_blank">
+
+6d7baa1
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/1.html">1</a></td>
+      <td>acorn</td>
+      <td>intel/19.1.3</td>
+      <td>mpi/8.1.7</td>
+      <td>O</td>
+      <td>4.7.4</td>
+      <td>07-28 01:16</td>
+      <td>07-28 01:29</td>
+      <td>07-28 01:51</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">13788/0</td>
+      <td class="table-success
+">49/0</td>
+      <td class="table-success
+">80/0</td>
+      <td class="table-success
+">50/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7e76a07329f572f7d327f3c24e8e0ddcfd676264/develop/intel/19.1.3/O/mpi/8.1.7" target="_blank">
+
+7e76a07
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/69.html">69</a></td>
+      <td>hera</td>
+      <td>gfortran/9.2.0a</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.7.2</td>
+      <td>07-28 02:02</td>
+      <td>07-28 02:23</td>
+      <td>07-28 02:42</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12265/0</td>
+      <td class="table-success
+">8/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/19f59e588be1c5f0b2f25ab6d4a47c3e36dcaa98/develop/gfortran/9.2.0a/O/mpiuni/None" target="_blank">
+
+19f59e5
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/66.html">66</a></td>
+      <td>hera</td>
+      <td>gfortran/9.2.0a</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.7.2</td>
+      <td>07-28 02:03</td>
+      <td>07-28 02:23</td>
+      <td>07-28 02:48</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12265/0</td>
+      <td class="table-success
+">8/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/23998fbd2dccb75738d10f0def488eb4f3c2c6f3/develop/gfortran/9.2.0a/g/mpiuni/None" target="_blank">
+
+23998fb
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/67.html">67</a></td>
+      <td>hera</td>
+      <td>gfortran/9.2.0b</td>
+      <td>openmpi/3.1.4</td>
+      <td>O</td>
+      <td>None</td>
+      <td>07-28 02:04</td>
+      <td>07-28 02:24</td>
+      <td>07-28 02:48</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">13788/0</td>
+      <td class="table-success
+">49/0</td>
+      <td class="table-success
+">80/0</td>
+      <td class="table-success
+">50/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/1957f66bff29e24948ff880049b83a140f279517/develop/gfortran/9.2.0b/O/openmpi/3.1.4" target="_blank">
+
+1957f66
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/64.html">64</a></td>
+      <td>hera</td>
+      <td>gfortran/9.2.0b</td>
+      <td>openmpi/3.1.4</td>
+      <td>g</td>
+      <td>None</td>
+      <td>07-28 02:05</td>
+      <td>07-28 02:24</td>
+      <td>07-28 02:51</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">13788/0</td>
+      <td class="table-success
+">49/0</td>
+      <td class="table-success
+">80/0</td>
+      <td class="table-success
+">50/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/14d60cea6c7ca8053ecb5d9b3515176e7c719132/develop/gfortran/9.2.0b/g/openmpi/3.1.4" target="_blank">
+
+14d60ce
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/63.html">63</a></td>
+      <td>hera</td>
+      <td>intel/18.0.5a</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.6.1</td>
+      <td>07-28 02:06</td>
+      <td>07-28 02:30</td>
+      <td>07-28 02:54</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12265/0</td>
+      <td class="table-success
+">8/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/4c306f1dcbd8fe7d4beb30aef8ab5d4f0ecde1f4/develop/intel/18.0.5a/O/mpiuni/None" target="_blank">
+
+4c306f1
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/62.html">62</a></td>
+      <td>hera</td>
+      <td>intel/18.0.5a</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.6.1</td>
+      <td>07-28 02:08</td>
+      <td>07-28 02:26</td>
+      <td>07-28 02:58</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12265/0</td>
+      <td class="table-success
+">8/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/dd82aaadf924db9ba8a203481a15876df80dbb21/develop/intel/18.0.5a/g/mpiuni/None" target="_blank">
+
+dd82aaa
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/70.html">70</a></td>
+      <td>hera</td>
+      <td>intel/18.0.5b</td>
+      <td>intelmpi/2018.4.274</td>
+      <td>O</td>
+      <td>4.7.4</td>
+      <td>07-28 02:09</td>
+      <td>07-28 02:32</td>
+      <td>07-28 02:32</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/de3107034b92c77ecd8b5a270be1c90fcae257f6/develop/intel/18.0.5b/O/intelmpi/2018.4.274" target="_blank">
+
+de31070
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/71.html">71</a></td>
+      <td>hera</td>
+      <td>intel/18.0.5b</td>
+      <td>intelmpi/2018.4.274</td>
+      <td>g</td>
+      <td>4.7.4</td>
+      <td>07-28 02:10</td>
+      <td>07-28 02:27</td>
+      <td>07-28 02:27</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5f9dd63f350543a3b77bd3b76bba9b9c4fa4ee10/develop/intel/18.0.5b/g/intelmpi/2018.4.274" target="_blank">
+
+5f9dd63
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/61.html">61</a></td>
+      <td>hera</td>
+      <td>pgi/19.1</td>
+      <td>intelmpi/2019.0.5</td>
+      <td>O</td>
+      <td>None</td>
+      <td>07-28 02:14</td>
+      <td>07-28 02:59</td>
+      <td>07-28 02:59</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/13c3c3d93dbd31b8b5a17975ca735b93d62244f8/develop/pgi/19.1/O/intelmpi/2019.0.5" target="_blank">
+
+13c3c3d
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/68.html">68</a></td>
+      <td>hera</td>
+      <td>pgi/19.1</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>None</td>
+      <td>07-28 02:11</td>
+      <td>07-28 02:44</td>
+      <td>07-28 02:45</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7a005f52a27bb043f2d9429686e7ee45df8c10a1/develop/pgi/19.1/O/mpiuni/None" target="_blank">
+
+7a005f5
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/65.html">65</a></td>
+      <td>hera</td>
+      <td>pgi/19.1</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>None</td>
+      <td>07-28 02:13</td>
+      <td>07-28 02:49</td>
+      <td>07-28 02:50</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/0c78bb20e76a5b3dc168babbba02488b7b23dc55/develop/pgi/19.1/g/mpiuni/None" target="_blank">
+
+0c78bb2
+
+</a></td>
+    </tr>
+    
+    </tbody>
+  </table>
+
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2022-07-27 21:01:12 MDT.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
