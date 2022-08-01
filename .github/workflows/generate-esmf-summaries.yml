@@ -53,7 +53,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     
     - name: Generate summaries
-      run: $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -a $GITHUB_WORKSPACE/esmf-test-artifacts -d $GITHUB_WORKSPACE --output-dir $GITHUB_WORKSPACE/esmf-test-summary/docs
+      run: $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -d $GITHUB_WORKSPACE --output-dir $GITHUB_WORKSPACE/esmf-test-summary/docs
     
     - name: Commit and push summaries
       uses: actions-js/push@master
