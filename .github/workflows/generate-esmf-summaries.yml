@@ -10,14 +10,7 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    steps:
-    
-    - name: Checkout esmf-test-summary
-      uses: actions/checkout@v3
-      with:
-        repository: esmf-org/esmf-test-summary
-        path: esmf-test-summary
-        ref: main
+    steps:     
     
     - name: Checkout summarizer scripts
       uses: actions/checkout@v3
@@ -52,8 +45,20 @@ jobs:
         pip install jinja2
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     
+    - name: Checkout esmf-test-summary
+      uses: actions/checkout@v3
+      with:
+        repository: esmf-org/esmf-test-summary
+        path: esmf-test-summary
+        ref: main
+           
     - name: Generate summaries
-      run: $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -d $GITHUB_WORKSPACE --output-dir $GITHUB_WORKSPACE/esmf-test-summary/docs
+      run: |
+        mkdir -p $GITHUB_WORKSPACE/htmlout
+        $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -d $GITHUB_WORKSPACE --output-dir $GITHUB_WORKSPACE/htmlout
+        cd $GITHUB_WORKSPACE/esmf-test-summary
+        git reset --hard origin/main
+        cp -R $GITHUB_WORKSPACE/htmlout/* $GITHUB_WORKSPACE/esmf-test-summary/docs
     
     - name: Commit and push summaries
       uses: actions-js/push@master
