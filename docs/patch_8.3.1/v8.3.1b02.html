@@ -1,0 +1,500 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+    
+    <script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+    <h3 class="mb-2">ESMF Hash: v8.3.1b02 (branch: <a href="index.html">patch_8.3.1</a>)</h3><p><a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover">
+    <thead class="table-light">
+    <tr>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
+      <th>Build Time</th>
+      <th>Collect Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>Artifacts</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td><a href="../combos/43.html">43</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/10.1.0</td>
+      <td>intelmpi/19.1.3.304</td>
+      <td>O</td>
+      <td>None</td>
+      <td>08-10 01:04</td>
+      <td>08-10 01:24</td>
+      <td>08-10 05:24</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/1405096dada9ecd441e9b207cd2686e6b92b7c32/patch_8.3.1/gfortran/10.1.0/O/intelmpi/19.1.3.304" target="_blank">
+
+1405096
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/40.html">40</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/10.1.0</td>
+      <td>intelmpi/19.1.3.304</td>
+      <td>g</td>
+      <td>None</td>
+      <td>08-10 01:05</td>
+      <td>08-10 01:27</td>
+      <td>08-10 05:28</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d8611e2bb19141ccb5d4dbb1d175d9a9e0d2f870/patch_8.3.1/gfortran/10.1.0/g/intelmpi/19.1.3.304" target="_blank">
+
+d8611e2
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/48.html">48</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/8.3.0</td>
+      <td>intelmpi/19.1.3.304</td>
+      <td>O</td>
+      <td>None</td>
+      <td>08-10 00:58</td>
+      <td>08-10 01:20</td>
+      <td>08-10 05:20</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5e7aee67088a5828fd8c5edf975e9ded1d05b15a/patch_8.3.1/gfortran/8.3.0/O/intelmpi/19.1.3.304" target="_blank">
+
+5e7aee6
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/45.html">45</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/8.3.0</td>
+      <td>intelmpi/19.1.3.304</td>
+      <td>g</td>
+      <td>None</td>
+      <td>08-10 00:59</td>
+      <td>08-10 01:22</td>
+      <td>08-10 05:22</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/3dd73605e95f57ffd919b47a114de66d7e5ad6f7/patch_8.3.1/gfortran/8.3.0/g/intelmpi/19.1.3.304" target="_blank">
+
+3dd7360
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/46.html">46</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/8.3.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>None</td>
+      <td>08-10 01:02</td>
+      <td>08-10 01:21</td>
+      <td>08-10 05:22</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/da909d867e00401a2b2bb3e5b181950222326d23/patch_8.3.1/gfortran/8.3.0/O/mpiuni/None" target="_blank">
+
+da909d8
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/42.html">42</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/8.3.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>None</td>
+      <td>08-10 01:03</td>
+      <td>08-10 01:24</td>
+      <td>08-10 05:25</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/63382bf3f0235a4867dbac79da70e5b7c9e47bd9/patch_8.3.1/gfortran/8.3.0/g/mpiuni/None" target="_blank">
+
+63382bf
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/47.html">47</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/8.3.0</td>
+      <td>mpt/2.17</td>
+      <td>O</td>
+      <td>None</td>
+      <td>08-10 01:00</td>
+      <td>08-10 01:21</td>
+      <td>08-10 05:22</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/f3aaeacdedc87b173f10fa8b69e93a2b24c9bbc0/patch_8.3.1/gfortran/8.3.0/O/mpt/2.17" target="_blank">
+
+f3aaeac
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/44.html">44</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/8.3.0</td>
+      <td>mpt/2.17</td>
+      <td>g</td>
+      <td>None</td>
+      <td>08-10 01:01</td>
+      <td>08-10 01:23</td>
+      <td>08-10 05:24</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/20dc45727e5b8c99eb9823d56b55f855efd47a7d/patch_8.3.1/gfortran/8.3.0/g/mpt/2.17" target="_blank">
+
+20dc457
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/39.html">39</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>intel/19.1.3</td>
+      <td>intelmpi/19.1.3.304</td>
+      <td>O</td>
+      <td>4.8.0-development</td>
+      <td>08-10 00:54</td>
+      <td>08-10 01:29</td>
+      <td>08-10 05:29</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d4e356cab6f2808d82ec124859793f458316e1b9/patch_8.3.1/intel/19.1.3/O/intelmpi/19.1.3.304" target="_blank">
+
+d4e356c
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/41.html">41</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>intel/19.1.3</td>
+      <td>intelmpi/19.1.3.304</td>
+      <td>g</td>
+      <td>4.8.0-development</td>
+      <td>08-10 00:55</td>
+      <td>08-10 01:26</td>
+      <td>08-10 05:26</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/07cc3477d657a6d70ed21339c92f860eab2a03bb/patch_8.3.1/intel/19.1.3/g/intelmpi/19.1.3.304" target="_blank">
+
+07cc347
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/50.html">50</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>intel/19.1.3</td>
+      <td>mpt/2.17</td>
+      <td>O</td>
+      <td>4.8.0-development</td>
+      <td>08-10 00:56</td>
+      <td>None</td>
+      <td>08-10 05:12</td>
+      <td class="table-danger
+">FAIL</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/038154f88713e67d14e43d6a9a58e1f6a238e60b/patch_8.3.1/intel/19.1.3/O/mpt/2.17" target="_blank">
+
+038154f
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/49.html">49</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>intel/19.1.3</td>
+      <td>mpt/2.17</td>
+      <td>g</td>
+      <td>4.8.0-development</td>
+      <td>08-10 00:57</td>
+      <td>None</td>
+      <td>08-10 05:13</td>
+      <td class="table-danger
+">FAIL</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/15e758772be6e2654a998754b37f6ad693d63392/patch_8.3.1/intel/19.1.3/g/mpt/2.17" target="_blank">
+
+15e7587
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/54.html">54</a></td>
+      <td>gaea</td>
+      <td>Unicos</td>
+      <td>intel/2019.5</td>
+      <td>mpi/7.7.11</td>
+      <td>O</td>
+      <td>4.6.3</td>
+      <td>08-10 00:37</td>
+      <td>08-10 01:12</td>
+      <td>08-10 05:13</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/1a1867b3bc12dd3c6eee5595e91147d872e9d5ff/patch_8.3.1/intel/2019.5/O/mpi/7.7.11" target="_blank">
+
+1a1867b
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/55.html">55</a></td>
+      <td>gaea</td>
+      <td>Unicos</td>
+      <td>intel/2019.5</td>
+      <td>mpi/7.7.11</td>
+      <td>g</td>
+      <td>4.6.3</td>
+      <td>08-10 00:40</td>
+      <td>08-10 01:12</td>
+      <td>08-10 05:13</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/8ed4dd11879fdd30b7441d1b162b6df4089cf9f2/patch_8.3.1/intel/2019.5/g/mpi/7.7.11" target="_blank">
+
+8ed4dd1
+
+</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/56.html">56</a></td>
+      <td>gaea</td>
+      <td>Unicos</td>
+      <td>intel/2019.5</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.6.3</td>
+      <td>08-10 00:34</td>
+      <td>08-10 01:09</td>
+      <td>08-10 05:09</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/bcb222a17f209d47211f2477873572257b9d16d3/patch_8.3.1/intel/2019.5/g/mpiuni/None" target="_blank">
+
+bcb222a
+
+</a></td>
+    </tr>
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2022-08-09 23:43:19 MDT.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
