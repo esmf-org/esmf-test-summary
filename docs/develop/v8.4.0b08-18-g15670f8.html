@@ -21,32 +21,36 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: jet/None/intel/2020.2/intelmpi/2020.2/g/None</h3><p><a href="../index.html">Top</a></p>
+    <h3 class="mb-2">ESMF Hash: v8.4.0b08-18-g15670f8 (branch: <a href="index.html">develop</a>)</h3><p><a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Collect Time</th>
       <th>Build</th>
@@ -59,71 +63,33 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.4.0b08-10-gf7d2c1b</td>
-        <td>develop</td>
-        <td>08-09 03:47</td>
-        <td>None</td>
-        <td>08-09 04:00</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/4.html">4</a></td>
+      <td>acorn</td>
+      <td>Unicos</td>
+      <td>gfortran/10.3.0</td>
+      <td>mpi/8.1.7</td>
+      <td>g</td>
+      <td>None</td>
+      <td>08-10 01:18</td>
+      <td>08-10 01:25</td>
+      <td>08-10 01:26</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/481002679a454d2176cdda42066d17fc9d1a471b/develop/intel/2020.2/g/intelmpi/2020.2" target="_blank">
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/0a5a8cc2a749e051e51b3052b5768844a0fa74b8/develop/gfortran/10.3.0/g/mpi/8.1.7" target="_blank">
 
-4810026
-
-</a></td>
-    
-      <tr>
-        <td>v8.4.0b08-10-gf7d2c1b</td>
-        <td>develop</td>
-        <td>08-06 03:47</td>
-        <td>None</td>
-        <td>08-06 04:00</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/bc1b0dcc01db155e174d921aa31b3c4332dbdf4d/develop/intel/2020.2/g/intelmpi/2020.2" target="_blank">
-
-bc1b0dc
+0a5a8cc
 
 </a></td>
-    
-      <tr>
-        <td>v8.4.0b08</td>
-        <td>develop</td>
-        <td>07-30 03:46</td>
-        <td>None</td>
-        <td>07-30 03:53</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/b7f3f2c1904197838a734cb3d7ed4c1d2fbd374c/develop/intel/2020.2/g/intelmpi/2020.2" target="_blank">
-
-b7f3f2c
-
-</a></td>
+    </tr>
     
     </tbody>
   </table>
