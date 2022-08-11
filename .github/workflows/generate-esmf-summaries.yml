@@ -24,6 +24,12 @@ jobs:
       with:
         path: esmf-test-artifacts
         key: esmf-test-artifacts-cache-key-v2
+    
+    - name: Restore summarizer database
+      uses: actions/cache@v2
+      with:
+        path: summarizer-db
+        key: summarizer-db
        
     - name: Checkout ESMF test artifacts
       uses: actions/checkout@v3
@@ -55,9 +61,12 @@ jobs:
     - name: Generate summaries
       run: |
         mkdir -p $GITHUB_WORKSPACE/htmlout
-        $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -d $GITHUB_WORKSPACE --output-dir $GITHUB_WORKSPACE/htmlout
+        mkdir -p $GITHUB_WORKSPACE/summarizer-db
+        $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -d $GITHUB_WORKSPACE/summarizer-db --output-dir $GITHUB_WORKSPACE/htmlout
         cd $GITHUB_WORKSPACE/esmf-test-summary
+        git fetch
         git reset --hard origin/main
+        rm -rf $GITHUB_WORKSPACE/esmf-test-summary/docs/*
         cp -R $GITHUB_WORKSPACE/htmlout/* $GITHUB_WORKSPACE/esmf-test-summary/docs
     
     - name: Commit and push summaries
