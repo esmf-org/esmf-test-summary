@@ -30,7 +30,7 @@ jobs:
       with:
         path: summarizer-db
         key: summarizer-db-${{github.run_id}}
-        restore-keys: summarizer-db
+        restore-keys: summarizer-db-
        
     - name: Checkout ESMF test artifacts
       uses: actions/checkout@v3
