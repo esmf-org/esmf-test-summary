@@ -19,17 +19,18 @@ jobs:
         path: esmf-test-scripts
         ref: main
     
-    - name: Restore esmf-test-artifacts
-      uses: actions/cache@v2
-      with:
-        path: esmf-test-artifacts
-        key: esmf-test-artifacts-cache-key-v2
+    #- name: Restore esmf-test-artifacts
+    #  uses: actions/cache@v2
+    #  with:
+    #    path: esmf-test-artifacts
+    #    key: esmf-test-artifacts-cache-key-v2
     
     - name: Restore summarizer database
       uses: actions/cache@v2
       with:
         path: summarizer-db
-        key: summarizer-db
+        key: summarizer-db-${{github.run_id}}
+        restore-keys: summarizer-db
        
     - name: Checkout ESMF test artifacts
       uses: actions/checkout@v3
