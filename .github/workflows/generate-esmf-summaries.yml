@@ -72,11 +72,11 @@ jobs:
            
     - name: Should refresh?
       if: ${{ inputs.rebuild-database }}
-      run: echo "REBUILD_DB='--refresh'" >> $GITHUB_ENV 
+      run: echo "REBUILD_DB=--refresh" >> $GITHUB_ENV 
     
     - name: Should debug?
       if: ${{ inputs.debug-logging }}
-      run: echo "DEBUG_LOGGING='--debug'" >> $GITHUB_ENV 
+      run: echo "DEBUG_LOGGING=--debug" >> $GITHUB_ENV 
     
     - name: Generate summaries
       run: |
