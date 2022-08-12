@@ -63,14 +63,17 @@ jobs:
       run: |
         mkdir -p $GITHUB_WORKSPACE/htmlout
         mkdir -p $GITHUB_WORKSPACE/summarizer-db
-        $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -d $GITHUB_WORKSPACE/summarizer-db --output-dir $GITHUB_WORKSPACE/htmlout --debug
+        $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -d $GITHUB_WORKSPACE/summarizer-db --output-dir $GITHUB_WORKSPACE/htmlout --refresh --debug       
+    
+    - name: Copy HTML
+      run: |
         cd $GITHUB_WORKSPACE/esmf-test-summary
         git fetch
         git reset --hard origin/main
         rm -rf $GITHUB_WORKSPACE/esmf-test-summary/docs/*
         cp -R $GITHUB_WORKSPACE/htmlout/* $GITHUB_WORKSPACE/esmf-test-summary/docs
     
-    - name: Commit and push summaries
+    - name: Commit and push HTML
       uses: actions-js/push@master
       with:
         directory: ${{ github.workspace }}/esmf-test-summary
