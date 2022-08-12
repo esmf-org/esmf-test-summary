@@ -1,0 +1,230 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+    
+    <script>
+      $(document).ready(function () {
+          $('#results').DataTable({
+              paging: false
+          });
+          $('[data-bs-toggle="popover"]').popover();
+      });
+  </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+<h3 class="mb-2">Combination: catania/Darwin/gfortran/11.2.0/openmpi/4.1.0/g/4.7.4</h3><p><a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover text-nowrap">
+    <thead class="table-light">
+    <tr>
+      <th>ESMF Hash</th>
+      <th>ESMF Branch</th>
+      <th>Clone Time</th>
+      <th>Build Time</th>
+      <th>Collect Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>Artifacts</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+      <tr>
+        <td>v8.4.0b09-4-g60e561f</td>
+        <td>develop</td>
+        <td>08-11 23:00</td>
+        <td>08-12 00:31</td>
+        <td>08-12 07:03</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-danger
+">13779/9</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-danger
+">45/5</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/0ca546a59db64105fa8b4a36c5d451dc342bdf6b/develop/gfortran/11.2.0/g/openmpi/4.1.0" target="_blank">
+
+0ca546a
+
+</a></td>
+    
+      <tr>
+        <td>v8.4.0b09</td>
+        <td>develop</td>
+        <td>08-10 23:00</td>
+        <td>08-11 00:29</td>
+        <td>08-11 07:01</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-danger
+">13779/9</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-danger
+">45/5</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e2c7f792bc23cfd5f4cb344bf2b53ca9f4e9b3dd/develop/gfortran/11.2.0/g/openmpi/4.1.0" target="_blank">
+
+e2c7f79
+
+</a></td>
+    
+      <tr>
+        <td>v8.4.0b09</td>
+        <td>develop</td>
+        <td>08-09 23:00</td>
+        <td>08-10 00:30</td>
+        <td>08-10 07:02</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-danger
+">13779/9</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-danger
+">45/5</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/8a3bd6963e5a65a96ae5000ab09b55ff4f1600bf/develop/gfortran/11.2.0/g/openmpi/4.1.0" target="_blank">
+
+8a3bd69
+
+</a></td>
+    
+      <tr>
+        <td>v8.4.0b07</td>
+        <td>develop</td>
+        <td>None</td>
+        <td>07-22 14:08</td>
+        <td>07-22 20:32</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-danger
+">13779/9</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-danger
+">45/5</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/a839032065edec33fd5e9ba5ec95dde42ca7c3b8/develop/gfortran/11.2.0/g/openmpi/4.1.0" target="_blank">
+
+a839032
+
+</a></td>
+    
+      <tr>
+        <td>v8.3.1b02</td>
+        <td>patch_8.3.1</td>
+        <td>08-11 23:01</td>
+        <td>08-12 01:14</td>
+        <td>08-12 07:45</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-danger
+">13656/9</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-danger
+">45/5</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/ced07b72ca7e0e2d1d9dcbd5cb24bbf9c9747f98/patch_8.3.1/gfortran/11.2.0/g/openmpi/4.1.0" target="_blank">
+
+ced07b7
+
+</a></td>
+    
+      <tr>
+        <td>v8.3.1b02</td>
+        <td>patch_8.3.1</td>
+        <td>08-10 23:01</td>
+        <td>08-11 01:13</td>
+        <td>08-11 07:43</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-danger
+">13656/9</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-danger
+">45/5</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7b5563b4e4e378e89029694b5f7fd7afd9d1a030/patch_8.3.1/gfortran/11.2.0/g/openmpi/4.1.0" target="_blank">
+
+7b5563b
+
+</a></td>
+    
+      <tr>
+        <td>v8.3.1b02</td>
+        <td>patch_8.3.1</td>
+        <td>08-09 23:00</td>
+        <td>08-10 01:14</td>
+        <td>08-10 07:45</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-danger
+">13656/9</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-danger
+">45/5</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/219df36f9aa35f72fc4cef52820eb6f1b48ec2e2/patch_8.3.1/gfortran/11.2.0/g/openmpi/4.1.0" target="_blank">
+
+219df36
+
+</a></td>
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2022-08-12 13:30:26 MDT.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
