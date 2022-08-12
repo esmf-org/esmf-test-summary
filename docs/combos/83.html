@@ -19,6 +19,32 @@
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+
+    <style>
+      @-webkit-keyframes pending {
+        from { background-color: #b4d5e9; }
+        to { background-color: white; }
+      }
+      @-moz-keyframes pending {
+        from { background-color: #b4d5e9; }
+        to { background-color: white; }
+      }
+      @-o-keyframes pending {
+        from { background-color: #b4d5e9; }
+        to { background-color: white; }
+      }
+      @keyframes pending {
+        from { background-color: #b4d5e9; }
+        to { background-color: white; }
+      }
+      .pending {
+        -webkit-animation: pending 5s infinite; /* Safari 4+ */
+        -moz-animation:    pending 5s infinite; /* Fx 5+ */
+        -o-animation:      pending 5s infinite; /* Opera 12+ */
+        animation:         pending 5s infinite; /* IE 10+ */
+      }
+    </style>
+
     
     <script>
       $(document).ready(function () {
@@ -200,7 +226,7 @@ b0f79c9
       <br/>
       <footer>
         <div class="text-center p-2 bg-light">
-          This page was generated at 2022-08-12 14:25:09 MDT.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+          This page was generated at 2022-08-12 15:11:55 MDT.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
         </div>
       </footer>
     </div>
