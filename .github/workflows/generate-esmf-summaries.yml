@@ -10,6 +10,11 @@ on:
         required: true
         type: boolean
         default: false
+      debug-logging:
+        description: 'Output debug logging?'
+        required: true
+        type: boolean
+        default: false
         
 jobs:
   build:
@@ -66,14 +71,18 @@ jobs:
         ref: main
            
     - name: Should refresh?
-      if: ${{ inputs.rebuild.database }}
-      run: echo "REBUILD_DB='--refresh'" >> $GITHUB_ENV        
+      if: ${{ inputs.rebuild-database }}
+      run: echo "REBUILD_DB='--refresh'" >> $GITHUB_ENV 
+    
+    - name: Should debug?
+      if: ${{ inputs.debug-logging }}
+      run: echo "DEBUG_LOGGING='--debug'" >> $GITHUB_ENV 
     
     - name: Generate summaries
       run: |
         mkdir -p $GITHUB_WORKSPACE/htmlout
         mkdir -p $GITHUB_WORKSPACE/summarizer-db
-        $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -d $GITHUB_WORKSPACE/summarizer-db --output-dir $GITHUB_WORKSPACE/htmlout --debug ${{ env.rebuild-db }}
+        $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -d $GITHUB_WORKSPACE/summarizer-db --output-dir $GITHUB_WORKSPACE/htmlout ${{ env.REBUILD_DB }} ${{ env.DEBUG_LOGGING }}
     
     - name: Copy HTML
       run: |
