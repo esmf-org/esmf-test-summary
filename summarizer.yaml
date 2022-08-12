@@ -1,4 +1,20 @@
+## summarizer.yaml
+## This file allows excluding specific ESMF hashes and branches and entire machines from 
+## the generated summarization tables.  A * can be used as a wildcard (matches any number of
+## characters) in any of the entries.
+
 exclude:
+  machine:
+    - acorn
+    - hera
+    - jet
+    - orion
+    - catania
+    - cori
+    - chianti
+    - discover
+    - gaea
+    - rockylaptop
   esmf_hash:
     - v8.4.0b08*
     - v8.4.0b07-*
