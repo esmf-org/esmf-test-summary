@@ -9,7 +9,7 @@ on:
         description: 'Rebuild database?'
         required: true
         type: boolean
-        default: false
+        default: false      
       debug-logging:
         description: 'Output debug logging?'
         required: true
@@ -51,6 +51,12 @@ jobs:
         ref: main
         fetch-depth: 0
     
+    - name: Checkout ESMF 
+      uses: actions/checkout@v3
+      with:
+        repository: esmf-org/esmf
+        path: esmf        
+    
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
@@ -82,7 +88,7 @@ jobs:
       run: |
         mkdir -p $GITHUB_WORKSPACE/htmlout
         mkdir -p $GITHUB_WORKSPACE/summarizer-db
-        $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -d $GITHUB_WORKSPACE/summarizer-db --output-dir $GITHUB_WORKSPACE/htmlout ${{ env.REBUILD_DB }} ${{ env.DEBUG_LOGGING }}
+        $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -e $GITHUB_WORKSPACE/esmf -d $GITHUB_WORKSPACE/summarizer-db --output-dir $GITHUB_WORKSPACE/htmlout ${{ env.REBUILD_DB }} ${{ env.DEBUG_LOGGING }}
     
     - name: Copy HTML
       run: |
