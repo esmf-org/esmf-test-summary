@@ -15,7 +15,10 @@ on:
         required: true
         type: boolean
         default: false
-        
+
+# disallow concurrent runs of the summarizer
+concurrency: esmf-summarizer
+
 jobs:
   build:
 
