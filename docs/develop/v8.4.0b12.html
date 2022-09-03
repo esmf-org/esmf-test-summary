@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: gaea/None/intel/2019.5/mpiuni/None/O/None</h3><p><a href="../index.html">Top</a></p>
+    <h3 class="mb-2">ESMF Hash: v8.4.0b12 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Update README with new doc build status badges (Rocky Dunlap, Fri Sep 2 16:22:20 2022 -0600)</p> 
+    <p><a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Collect Time</th>
       <th>Build</th>
@@ -60,27 +66,61 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.3.1b05</td>
-        <td>patch_8.3.1</td>
-        <td>08-29 00:19</td>
-        <td>None</td>
-        <td>08-29 04:30</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/acorn_Unicos_gfortran_10.3.0_mpi_8.1.7_None_O.html">4</a></td>
+      <td>acorn</td>
+      <td>Unicos</td>
+      <td>gfortran/10.3.0</td>
+      <td>mpi/8.1.7</td>
+      <td>O</td>
+      <td>None</td>
+      <td>09-03 01:17</td>
+      <td>None</td>
+      <td>09-03 01:24</td>
+      <td class="table-danger
 ">FAIL</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/3e2e682043a1816c3cc7f3b1b3270a28264d57f1/patch_8.3.1/intel/2019.5/O/mpiuni/None" target="_blank">
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/23e05ad4210f13cae2ac23ebfb6c09f387a11045/develop/gfortran/10.3.0/O/mpi/8.1.7" target="_blank">
 
-3e2e682
+23e05ad
 
 </a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/acorn_Unicos_gfortran_10.3.0_mpi_8.1.7_None_g.html">2</a></td>
+      <td>acorn</td>
+      <td>Unicos</td>
+      <td>gfortran/10.3.0</td>
+      <td>mpi/8.1.7</td>
+      <td>g</td>
+      <td>None</td>
+      <td>09-03 01:18</td>
+      <td>None</td>
+      <td>09-03 01:22</td>
+      <td class="table-danger
+">FAIL</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/83e34cacc518593a51e3d8c0f27c38f5465e6139/develop/gfortran/10.3.0/g/mpi/8.1.7" target="_blank">
+
+83e34ca
+
+</a></td>
+    </tr>
     
     </tbody>
   </table>
