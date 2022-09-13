@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: gaea/None/intel/2019.5/mpiuni/None/O/None</h3><p><a href="../index.html">Top</a></p>
+    <h3 class="mb-2">ESMF Hash: v8.4.0b13-29-gf62da39 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Escape "#" symbol with "\" for LaTeX. (Gerhard Theurich, Tue Sep 13 08:43:15 2022 -0700)</p> 
+    <p><a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Collect Time</th>
       <th>Build</th>
@@ -60,27 +66,33 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.3.1b05</td>
-        <td>patch_8.3.1</td>
-        <td>08-29 00:19</td>
-        <td>None</td>
-        <td>08-29 04:30</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/catania_Darwin_gfortran_11.2.0_openmpi_4.1.0_4.7.4_O.html">5</a></td>
+      <td>catania</td>
+      <td>Darwin</td>
+      <td>gfortran/11.2.0</td>
+      <td>openmpi/4.1.0</td>
+      <td>O</td>
+      <td>4.7.4</td>
+      <td>09-13 09:52</td>
+      <td>09-13 10:04</td>
+      <td>09-13 16:05</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/3e2e682043a1816c3cc7f3b1b3270a28264d57f1/patch_8.3.1/intel/2019.5/O/mpiuni/None" target="_blank">
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e087de0240cd2aa975f8330bafe51c1395d7097e/develop/gfortran/11.2.0/O/openmpi/4.1.0" target="_blank">
 
-3e2e682
+e087de0
 
 </a></td>
+    </tr>
     
     </tbody>
   </table>
