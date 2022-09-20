@@ -45,8 +45,7 @@ jobs:
         key: summarizer-db-${{github.run_id}}
         restore-keys: summarizer-db-
        
-    - name: Checkout ESMF test artifacts
-      if: ${{ ! inputs.no-update }}
+    - name: Checkout ESMF test artifacts      
       uses: actions/checkout@v3
       with:
         repository: esmf-org/esmf-test-artifacts
