@@ -15,6 +15,11 @@ on:
         required: true
         type: boolean
         default: false
+      no-update:
+        description: 'Skip artifacts update?'
+        required: true
+        type: boolean
+        default: false 
 
 # disallow concurrent runs of the summarizer
 concurrency: esmf-summarizer
@@ -33,12 +38,6 @@ jobs:
         path: esmf-test-scripts
         ref: main
     
-    #- name: Restore esmf-test-artifacts
-    #  uses: actions/cache@v2
-    #  with:
-    #    path: esmf-test-artifacts
-    #    key: esmf-test-artifacts-cache-key-v2
-    
     - name: Restore summarizer database
       uses: actions/cache@v2
       with:
@@ -46,13 +45,14 @@ jobs:
         key: summarizer-db-${{github.run_id}}
         restore-keys: summarizer-db-
        
-#    - name: Checkout ESMF test artifacts
-#      uses: actions/checkout@v3
-#      with:
-#        repository: esmf-org/esmf-test-artifacts
-#        path: esmf-test-artifacts
-#        ref: main
-#        fetch-depth: 0
+    - name: Checkout ESMF test artifacts
+      if: ${{ ! inputs.no-update }}
+      uses: actions/checkout@v3
+      with:
+        repository: esmf-org/esmf-test-artifacts
+        path: esmf-test-artifacts
+        ref: main
+        fetch-depth: 0
     
     - name: Checkout ESMF 
       uses: actions/checkout@v3
@@ -87,26 +87,30 @@ jobs:
     - name: Should debug?
       if: ${{ inputs.debug-logging }}
       run: echo "DEBUG_LOGGING=--debug" >> $GITHUB_ENV 
+      
+    - name: Should skip artifacts update?
+      if: ${{ inputs.no-update }}
+      run: echo "NO_UPDATE=--no-update" >> $GITHUB_ENV 
     
-#    - name: Generate summaries
-#      run: |
-#        mkdir -p $GITHUB_WORKSPACE/htmlout
-#        mkdir -p $GITHUB_WORKSPACE/summarizer-db
-#        $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -e $GITHUB_WORKSPACE/esmf -d $GITHUB_WORKSPACE/summarizer-db --output-dir $GITHUB_WORKSPACE/htmlout ${{ env.REBUILD_DB }} ${{ env.DEBUG_LOGGING }}
+    - name: Generate summaries
+      run: |
+        mkdir -p $GITHUB_WORKSPACE/htmlout
+        mkdir -p $GITHUB_WORKSPACE/summarizer-db
+        $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -e $GITHUB_WORKSPACE/esmf -d $GITHUB_WORKSPACE/summarizer-db --output-dir $GITHUB_WORKSPACE/htmlout ${{ env.REBUILD_DB }} ${{ env.DEBUG_LOGGING }} ${{ env.NO_UPDATE }}
     
-#    - name: Copy HTML
-#      run: |
-#        cd $GITHUB_WORKSPACE/esmf-test-summary
-#        git fetch
-#        git reset --hard origin/main
-#        rm -rf $GITHUB_WORKSPACE/esmf-test-summary/docs/*
-#        cp -R $GITHUB_WORKSPACE/htmlout/* $GITHUB_WORKSPACE/esmf-test-summary/docs
+    - name: Copy HTML
+      run: |
+        cd $GITHUB_WORKSPACE/esmf-test-summary
+        git fetch
+        git reset --hard origin/main
+        rm -rf $GITHUB_WORKSPACE/esmf-test-summary/docs/*
+        cp -R $GITHUB_WORKSPACE/htmlout/* $GITHUB_WORKSPACE/esmf-test-summary/docs
     
-#    - name: Commit and push HTML
-#      uses: actions-js/push@master
-#      with:
-#        directory: ${{ github.workspace }}/esmf-test-summary
-#        github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Commit and push HTML
+      uses: actions-js/push@master
+      with:
+        directory: ${{ github.workspace }}/esmf-test-summary
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
