@@ -46,13 +46,13 @@ jobs:
         key: summarizer-db-${{github.run_id}}
         restore-keys: summarizer-db-
        
-    - name: Checkout ESMF test artifacts
-      uses: actions/checkout@v3
-      with:
-        repository: esmf-org/esmf-test-artifacts
-        path: esmf-test-artifacts
-        ref: main
-        fetch-depth: 0
+#    - name: Checkout ESMF test artifacts
+#      uses: actions/checkout@v3
+#      with:
+#        repository: esmf-org/esmf-test-artifacts
+#        path: esmf-test-artifacts
+#        ref: main
+#        fetch-depth: 0
     
     - name: Checkout ESMF 
       uses: actions/checkout@v3
@@ -88,11 +88,11 @@ jobs:
       if: ${{ inputs.debug-logging }}
       run: echo "DEBUG_LOGGING=--debug" >> $GITHUB_ENV 
     
-    - name: Generate summaries
-      run: |
-        mkdir -p $GITHUB_WORKSPACE/htmlout
-        mkdir -p $GITHUB_WORKSPACE/summarizer-db
-        $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -e $GITHUB_WORKSPACE/esmf -d $GITHUB_WORKSPACE/summarizer-db --output-dir $GITHUB_WORKSPACE/htmlout ${{ env.REBUILD_DB }} ${{ env.DEBUG_LOGGING }}
+#    - name: Generate summaries
+#      run: |
+#        mkdir -p $GITHUB_WORKSPACE/htmlout
+#        mkdir -p $GITHUB_WORKSPACE/summarizer-db
+#        $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -e $GITHUB_WORKSPACE/esmf -d $GITHUB_WORKSPACE/summarizer-db --output-dir $GITHUB_WORKSPACE/htmlout ${{ env.REBUILD_DB }} ${{ env.DEBUG_LOGGING }}
     
     - name: Copy HTML
       run: |
@@ -102,8 +102,14 @@ jobs:
         rm -rf $GITHUB_WORKSPACE/esmf-test-summary/docs/*
         cp -R $GITHUB_WORKSPACE/htmlout/* $GITHUB_WORKSPACE/esmf-test-summary/docs
     
-    - name: Commit and push HTML
-      uses: actions-js/push@master
+#    - name: Commit and push HTML
+#      uses: actions-js/push@master
+#      with:
+#        directory: ${{ github.workspace }}/esmf-test-summary
+#        github_token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
       with:
-        directory: ${{ github.workspace }}/esmf-test-summary
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        name: summarizer-db
+        path: ${{ github.workspace }}/summarizer-db
