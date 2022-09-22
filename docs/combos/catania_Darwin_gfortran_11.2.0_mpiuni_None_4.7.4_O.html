@@ -22,102 +22,59 @@
 
     
     <script>
-        $(document).ready(function () {
-            $('#branches').DataTable({
-                paging: false
-            });
-        });
-        $(document).ready(function () {
-            $('#combos').DataTable({
-                paging: false,
-                order: [[1, 'asc'], [3, 'asc'], [4, 'asc'], [5, 'asc'], [6, 'asc']],
-            });
-        });
-    </script>
+      $(document).ready(function () {
+          $('#results').DataTable({
+              paging: false
+          });
+          $('[data-bs-toggle="popover"]').popover();
+      });
+  </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
+<h3 class="mb-2">Combination: catania/Darwin/gfortran/11.2.0/mpiuni/None/O/4.7.4</h3><p><a href="../index.html">Top</a></p>
+
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="branches" class="table table-bordered table-hover">
+  <table id="results" class="table table-bordered table-hover text-nowrap">
     <thead class="table-light">
     <tr>
-      <th class="text-center">Tested ESMF Branches</th>
+      <th>ESMF Hash</th>
+      <th>ESMF Branch</th>
+      <th>Clone Time</th>
+      <th>Build Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>Artifacts</th>
     </tr>
     </thead>
     <tbody>
     
-    <tr>
-      <td><a href="develop/index.html">develop</a></td>
-    </tr>
-    
-    </tbody>
-  </table>
-  <br/>
-  <table id="combos"  class="table table-bordered table-hover">
-    <thead class="table-light">
-    <tr>
-      <th class="text-center" colspan="10">Combinations</th>
-    </tr>
-    <tr>
-      <th>No.</th>
-      <th>Machine</th>
-      <th>OS</th>
-      <th>Compiler</th>
-      <th>Version</th>
-      <th>MPI</th>
-      <th>Version</th>
-      <th>BOPT</th>
-      <th>NetCDF</th>
-      <th>Last Reported</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-    <tr>
-      <td><a href="combos/catania_Darwin_gfortran_11.2.0_mpiuni_None_4.7.4_O.html">2</a></td>
-      <td>catania</td>
-      <td>Darwin</td>
-      <td>gfortran</td>
-      <td>11.2.0</td>
-      <td>mpiuni</td>
-      <td>None</td>
-      <td>O</td>
-      <td>4.7.4</td>
-      <td>09-22 18:22</td>
-    </tr>
-    
-    <tr>
-      <td><a href="combos/catania_Darwin_gfortran_11.2.0_openmpi_4.1.0_4.7.4_O.html">1</a></td>
-      <td>catania</td>
-      <td>Darwin</td>
-      <td>gfortran</td>
-      <td>11.2.0</td>
-      <td>openmpi</td>
-      <td>4.1.0</td>
-      <td>O</td>
-      <td>4.7.4</td>
-      <td>09-22 17:23</td>
-    </tr>
-    
-    <tr>
-      <td><a href="combos/catania_Darwin_gfortran_11.2.0_openmpi_4.1.0_4.7.4_g.html">3</a></td>
-      <td>catania</td>
-      <td>Darwin</td>
-      <td>gfortran</td>
-      <td>11.2.0</td>
-      <td>openmpi</td>
-      <td>4.1.0</td>
-      <td>g</td>
-      <td>4.7.4</td>
-      <td>09-22 17:58</td>
-    </tr>
+      <tr>
+        <td>v8.4.0b14-4-g385fd8f</td>
+        <td>develop</td>
+        <td>09-22 10:51</td>
+        <td>09-22 12:06</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-success
+">12314/0</td>
+        <td class="table-success
+">8/0</td>
+        <td class="table-success
+">43/0</td>
+        <td class="table-success
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/f82a1ca2d6314f132e2c4cce8208a4e4c597a155/develop/gfortran/11.2.0/O/mpiuni/None" target="_blank">f82a1ca</a></td>
     
     </tbody>
   </table>
