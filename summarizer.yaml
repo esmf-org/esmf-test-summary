@@ -5,7 +5,6 @@
 
 exclude:
   esmf_hash:
-    - v8.4.0b15-5-*
     - v8.4.0b13*
 #  machine:
 #    - acorn
