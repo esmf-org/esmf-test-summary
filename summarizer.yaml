@@ -4,8 +4,8 @@
 ## characters) in any of the entries.
 
 exclude:
-  esmf_hash:
-    - v8.4.0b13*
+#  esmf_hash:
+#    - v8.4.0b13*
 #  machine:
 #    - acorn
 #    - hera
