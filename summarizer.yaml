@@ -5,7 +5,10 @@
 
 exclude:
   esmf_hash:
-#    - v8.4.0b13*
+    - v8.5.0b04-6-*
+    - v8.5.0b04-9-*
+    - v8.5.0b04-11-*
+    - v8.5.0b04-13-*
 #  machine:
 #    - acorn
 #    - hera
