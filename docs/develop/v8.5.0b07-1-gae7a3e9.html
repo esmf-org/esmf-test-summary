@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: jet/None/intel/2020.2/intelmpi/2020.2/g/None</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.5.0b07-1-gae7a3e9 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Change value of pi in cubed sphere coordinate calc to more accurate value. Also adjust some temporary buffer sizes upward in 2nd order conservative. (Robert Oehmke, Tue Nov 29 16:23:06 2022 -0700)</p> 
+    <p><a href="v8.5.0b07-1-gae7a3e9.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,47 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.5.0b02-3-g34fed67</td>
-        <td>develop</td>
-        <td>11-07 03:53</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/breve_Linux_aocc_3.2.0_mpiuni_None_None_O.html">9</a></td>
+      <td>breve</td>
+      <td>Linux</td>
+      <td>aocc/3.2.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>None</td>
+      <td>11-29 18:50</td>
+      <td>11-29 19:33</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-success
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/ece543548781c5698815d9575a517ae8311ba60a/develop/intel/2020.2/g/intelmpi/2020.2" target="_blank">ece5435</a></td>
-    
-      <tr>
-        <td>v8.5.0b02-3-g34fed67</td>
-        <td>develop</td>
-        <td>11-08 03:49</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/18aaa3b4d96c4d913b6dc371c382a5e482fc95aa/develop/intel/2020.2/g/intelmpi/2020.2" target="_blank">18aaa3b</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/c153a566cd1755dd5c25d1e7e52c8c5a3d667d5d/develop/aocc/3.2.0/O/mpiuni/None" target="_blank">c153a56</a></td>
+    </tr>
     
     </tbody>
   </table>
