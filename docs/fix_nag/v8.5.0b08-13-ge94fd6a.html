@@ -34,9 +34,9 @@
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">ESMF Hash: v8.5.0b08-10-g06c11b2 (branch: <a href="index.html">develop</a>)</h3>
-    <p>Fix problem with ESMPy cubed sphere Grid creation not working with corner stagger. (Robert Oehmke, Thu Dec 8 13:21:01 2022 -0700)</p> 
-    <p><a href="v8.5.0b08-10-g06c11b2.md">Markdown</a>   <a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.5.0b08-13-ge94fd6a (branch: <a href="index.html">fix_nag</a>)</h3>
+    <p>Set ESMF_OPENMP=OFF for NAG since there were hanging tests that might be OpenMP related. (Gerhard Theurich, Thu Dec 8 17:26:41 2022 -0800)</p> 
+    <p><a href="v8.5.0b08-13-ge94fd6a.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
@@ -68,87 +68,6 @@
     <tbody>
     
     <tr>
-      <td><a href="../combos/bighorn_Linux_intel_20.0.1_mpiuni_None_4.6.1_O.html">123</a></td>
-      <td>bighorn</td>
-      <td>Linux</td>
-      <td>intel/20.0.1</td>
-      <td>mpiuni/None</td>
-      <td>O</td>
-      <td>4.6.1</td>
-      <td>12-08 13:23</td>
-      <td>12-08 13:46</td>
-      <td class="table-success
-">PASS</td>
-      <td class="table-success
-">12338/0</td>
-      <td class="table-success
-">8/0</td>
-      <td class="table-success
-">43/0</td>
-      <td class="table-success
-">None/None</td>
-      <td class="table-danger
-">NONE</td>
-      <td class="table-danger
-">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/3dfdf87a236f6d4b3f92034082be7c0370cf38d2/develop/intel/20.0.1/O/mpiuni/None" target="_blank">3dfdf87</a></td>
-    </tr>
-    
-    <tr>
-      <td><a href="../combos/bighorn_Linux_intel_20.0.1_mpiuni_None_4.6.1_g.html">124</a></td>
-      <td>bighorn</td>
-      <td>Linux</td>
-      <td>intel/20.0.1</td>
-      <td>mpiuni/None</td>
-      <td>g</td>
-      <td>4.6.1</td>
-      <td>12-08 14:24</td>
-      <td>12-08 14:40</td>
-      <td class="table-success
-">PASS</td>
-      <td class="table-success
-">12338/0</td>
-      <td class="table-success
-">8/0</td>
-      <td class="table-success
-">43/0</td>
-      <td class="table-success
-">None/None</td>
-      <td class="table-danger
-">NONE</td>
-      <td class="table-danger
-">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e29743fc7f2abdeb2fd50d55b1525b21bc50718c/develop/intel/20.0.1/g/mpiuni/None" target="_blank">e29743f</a></td>
-    </tr>
-    
-    <tr>
-      <td><a href="../combos/bighorn_Linux_nag_7.0_mpiuni_None_4.6.1_O.html">125</a></td>
-      <td>bighorn</td>
-      <td>Linux</td>
-      <td>nag/7.0</td>
-      <td>mpiuni/None</td>
-      <td>O</td>
-      <td>4.6.1</td>
-      <td>12-08 14:25</td>
-      <td>12-08 15:36</td>
-      <td class="table-success
-">PASS</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-success
-">None/None</td>
-      <td class="table-danger
-">NONE</td>
-      <td class="table-danger
-">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/b278724e27f5dd972080bcd18b69fce85e959562/develop/nag/7.0/O/mpiuni/None" target="_blank">b278724</a></td>
-    </tr>
-    
-    <tr>
       <td><a href="../combos/jet_Linux_gfortran_9.2.0_openmpi_3.1.4_None_g.html">95</a></td>
       <td>jet</td>
       <td>Linux</td>
@@ -156,8 +75,8 @@
       <td>openmpi/3.1.4</td>
       <td>g</td>
       <td>None</td>
-      <td>12-09 03:50</td>
-      <td>12-09 04:12</td>
+      <td>12-09 03:51</td>
+      <td>12-09 04:13</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-danger
@@ -172,7 +91,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/db798f8b6b15bd20a5aa87efd3eed6e5fb0db5a3/develop/gfortran/9.2.0/g/openmpi/3.1.4" target="_blank">db798f8</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/87fc8d95918556c35bbb6a71474c2fe9b64ae672/fix_nag/gfortran/9.2.0/g/openmpi/3.1.4" target="_blank">87fc8d9</a></td>
     </tr>
     
     <tr>
@@ -184,33 +103,6 @@
       <td>O</td>
       <td>None</td>
       <td>12-09 03:49</td>
-      <td>12-09 04:11</td>
-      <td class="table-success
-">PASS</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">NONE</td>
-      <td class="table-danger
-">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2e6c0892b30dfec4e6d63677c32a5b0f98c0f017/develop/gfortran/9.2.0/O/openmpi/3.1.4" target="_blank">2e6c089</a></td>
-    </tr>
-    
-    <tr>
-      <td><a href="../combos/jet_Linux_intel_2020.2_intelmpi_2020.2_4.7.0_g.html">93</a></td>
-      <td>jet</td>
-      <td>Linux</td>
-      <td>intel/2020.2</td>
-      <td>intelmpi/2020.2</td>
-      <td>g</td>
-      <td>4.7.0</td>
-      <td>12-09 03:47</td>
       <td>12-09 04:12</td>
       <td class="table-success
 ">PASS</td>
@@ -226,7 +118,34 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/458bcd131244a2b70efd9148b832cee28553daea/develop/intel/2020.2/g/intelmpi/2020.2" target="_blank">458bcd1</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/9bdce64fca3c02732da4226bd77e63c9012bbd9b/fix_nag/gfortran/9.2.0/O/openmpi/3.1.4" target="_blank">9bdce64</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/jet_Linux_intel_2020.2_intelmpi_2020.2_4.7.0_g.html">93</a></td>
+      <td>jet</td>
+      <td>Linux</td>
+      <td>intel/2020.2</td>
+      <td>intelmpi/2020.2</td>
+      <td>g</td>
+      <td>4.7.0</td>
+      <td>12-09 03:48</td>
+      <td>12-09 04:13</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2c319b1c6e52284a5ac065beebe17ee4a3fe106b/fix_nag/intel/2020.2/g/intelmpi/2020.2" target="_blank">2c319b1</a></td>
     </tr>
     
     <tr>
@@ -237,7 +156,7 @@
       <td>intelmpi/2020.2</td>
       <td>O</td>
       <td>4.7.0</td>
-      <td>12-09 03:45</td>
+      <td>12-09 03:46</td>
       <td>12-09 04:19</td>
       <td class="table-success
 ">PASS</td>
@@ -253,34 +172,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e2615e8ccf30170cd22d1773f761d9e29add86d6/develop/intel/2020.2/O/intelmpi/2020.2" target="_blank">e2615e8</a></td>
-    </tr>
-    
-    <tr>
-      <td><a href="../combos/jet_None_intel_2020.2_intelmpi_2020.2_None_O.html">118</a></td>
-      <td>jet</td>
-      <td>None</td>
-      <td>intel/2020.2</td>
-      <td>intelmpi/2020.2</td>
-      <td>O</td>
-      <td>None</td>
-      <td>12-09 03:45</td>
-      <td>None</td>
-      <td class="table-danger
-">FAIL</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">NONE</td>
-      <td class="table-danger
-">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/ecadaafc19703f9429f902d4fa67c40a624da870/develop/intel/2020.2/O/intelmpi/2020.2" target="_blank">ecadaaf</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/6d89c440b83871276ce02612d2ef2694ef10b82d/fix_nag/intel/2020.2/O/intelmpi/2020.2" target="_blank">6d89c44</a></td>
     </tr>
     
     <tr>
@@ -290,33 +182,6 @@
       <td>nvhpc/22.2</td>
       <td>intelmpi/2022.3.0</td>
       <td>O</td>
-      <td>None</td>
-      <td>12-09 03:55</td>
-      <td>None</td>
-      <td class="table-danger
-">FAIL</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">NONE</td>
-      <td class="table-danger
-">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7a5afbab7e369cee1b8064e18baf515f0bba2c29/develop/nvhpc/22.2/O/intelmpi/2022.3.0" target="_blank">7a5afba</a></td>
-    </tr>
-    
-    <tr>
-      <td><a href="../combos/jet_Linux_nvhpc_22.2_intelmpi_2022.3.0_None_g.html">98</a></td>
-      <td>jet</td>
-      <td>Linux</td>
-      <td>nvhpc/22.2</td>
-      <td>intelmpi/2022.3.0</td>
-      <td>g</td>
       <td>None</td>
       <td>12-09 03:56</td>
       <td>None</td>
@@ -334,7 +199,34 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2244bf4f872378e74897cd7742ba52ea6b7b9ab6/develop/nvhpc/22.2/g/intelmpi/2022.3.0" target="_blank">2244bf4</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/a9f80110f4f3dd984deee395fc0e94fea96cd20c/fix_nag/nvhpc/22.2/O/intelmpi/2022.3.0" target="_blank">a9f8011</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/jet_Linux_nvhpc_22.2_intelmpi_2022.3.0_None_g.html">98</a></td>
+      <td>jet</td>
+      <td>Linux</td>
+      <td>nvhpc/22.2</td>
+      <td>intelmpi/2022.3.0</td>
+      <td>g</td>
+      <td>None</td>
+      <td>12-09 03:57</td>
+      <td>None</td>
+      <td class="table-danger
+">FAIL</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/215d51a367f40694a941defd2e9ff0e81d94c224/fix_nag/nvhpc/22.2/g/intelmpi/2022.3.0" target="_blank">215d51a</a></td>
     </tr>
     
     <tr>
@@ -345,7 +237,7 @@
       <td>mpiuni/None</td>
       <td>g</td>
       <td>None</td>
-      <td>12-09 03:53</td>
+      <td>12-09 03:54</td>
       <td>12-09 04:29</td>
       <td class="table-success
 ">PASS</td>
@@ -361,7 +253,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/59f37931d56272696e85638619ee89dd81bd4d6e/develop/nvhpc/22.2/g/mpiuni/None" target="_blank">59f3793</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5d42efbffdb0dcdec4f00fc0282fefb59ebebe4d/fix_nag/nvhpc/22.2/g/mpiuni/None" target="_blank">5d42efb</a></td>
     </tr>
     
     <tr>
@@ -388,7 +280,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/0a7374f1e9f15a13aa7a4550febbfab4ee9a4b03/develop/nvhpc/22.2/O/mpiuni/None" target="_blank">0a7374f</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/100fb9ecfe0a08b517f869642540cc4eed98f1e7/fix_nag/nvhpc/22.2/O/mpiuni/None" target="_blank">100fb9e</a></td>
     </tr>
     
     </tbody>
