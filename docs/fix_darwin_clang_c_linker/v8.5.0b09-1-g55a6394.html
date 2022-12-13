@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: perlmutter/Unicos/gfortran/11.2.0/mpiuni/None/g/4.8.1</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.5.0b09-1-g55a6394 (branch: <a href="index.html">fix_darwin_clang_c_linker</a>)</h3>
+    <p>Darwin gfortranclang: Use C++ linker even for C programs (Bill Sacks, Mon Dec 12 16:42:31 2022 -0700)</p> 
+    <p><a href="v8.5.0b09-1-g55a6394.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,68 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.5.0b09</td>
-        <td>develop</td>
-        <td>12-10 12:31</td>
-        <td>12-10 12:45</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/green_Darwin_gfortranclang_12.2.0_14.0.0_openmpi_4.1.4_4.9.0_O.html">74</a></td>
+      <td>green</td>
+      <td>Darwin</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>openmpi/4.1.4</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>12-12 16:59</td>
+      <td>12-12 18:14</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-danger
-">12323/15</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">43/0</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">13916/1</td>
+      <td class="table-success
+">49/0</td>
+      <td class="table-success
+">80/0</td>
+      <td class="table-success
+">52/0</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/4b953af8c581e3dfc025f709fd2e67b4e640151a/develop/gfortran/11.2.0/g/mpiuni/None" target="_blank">4b953af</a></td>
-    
-      <tr>
-        <td>v8.5.0b08</td>
-        <td>develop</td>
-        <td>12-02 14:53</td>
-        <td>12-02 15:05</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-danger
-">12323/15</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">43/0</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7a67e0598a7ec90da2f6083bda8bb2d7f42df319/develop/gfortran/11.2.0/g/mpiuni/None" target="_blank">7a67e05</a></td>
-    
-      <tr>
-        <td>v8.5.0b08</td>
-        <td>develop</td>
-        <td>12-04 07:08</td>
-        <td>12-04 07:23</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-danger
-">12323/15</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">43/0</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d29b17dd267ea40ebbf19141bd3f22bc8fecfcce/develop/gfortran/11.2.0/g/mpiuni/None" target="_blank">d29b17d</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/73957391d07fe35d9bb9a26ab656fbb7cdfc63f9/fix_darwin_clang_c_linker/gfortranclang/12.2.0_14.0.0/O/openmpi/4.1.4" target="_blank">7395739</a></td>
+    </tr>
     
     </tbody>
   </table>
