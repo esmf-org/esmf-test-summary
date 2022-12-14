@@ -34,9 +34,9 @@
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">ESMF Hash: v8.5.0b08-12-ge317521 (branch: <a href="index.html">fix_nag</a>)</h3>
-    <p>Fix a typo: exactly did NOT want to use the ESMF_F90RPATHPREFIX! (Gerhard Theurich, Thu Dec 8 15:50:49 2022 -0800)</p> 
-    <p><a href="v8.5.0b08-12-ge317521.md">Markdown</a>   <a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.5.0b09-3-gd7b0020 (branch: <a href="index.html">feature_reuse-RH</a>)</h3>
+    <p>Refactor Regrid RH-reuse optimization into a single unified approach to be used by both ESMF and NUOPC! (Gerhard Theurich, Tue Dec 13 16:51:43 2022 -0800)</p> 
+    <p><a href="v8.5.0b09-3-gd7b0020.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
@@ -68,84 +68,138 @@
     <tbody>
     
     <tr>
-      <td><a href="../combos/bighorn_Linux_nag_6.2_mpiuni_None_4.6.1_O.html">126</a></td>
-      <td>bighorn</td>
+      <td><a href="../combos/hera_Linux_gfortran_9.2.0a_mpiuni_None_4.7.2_g.html">89</a></td>
+      <td>hera</td>
       <td>Linux</td>
-      <td>nag/6.2</td>
+      <td>gfortran/9.2.0a</td>
       <td>mpiuni/None</td>
-      <td>O</td>
-      <td>4.6.1</td>
-      <td>12-08 18:08</td>
-      <td>12-08 18:20</td>
+      <td>g</td>
+      <td>4.7.2</td>
+      <td>12-14 07:03</td>
+      <td>12-14 07:31</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-danger
-">12304/34</td>
+">None/None</td>
       <td class="table-danger
-">6/2</td>
-      <td class="table-success
-">43/0</td>
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
       <td class="table-success
 ">None/None</td>
       <td class="table-danger
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/79e15bf563c4e5e8a3e4306b0e290a8f8668d73e/fix_nag/nag/6.2/O/mpiuni/None" target="_blank">79e15bf</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2c76ea4661340e9c84ae9387ab6a432554a004a2/feature_reuse-RH/gfortran/9.2.0a/g/mpiuni/None" target="_blank">2c76ea4</a></td>
     </tr>
     
     <tr>
-      <td><a href="../combos/bighorn_Linux_nag_7.0_mpiuni_None_4.6.1_O.html">125</a></td>
-      <td>bighorn</td>
+      <td><a href="../combos/hera_Linux_gfortran_9.2.0a_mpiuni_None_4.7.2_O.html">90</a></td>
+      <td>hera</td>
       <td>Linux</td>
-      <td>nag/7.0</td>
+      <td>gfortran/9.2.0a</td>
       <td>mpiuni/None</td>
       <td>O</td>
-      <td>4.6.1</td>
-      <td>12-08 17:02</td>
-      <td>12-08 17:15</td>
+      <td>4.7.2</td>
+      <td>12-14 07:01</td>
+      <td>12-14 07:30</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-danger
-">12304/34</td>
+">None/None</td>
       <td class="table-danger
-">6/2</td>
-      <td class="table-success
-">43/0</td>
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
       <td class="table-success
 ">None/None</td>
       <td class="table-danger
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/58f780588b0993181c3bef696ba40fee995c71f8/fix_nag/nag/7.0/O/mpiuni/None" target="_blank">58f7805</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/da1dc05702af7498c387f7969deff13dc0aa8ff3/feature_reuse-RH/gfortran/9.2.0a/O/mpiuni/None" target="_blank">da1dc05</a></td>
     </tr>
     
     <tr>
-      <td><a href="../combos/bighorn_Linux_pgi_19.9_mpiuni_None_4.6.1_O.html">127</a></td>
-      <td>bighorn</td>
+      <td><a href="../combos/hera_Linux_gfortran_9.2.0b_openmpi_3.1.4_None_g.html">86</a></td>
+      <td>hera</td>
       <td>Linux</td>
-      <td>pgi/19.9</td>
-      <td>mpiuni/None</td>
-      <td>O</td>
-      <td>4.6.1</td>
-      <td>12-08 18:09</td>
-      <td>12-08 19:41</td>
+      <td>gfortran/9.2.0b</td>
+      <td>openmpi/3.1.4</td>
+      <td>g</td>
+      <td>None</td>
+      <td>12-14 07:07</td>
+      <td>12-14 07:33</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-danger
-">0/7460</td>
+">None/None</td>
       <td class="table-danger
-">0/8</td>
+">None/None</td>
       <td class="table-danger
-">0/43</td>
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/563fd9a5bec558dc5c7525e28cc6fa8ce6a8a544/feature_reuse-RH/gfortran/9.2.0b/g/openmpi/3.1.4" target="_blank">563fd9a</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_gfortran_9.2.0b_openmpi_3.1.4_None_O.html">88</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>gfortran/9.2.0b</td>
+      <td>openmpi/3.1.4</td>
+      <td>O</td>
+      <td>None</td>
+      <td>12-14 07:05</td>
+      <td>12-14 07:32</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/c07f44ad963eaf02c49461d79557e7bc5b5e83f1/feature_reuse-RH/gfortran/9.2.0b/O/openmpi/3.1.4" target="_blank">c07f44a</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_intel_18.0.5a_mpiuni_None_4.6.1_g.html">85</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>intel/18.0.5a</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.6.1</td>
+      <td>12-14 07:10</td>
+      <td>12-14 07:36</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
       <td class="table-success
 ">None/None</td>
       <td class="table-danger
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/3ee7c19fbb9a46ee9a2632dc5b22ccdb62c2fac8/fix_nag/pgi/19.9/O/mpiuni/None" target="_blank">3ee7c19</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/679fe05ddbfbed9e558dbbe5cf4449e9e9555419/feature_reuse-RH/intel/18.0.5a/g/mpiuni/None" target="_blank">679fe05</a></td>
     </tr>
     
     </tbody>
