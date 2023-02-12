@@ -34,9 +34,9 @@
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">ESMF Hash: v8.5.0b14-10-g3e6a661 (branch: <a href="index.html">fix_reconcile</a>)</h3>
-    <p>Provide ESMF internal ESMF_FieldBundleTypeDeepCopy() in the right place so it can be used by StateReconcile(). (Gerhard Theurich, Sat Feb 11 18:16:58 2023 -0700)</p> 
-    <p><a href="v8.5.0b14-10-g3e6a661.md">Markdown</a>   <a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.5.0b14-11-g6bf2088 (branch: <a href="index.html">fix_reconcile</a>)</h3>
+    <p>Switch to stack vs heap for temporary Field/FieldBundle variables and final cleanup. (Gerhard Theurich, Sat Feb 11 20:21:42 2023 -0700)</p> 
+    <p><a href="v8.5.0b14-11-g6bf2088.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
@@ -75,23 +75,23 @@
       <td>mpi/8.1.21</td>
       <td>g</td>
       <td>4.9.0</td>
-      <td>02-11 18:19</td>
-      <td>02-11 18:34</td>
+      <td>02-11 20:24</td>
+      <td>02-11 20:39</td>
       <td class="table-success
 ">PASS</td>
-      <td class="table-success
-">13918/0</td>
-      <td class="table-success
-">49/0</td>
-      <td class="table-success
-">80/0</td>
-      <td class="table-success
-">52/0</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
       <td class="table-danger
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5024aac2ac62cbc9292ef56cf6b2e690f29f7555/fix_reconcile/intel/2021.7.1/g/mpi/8.1.21" target="_blank">5024aac</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/0f7e5c9f5c9c441cdce56ce242b06dea07a53581/fix_reconcile/intel/2021.7.1/g/mpi/8.1.21" target="_blank">0f7e5c9</a></td>
     </tr>
     
     <tr>
@@ -102,23 +102,23 @@
       <td>mpi/8.1.21</td>
       <td>O</td>
       <td>4.9.0</td>
-      <td>02-11 18:19</td>
-      <td>02-11 18:34</td>
+      <td>02-11 20:23</td>
+      <td>02-11 20:39</td>
       <td class="table-success
 ">PASS</td>
-      <td class="table-success
-">13918/0</td>
-      <td class="table-success
-">49/0</td>
-      <td class="table-success
-">80/0</td>
-      <td class="table-success
-">52/0</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
       <td class="table-danger
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/307a322f58af4c09b13f12dfd690104324bbba60/fix_reconcile/intel/2021.7.1/O/mpi/8.1.21" target="_blank">307a322</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/0eb80ec320d3eb4bdcaab5cfc8c2ae2360d6549d/fix_reconcile/intel/2021.7.1/O/mpi/8.1.21" target="_blank">0eb80ec</a></td>
     </tr>
     
     <tr>
@@ -129,23 +129,23 @@
       <td>mpiuni/None</td>
       <td>g</td>
       <td>4.9.0</td>
-      <td>02-11 18:18</td>
-      <td>02-11 18:35</td>
+      <td>02-11 20:23</td>
+      <td>02-11 20:39</td>
       <td class="table-success
 ">PASS</td>
-      <td class="table-success
-">12338/0</td>
-      <td class="table-success
-">8/0</td>
-      <td class="table-success
-">43/0</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
       <td class="table-success
 ">None/None</td>
       <td class="table-danger
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/255949d732e28cf655d2311d4ea7d2fef30a9835/fix_reconcile/intel/2021.7.1/g/mpiuni/None" target="_blank">255949d</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/62ff97fdf3ed3ca03ce3bfd5253045d9610ca137/fix_reconcile/intel/2021.7.1/g/mpiuni/None" target="_blank">62ff97f</a></td>
     </tr>
     
     <tr>
@@ -156,23 +156,23 @@
       <td>mpiuni/None</td>
       <td>O</td>
       <td>4.9.0</td>
-      <td>02-11 18:18</td>
-      <td>02-11 18:34</td>
+      <td>02-11 20:22</td>
+      <td>02-11 20:39</td>
       <td class="table-success
 ">PASS</td>
-      <td class="table-success
-">12338/0</td>
-      <td class="table-success
-">8/0</td>
-      <td class="table-success
-">43/0</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
       <td class="table-success
 ">None/None</td>
       <td class="table-danger
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/bc4a1d2c7ff8c0415c41fd9ea64e01f9df84b566/fix_reconcile/intel/2021.7.1/O/mpiuni/None" target="_blank">bc4a1d2</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/022bc947c4c1b8da0ac4e4744e3aeb4117677270/fix_reconcile/intel/2021.7.1/O/mpiuni/None" target="_blank">022bc94</a></td>
     </tr>
     
     </tbody>
