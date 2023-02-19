@@ -51,7 +51,7 @@ jobs:
         repository: esmf-org/esmf-test-artifacts
         path: esmf-test-artifacts
         ref: main
-        fetch-depth: 100
+        fetch-depth: 10
     
     - name: Checkout ESMF 
       uses: actions/checkout@v3
