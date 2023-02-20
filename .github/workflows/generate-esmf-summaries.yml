@@ -49,13 +49,9 @@ jobs:
         key: summarizer-db-${{github.run_id}}
         restore-keys: summarizer-db-
        
-    - name: Checkout ESMF test artifacts      
-      uses: actions/checkout@v3
-      with:
-        repository: esmf-org/esmf-test-artifacts
-        path: esmf-test-artifacts
-        ref: main
-        fetch-depth: 10
+    - name: Checkout ESMF test artifacts
+      run: |
+        git clone --filter=blob:none https://esmf-org/esmf-test-artifacts
     
     - name: Checkout ESMF 
       uses: actions/checkout@v3
