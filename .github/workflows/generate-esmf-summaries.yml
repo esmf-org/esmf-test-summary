@@ -31,7 +31,7 @@ jobs:
 
     steps:
     
-    - name: free disk space
+    - name: Check on free disk space
       run: |
         df -h
     
@@ -62,7 +62,7 @@ jobs:
       with:
         repository: esmf-org/esmf
         path: esmf   
-        fetch-depth: 0
+        fetch-depth: 10
     
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
