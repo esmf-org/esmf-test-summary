@@ -97,9 +97,14 @@ jobs:
     
     - name: Generate summaries
       run: |
+        echo $GITHUB_WORKSPACE
+        df -h
         mkdir -p $GITHUB_WORKSPACE/htmlout
+        df -h
         mkdir -p $GITHUB_WORKSPACE/summarizer-db
+        df -h
         $GITHUB_WORKSPACE/esmf-test-scripts/python_scripts/summarize_artifacts.py -c $GITHUB_WORKSPACE/esmf-test-summary/summarizer.yaml -a $GITHUB_WORKSPACE/esmf-test-artifacts -e $GITHUB_WORKSPACE/esmf -d $GITHUB_WORKSPACE/summarizer-db --output-dir $GITHUB_WORKSPACE/htmlout ${{ env.REBUILD_DB }} ${{ env.DEBUG_LOGGING }} ${{ env.NO_UPDATE }}
+        df -h
     
     - name: Copy HTML
       run: |
