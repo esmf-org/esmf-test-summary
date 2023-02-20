@@ -29,7 +29,11 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    steps:     
+    steps:
+    
+    - name: free disk space
+      run: |
+        df -h
     
     - name: Checkout summarizer scripts
       uses: actions/checkout@v3
