@@ -51,7 +51,7 @@ jobs:
        
     - name: Checkout ESMF test artifacts
       run: |
-        git clone --filter=blob:none https://esmf-org/esmf-test-artifacts
+        git clone --filter=blob:none esmf-org/esmf-test-artifacts
     
     - name: Checkout ESMF 
       uses: actions/checkout@v3
