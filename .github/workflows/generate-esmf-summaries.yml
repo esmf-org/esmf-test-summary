@@ -2,7 +2,7 @@ name: ESMF Test Results Summarizer
 
 on:
   schedule:
-   - cron: '*/60 * * * *'  
+   - cron: '*/180 * * * *'  
   workflow_dispatch:
     inputs:
       rebuild-database:
