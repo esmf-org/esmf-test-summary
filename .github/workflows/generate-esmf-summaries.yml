@@ -51,14 +51,14 @@ jobs:
        
     - name: Checkout ESMF test artifacts
       run: |
-        git clone --filter=blob:none https://github.com/esmf-org/esmf-test-artifacts.git
+        git clone --progress --filter=blob:none https://github.com/esmf-org/esmf-test-artifacts.git
     
     - name: Checkout ESMF 
       uses: actions/checkout@v3
       with:
         repository: esmf-org/esmf
         path: esmf   
-        fetch-depth: 10
+        fetch-depth: 0
     
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
