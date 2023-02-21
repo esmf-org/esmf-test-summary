@@ -1,0 +1,330 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+
+    
+    <script>
+      $(document).ready(function () {
+          $('#results').DataTable({
+              paging: false
+          });
+          $('[data-bs-toggle="popover"]').popover();
+      });
+  </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+<h3 class="mb-2">Combination: hera/Linux/intel/18.0.5b/intelmpi/2018.4.274/g/4.7.4</h3><p><a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover text-nowrap">
+    <thead class="table-light">
+    <tr>
+      <th>ESMF Hash</th>
+      <th>ESMF Branch</th>
+      <th>Clone Time</th>
+      <th>Build Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>esmpy Install</th>
+      <th>esmpy Tests</th>
+      <th>Artifacts</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+      <tr>
+        <td>v8.5.0b16-4-g44a4b6b</td>
+        <td>develop</td>
+        <td>02-16 07:07</td>
+        <td>02-16 07:30</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-success
+">13918/0</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-success
+">52/0</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts.git/tree/7de7328209c55e535ad6fc96c4a2dc08af3b60e9/develop/intel/18.0.5b/g/intelmpi/2018.4.274" target="_blank">7de7328</a></td>
+    
+      <tr>
+        <td>v8.5.0b16-12-g4b4f7bf</td>
+        <td>develop</td>
+        <td>02-18 07:16</td>
+        <td>02-18 07:42</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-success
+">13918/0</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-success
+">52/0</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts.git/tree/03d8c15c07a5674219d1c88613edd73b53e7080e/develop/intel/18.0.5b/g/intelmpi/2018.4.274" target="_blank">03d8c15</a></td>
+    
+      <tr>
+        <td>v8.5.0b16-12-g4b4f7bf</td>
+        <td>develop</td>
+        <td>02-19 07:19</td>
+        <td>02-19 07:41</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-success
+">13918/0</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-success
+">52/0</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts.git/tree/cdeebeb8b470df8eef0bbba3f66d330ae41287d9/develop/intel/18.0.5b/g/intelmpi/2018.4.274" target="_blank">cdeebeb</a></td>
+    
+      <tr>
+        <td>v8.5.0b16-12-g4b4f7bf</td>
+        <td>develop</td>
+        <td>02-20 07:17</td>
+        <td>02-20 07:45</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-success
+">13918/0</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-success
+">52/0</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts.git/tree/34ea52219ec5dfb47833dd528a930a963b48afe0/develop/intel/18.0.5b/g/intelmpi/2018.4.274" target="_blank">34ea522</a></td>
+    
+      <tr>
+        <td>v8.5.0b16-11-gfaf9204</td>
+        <td>develop</td>
+        <td>02-17 07:15</td>
+        <td>02-17 07:40</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts.git/tree/e6f6d8a2f2fddd4026e91c6837a73748b38e58d2/develop/intel/18.0.5b/g/intelmpi/2018.4.274" target="_blank">e6f6d8a</a></td>
+    
+      <tr>
+        <td>v8.5.0b15-4-g8794448</td>
+        <td>develop</td>
+        <td>02-14 07:09</td>
+        <td>02-14 07:25</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-success
+">13918/0</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-success
+">52/0</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts.git/tree/8d3ebdcea1a419f66f581e03ffd55e55ad808ae6/develop/intel/18.0.5b/g/intelmpi/2018.4.274" target="_blank">8d3ebdc</a></td>
+    
+      <tr>
+        <td>v8.5.0b15-4-g8794448</td>
+        <td>develop</td>
+        <td>02-15 07:09</td>
+        <td>02-15 07:36</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-success
+">13918/0</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-success
+">52/0</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts.git/tree/194194e270ae59751be2684522378a4dea747099/develop/intel/18.0.5b/g/intelmpi/2018.4.274" target="_blank">194194e</a></td>
+    
+      <tr>
+        <td>v8.5.0b15</td>
+        <td>develop</td>
+        <td>02-13 07:08</td>
+        <td>02-13 07:25</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-success
+">13918/0</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-success
+">52/0</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts.git/tree/fd7d7a8ba43dad86f63c3b99b35e9c61acc77e27/develop/intel/18.0.5b/g/intelmpi/2018.4.274" target="_blank">fd7d7a8</a></td>
+    
+      <tr>
+        <td>v8.4.1b06-1-g14fc397</td>
+        <td>patch_8.4.1</td>
+        <td>02-18 07:17</td>
+        <td>02-18 07:42</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-success
+">13873/0</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-success
+">52/0</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts.git/tree/e499f972ed84f6e3633717a84af75ea5c288e58d/patch_8.4.1/intel/18.0.5b/g/intelmpi/2018.4.274" target="_blank">e499f97</a></td>
+    
+      <tr>
+        <td>v8.4.1b06-1-g14fc397</td>
+        <td>patch_8.4.1</td>
+        <td>02-19 07:19</td>
+        <td>02-19 07:41</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-success
+">13873/0</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-success
+">52/0</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts.git/tree/e98c7fbcbcfbd4257847cf27a3c79f955ad2d89b/patch_8.4.1/intel/18.0.5b/g/intelmpi/2018.4.274" target="_blank">e98c7fb</a></td>
+    
+      <tr>
+        <td>v8.4.1b06-1-g14fc397</td>
+        <td>patch_8.4.1</td>
+        <td>02-20 07:19</td>
+        <td>02-20 07:44</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-success
+">13873/0</td>
+        <td class="table-success
+">49/0</td>
+        <td class="table-success
+">80/0</td>
+        <td class="table-success
+">52/0</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts.git/tree/c5478913bd54d6812030aaba6ba5c01165f4f476/patch_8.4.1/intel/18.0.5b/g/intelmpi/2018.4.274" target="_blank">c547891</a></td>
+    
+      <tr>
+        <td>v8.4.1b06</td>
+        <td>patch_8.4.1</td>
+        <td>02-17 07:16</td>
+        <td>02-17 07:40</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts.git/tree/d60f7e98fc88a647f9ec0431a86e6b6c00ba0708/patch_8.4.1/intel/18.0.5b/g/intelmpi/2018.4.274" target="_blank">d60f7e9</a></td>
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2023-02-20 18:43:55 MST.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
