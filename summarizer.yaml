@@ -19,6 +19,7 @@ exclude:
     - v8.5.0b13*
     - v8.5.0b14*
     - v8.5.0b16
+    - v8.5.0b16-11*
 #  machine:
 #    - acorn
 #    - hera
