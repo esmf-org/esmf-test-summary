@@ -1,0 +1,6 @@
+
+
+| host     | os       | compiler                              | mpi                      | o_g        | netcdf        | build       | u_pass          | u_fail          | s_pass            | s_fail            | e_pass             | e_fail             | nuopc_pass       | nuopc_fail       | artifacts link          |
+|----------|----------|---------------------------------------|--------------------------|------------|---------------|-------------|-----------------|-----------------|-------------------|-------------------|--------------------|--------------------|------------------|------------------|-------------------------|
+| discover | Linux | gfortran 8.3.0 | intelmpi 19.1.3.304  | O | None  | PASS | None | None | None | None | None | None | None | None | <a href="https://github.com/esmf-org/esmf-test-artifacts/tree/18862581bff87d341614a2300393f16499d3f38e/feature_hconfig/gfortran/8.3.0/O/intelmpi/19.1.3.304" target="_blank">1886258</a> | 
+| discover | Linux | intel 19.1.3 | intelmpi 19.1.3.304  | O | 4.8.0-development  | PASS | None | None | None | None | None | None | None | None | <a href="https://github.com/esmf-org/esmf-test-artifacts/tree/839178e9a65d7fb7bb15788729bb0edecfbe737a/feature_hconfig/intel/19.1.3/O/intelmpi/19.1.3.304" target="_blank">839178e</a> | 
