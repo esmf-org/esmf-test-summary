@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: gaeaC5/Unicos/intel/2022.0-oneAPI/mpiuni/None/O/None</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.4.2b02-2-g12616b5 (branch: <a href="index.html">patch_8.4.2</a>)</h3>
+    <p>Merge branch 'fix/darwin_gfortranclang' into patch/8.4.2 (Gerhard Theurich, Fri Apr 21 09:57:56 2023 -0700)</p> 
+    <p><a href="v8.4.2b02-2-g12616b5.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,26 +67,59 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.5.0b19-5-gc2c4406</td>
-        <td>develop</td>
-        <td>04-17 12:17</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/grits_Darwin_gfortranclang_12.2.0_14.0.0_mpiuni_None_4.9.2_g.html">250</a></td>
+      <td>grits</td>
+      <td>Darwin</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.9.2</td>
+      <td>04-21 11:13</td>
+      <td>04-21 11:36</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-success
+      <td class="table-success
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2c7f044fe47966435915202b6da8166d16f0b2dd/develop/intel/2022.0-oneAPI/O/mpiuni/None" target="_blank">2c7f044</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/a692c557fb4c0aaa7d063a269b327a904d942013/patch_8.4.2/gfortranclang/12.2.0_14.0.0/g/mpiuni/None" target="_blank">a692c55</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/grits_Darwin_gfortranclang_12.2.0_14.0.0_mpiuni_None_4.9.2_O.html">251</a></td>
+      <td>grits</td>
+      <td>Darwin</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.2</td>
+      <td>04-21 11:11</td>
+      <td>04-21 11:19</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12317/0</td>
+      <td class="table-success
+">8/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/c9f61732d3a11f4bc9efda1d8f792f52c551bcc1/patch_8.4.2/gfortranclang/12.2.0_14.0.0/O/mpiuni/None" target="_blank">c9f6173</a></td>
+    </tr>
     
     </tbody>
   </table>
