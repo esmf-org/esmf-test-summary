@@ -3,6 +3,14 @@
 ## the generated test summarization tables.  A * can be used as a wildcard (matches any number of
 ## characters) in any of the entries.
 
+## !!! anything in include takes priority over exclude !!!
+
+include:
+#  esmf_hash:
+#    - v8.5.0b20-7-g842a2b6
+  esmf_branch:
+    - fix_profile_summary_at_scale
+
 exclude:
   artifact_hash:
     - 62ee2d8798b3945871881f5c4b1abd5bf4c77d97
