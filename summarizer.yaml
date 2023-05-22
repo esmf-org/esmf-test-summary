@@ -7,7 +7,7 @@
 
 include:
   esmf_hash:
-    - v8.5.0b21-131-g7f2cf84
+    - v8.5.0b21-132-gf99560c
 #  esmf_branch:
 #    - fix_profile_summary_at_scale
 
@@ -16,6 +16,7 @@ exclude:
     - 62ee2d8798b3945871881f5c4b1abd5bf4c77d97
   esmf_hash:
     - v8.4.2*
+    - v8.5.0b18*
     - v8.5.0b19*
     - v8.5.0b20*
     - v8.5.0b21*
