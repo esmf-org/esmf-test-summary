@@ -6,8 +6,8 @@
 ## !!! anything in include takes priority over exclude !!!
 
 include:
-  esmf_hash:
-    - v8.5.0b21-132-gf99560c
+#  esmf_hash:
+#    - v8.5.0b21-132-gf99560c
 #  esmf_branch:
 #    - fix_profile_summary_at_scale
 
@@ -20,6 +20,7 @@ exclude:
     - v8.5.0b19*
     - v8.5.0b20*
     - v8.5.0b21*
+    - v8.5.0b22*
 #  machine:
 #    - acorn
 #    - hera
