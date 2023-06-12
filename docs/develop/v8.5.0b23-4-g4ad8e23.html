@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: derecho/Unicos/intel/2023.0.0/mpiuni/None/O/4.9.2</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.5.0b23-4-g4ad8e23 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Update README.md (Gerhard Theurich, Sun Jun 11 22:43:48 2023 -0700)</p> 
+    <p><a href="v8.5.0b23-4-g4ad8e23.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,68 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.5.0b23-2-g2d76824</td>
-        <td>develop</td>
-        <td>06-09 14:33</td>
-        <td>06-09 14:43</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/bighorn_Linux_gfortran_8.2.0_mpiuni_None_4.6.1_O.html">6</a></td>
+      <td>bighorn</td>
+      <td>Linux</td>
+      <td>gfortran/8.2.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.6.1</td>
+      <td>06-12 00:15</td>
+      <td>06-12 00:31</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">12346/0</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">44/0</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/4010cfc1dbd74bb6941c9aaebb315dd1146d100f/develop/intel/2023.0.0/O/mpiuni/None" target="_blank">4010cfc</a></td>
-    
-      <tr>
-        <td>v8.5.0b23-2-g2d76824</td>
-        <td>develop</td>
-        <td>06-10 01:15</td>
-        <td>06-10 01:33</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-success
-">12346/0</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">44/0</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/226db10c1d6954f436f1d7045d98bab05a2f6e64/develop/intel/2023.0.0/O/mpiuni/None" target="_blank">226db10</a></td>
-    
-      <tr>
-        <td>v8.5.0b23-2-g2d76824</td>
-        <td>develop</td>
-        <td>06-11 01:15</td>
-        <td>06-11 01:33</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-success
-">12346/0</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">44/0</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/023391292c9cd69b17f287f873603d871a8692fa/develop/intel/2023.0.0/O/mpiuni/None" target="_blank">0233912</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/644aa03f01ae98dea75daee86a40c017de29e3f4/develop/gfortran/8.2.0/O/mpiuni/None" target="_blank">644aa03</a></td>
+    </tr>
     
     </tbody>
   </table>
