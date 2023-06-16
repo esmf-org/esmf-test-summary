@@ -12,15 +12,15 @@ include:
 #    - fix_profile_summary_at_scale
 
 exclude:
-  artifact_hash:
-    - 62ee2d8798b3945871881f5c4b1abd5bf4c77d97
-  esmf_hash:
-    - v8.4.2*
-    - v8.5.0b18*
-    - v8.5.0b19*
-    - v8.5.0b20*
-    - v8.5.0b21*
-    - v8.5.0b22*
+#  artifact_hash:
+#    - 62ee2d8798b3945871881f5c4b1abd5bf4c77d97
+#  esmf_hash:
+#    - v8.4.2*
+#    - v8.5.0b18*
+#    - v8.5.0b19*
+#    - v8.5.0b20*
+#    - v8.5.0b21*
+#    - v8.5.0b22*
 #  machine:
 #    - acorn
 #    - hera
