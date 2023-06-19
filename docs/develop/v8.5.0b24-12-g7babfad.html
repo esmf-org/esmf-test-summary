@@ -1,0 +1,327 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+
+    
+    <script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+<h3 class="mb-2">ESMF Hash: v8.5.0b24-12-g7babfad (branch: <a href="index.html">develop</a>)</h3>
+    <p>ESMF_FileTypeCheck() does not appear to depend on PIO. Adjust the #ifdef logic of the UTest to accurately reflect the library dependency of the call. (Gerhard Theurich, Sun Jun 18 22:40:01 2023 -0600)</p> 
+    <p><a href="v8.5.0b24-12-g7babfad.md">Markdown</a>   <a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover">
+    <thead class="table-light">
+    <tr>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
+      <th>Build Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>esmpy Install</th>
+      <th>esmpy Tests</th>
+      <th>Artifacts</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td><a href="../combos/discover_Linux_gfortran_10.1.0_intelmpi_19.1.3.304_None_g.html">65</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/10.1.0</td>
+      <td>intelmpi/19.1.3.304</td>
+      <td>g</td>
+      <td>None</td>
+      <td>06-19 00:57</td>
+      <td>06-19 01:12</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/4e9c16ef457c9aab1113d51ca34b3134d5db2653/develop/gfortran/10.1.0/g/intelmpi/19.1.3.304" target="_blank">4e9c16e</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/discover_Linux_gfortran_10.1.0_intelmpi_19.1.3.304_None_O.html">66</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/10.1.0</td>
+      <td>intelmpi/19.1.3.304</td>
+      <td>O</td>
+      <td>None</td>
+      <td>06-19 00:56</td>
+      <td>06-19 01:12</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/b5f8f4cc65a6a7cbcebebe1529010560857eb46c/develop/gfortran/10.1.0/O/intelmpi/19.1.3.304" target="_blank">b5f8f4c</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/discover_Linux_gfortran_8.3.0_intelmpi_19.1.3.304_None_g.html">69</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/8.3.0</td>
+      <td>intelmpi/19.1.3.304</td>
+      <td>g</td>
+      <td>None</td>
+      <td>06-19 00:55</td>
+      <td>06-19 01:09</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7495cd5d40c5a922f6881fb04dbdd91f061bcf9b/develop/gfortran/8.3.0/g/intelmpi/19.1.3.304" target="_blank">7495cd5</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/discover_Linux_gfortran_8.3.0_intelmpi_19.1.3.304_None_O.html">72</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/8.3.0</td>
+      <td>intelmpi/19.1.3.304</td>
+      <td>O</td>
+      <td>None</td>
+      <td>06-19 00:55</td>
+      <td>06-19 01:09</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/b1dffd8bdf9899736429f79fbfaebef01012564d/develop/gfortran/8.3.0/O/intelmpi/19.1.3.304" target="_blank">b1dffd8</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/discover_Linux_gfortran_8.3.0_mpiuni_None_None_g.html">68</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/8.3.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>None</td>
+      <td>06-19 00:56</td>
+      <td>06-19 01:08</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12360/0</td>
+      <td class="table-success
+">8/0</td>
+      <td class="table-success
+">44/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/c8542096eedeada24c7002e7c461e9572905aedb/develop/gfortran/8.3.0/g/mpiuni/None" target="_blank">c854209</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/discover_Linux_gfortran_8.3.0_mpiuni_None_None_O.html">70</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>gfortran/8.3.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>None</td>
+      <td>06-19 00:56</td>
+      <td>06-19 01:11</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12360/0</td>
+      <td class="table-success
+">8/0</td>
+      <td class="table-success
+">44/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/fa199c64636ec65044a69c7d8606308565a0d32f/develop/gfortran/8.3.0/O/mpiuni/None" target="_blank">fa199c6</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/discover_Linux_intel_19.1.3_intelmpi_19.1.3.304_4.8.0-development_g.html">67</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>intel/19.1.3</td>
+      <td>intelmpi/19.1.3.304</td>
+      <td>g</td>
+      <td>4.8.0-development</td>
+      <td>06-19 00:54</td>
+      <td>06-19 01:09</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/45158b8cb46f1a1b52655e9d75c6f319cc3be595/develop/intel/19.1.3/g/intelmpi/19.1.3.304" target="_blank">45158b8</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/discover_Linux_intel_19.1.3_intelmpi_19.1.3.304_4.8.0-development_O.html">71</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>intel/19.1.3</td>
+      <td>intelmpi/19.1.3.304</td>
+      <td>O</td>
+      <td>4.8.0-development</td>
+      <td>06-19 00:54</td>
+      <td>06-19 01:14</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/b9c3518fc26f697cfd9b6ebc41472cf0f7fa4823/develop/intel/19.1.3/O/intelmpi/19.1.3.304" target="_blank">b9c3518</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/discover_Linux_pgi_20.4_mpiuni_None_None_O.html">64</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>pgi/20.4</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>None</td>
+      <td>06-19 00:57</td>
+      <td>06-19 01:29</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/9b73d4995bbddd3ce91c20f7d99f8f1271ff2f73/develop/pgi/20.4/O/mpiuni/None" target="_blank">9b73d49</a></td>
+    </tr>
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2023-06-18 23:38:17 MDT.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
