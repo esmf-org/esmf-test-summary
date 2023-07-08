@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: perlmutter/Unicos/intel/2023.1.0-classic/mpi/8.1.25/O/4.9.0</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.5.0b26-4-gb23717b (branch: <a href="index.html">fix_oneAPI-component-shutdown</a>)</h3>
+    <p>Comment out deallocate() statement that is causing crashes during finalize on Intel oneAPI ifx compiler. (Gerhard Theurich, Sat Jul 8 08:13:18 2023 -0700)</p> 
+    <p><a href="v8.5.0b26-4-gb23717b.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,68 +67,59 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.5.0b26-7-gcbc147d</td>
-        <td>fix_nuopc-attributes</td>
-        <td>07-08 00:40</td>
-        <td>07-08 01:04</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/perlmutter_Unicos_gfortran_11.2.0_mpi_8.1.22_4.9.0_O.html">165</a></td>
+      <td>perlmutter</td>
+      <td>Unicos</td>
+      <td>gfortran/11.2.0</td>
+      <td>mpi/8.1.22</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>07-08 08:25</td>
+      <td>07-08 08:53</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">13976/0</td>
-        <td class="table-success
-">49/0</td>
-        <td class="table-success
-">81/0</td>
-        <td class="table-success
-">53/0</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/9b3b83def4b8bbc2309043dc920c152db5a8af45/fix_nuopc-attributes/intel/2023.1.0-classic/O/mpi/8.1.25" target="_blank">9b3b83d</a></td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/9a6218ddb73741f71c0606420b7cc0dda5322f37/fix_oneAPI-component-shutdown/gfortran/11.2.0/O/mpi/8.1.22" target="_blank">9a6218d</a></td>
+    </tr>
     
-      <tr>
-        <td>v8.5.0b26</td>
-        <td>develop</td>
-        <td>07-06 08:55</td>
-        <td>07-06 09:21</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/perlmutter_Unicos_gfortran_11.2.0_mpiuni_None_4.9.0_O.html">168</a></td>
+      <td>perlmutter</td>
+      <td>Unicos</td>
+      <td>gfortran/11.2.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>07-08 08:22</td>
+      <td>07-08 08:53</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">13976/0</td>
-        <td class="table-success
-">49/0</td>
-        <td class="table-success
-">81/0</td>
-        <td class="table-success
-">53/0</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/42d76c75dcef58d591624e6055a7eacd46688ba9/develop/intel/2023.1.0-classic/O/mpi/8.1.25" target="_blank">42d76c7</a></td>
-    
-      <tr>
-        <td>v8.5.0b26</td>
-        <td>develop</td>
-        <td>07-07 00:58</td>
-        <td>07-07 02:01</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-success
-">13976/0</td>
-        <td class="table-success
-">49/0</td>
-        <td class="table-success
-">81/0</td>
-        <td class="table-success
-">53/0</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2114cf3395f808b34b053ba05abb2ec1770496ea/develop/intel/2023.1.0-classic/O/mpi/8.1.25" target="_blank">2114cf3</a></td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/1c27e555fbe54c4acdc8273de6d55096abd4ff00/fix_oneAPI-component-shutdown/gfortran/11.2.0/O/mpiuni/None" target="_blank">1c27e55</a></td>
+    </tr>
     
     </tbody>
   </table>
