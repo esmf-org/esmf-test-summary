@@ -14,13 +14,11 @@ include:
 exclude:
 #  artifact_hash:
 #    - 62ee2d8798b3945871881f5c4b1abd5bf4c77d97
-#  esmf_hash:
+  esmf_hash:
 #    - v8.4.2*
-#    - v8.5.0b18*
-#    - v8.5.0b19*
-#    - v8.5.0b20*
-#    - v8.5.0b21*
-#    - v8.5.0b22*
+    - v8.5.0b24*
+    - v8.5.0b25*
+    - v8.5.0b26*
 #  machine:
 #    - acorn
 #    - hera
