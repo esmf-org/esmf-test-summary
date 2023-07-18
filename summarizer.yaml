@@ -12,8 +12,8 @@ include:
 #    - fix_profile_summary_at_scale
 
 exclude:
-#  artifact_hash:
-#    - 62ee2d8798b3945871881f5c4b1abd5bf4c77d97
+  artifact_hash:
+    - 86f3e75fb0ed9887b5426e44cfa969db42aa932b
   esmf_hash:
 #    - v8.4.2*
     - v8.5.0b24*
