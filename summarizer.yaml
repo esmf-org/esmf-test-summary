@@ -13,13 +13,9 @@ include:
 
 exclude:
   artifact_hash:
-    - 86f3e75fb0ed9887b5426e44cfa969db42aa932b
-    - 9876b1faac64130c3af3d82e3281c5a73551f3e0
-  esmf_hash:
+    - 079a206e93bc814fcc5f1751d2ec410ff72e0a2c
+#  esmf_hash:
 #    - v8.4.2*
-    - v8.5.0b24*
-    - v8.5.0b25*
-    - v8.5.0b26*
 #  machine:
 #    - acorn
 #    - hera
