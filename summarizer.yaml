@@ -14,6 +14,7 @@ include:
 exclude:
   artifact_hash:
     - 079a206e93bc814fcc5f1751d2ec410ff72e0a2c
+    - 4ea58e8e4224a3ed01acd419b7de31c82dbaaaa9
 #  esmf_hash:
 #    - v8.4.2*
 #  machine:
