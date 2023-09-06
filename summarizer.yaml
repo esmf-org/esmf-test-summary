@@ -20,6 +20,7 @@ exclude:
     - 3802ceadf2361bc73f4fc1750ecc3a1d5a882dd4
     - 124c5614b3d5e25d363115130033710e8dcb2bc5
     - 3132c1da00a5de01c3caedd94935d3da5eb86b4e
+    - f12c99202bfa9949319fc1037d05e2f2488d4d10
   esmf_hash:
     - v8.6.0b02*
 #  machine:
