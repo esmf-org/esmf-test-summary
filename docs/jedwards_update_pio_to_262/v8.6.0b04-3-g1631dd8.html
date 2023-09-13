@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: jet/Linux/nvhpc/23.3/openmpi/None/O/None</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.6.0b04-3-g1631dd8 (branch: <a href="index.html">jedwards_update_pio_to_262</a>)</h3>
+    <p>Change BOP/EOP to BOPI/EOPI (Bill Sacks, Wed Sep 13 11:57:50 2023 -0600)</p> 
+    <p><a href="v8.6.0b04-3-g1631dd8.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,47 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.6.0b05</td>
-        <td>develop</td>
-        <td>09-12 03:49</td>
-        <td>09-12 04:18</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/green_Darwin_gfortranclang_12.2.0_14.0.0_openmpi_4.1.4_4.9.2_g.html">101</a></td>
+      <td>green</td>
+      <td>Darwin</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>openmpi/4.1.4</td>
+      <td>g</td>
+      <td>4.9.2</td>
+      <td>09-13 12:13</td>
+      <td>09-13 13:03</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-danger
-">14006/3</td>
-        <td class="table-success
-">49/0</td>
-        <td class="table-success
-">81/0</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e9a3154d7d8703efecb93268cddeee319d755994/develop/nvhpc/23.3/O/openmpi/None" target="_blank">e9a3154</a></td>
-    
-      <tr>
-        <td>v8.6.0b05</td>
-        <td>develop</td>
-        <td>09-13 03:49</td>
-        <td>09-13 04:18</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-danger
-">14006/3</td>
-        <td class="table-success
-">49/0</td>
-        <td class="table-success
-">81/0</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/fe3aa2cec410c0d1331d01dcc65bcaec2f09c94f/develop/nvhpc/23.3/O/openmpi/None" target="_blank">fe3aa2c</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/ad0ac9f6c263fb9568680a92ac9b4ab13cc17dec/jedwards_update_pio_to_262/gfortranclang/12.2.0_14.0.0/g/openmpi/4.1.4" target="_blank">ad0ac9f</a></td>
+    </tr>
     
     </tbody>
   </table>
