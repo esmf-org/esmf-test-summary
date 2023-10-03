@@ -1,0 +1,335 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+
+    
+    <script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false,
+                order: [[1, 'asc'], [3, 'asc'], [4, 'asc'], [5, 'asc'], [6, 'asc']],
+            });
+            $('[data-bs-toggle="popover"]').popover();
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+    <h3 class="mb-2">ESMF Branch: develop</h3><p><a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover text-nowrap">
+    <thead class="table-light">
+    <tr>
+      <th colspan="9" class="text-center">Combination</th>
+      <th colspan="1" class="text-center">ESMF Tested Hash</th>
+    </tr>
+    <tr>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>Version</th>
+      <th>MPI</th>
+      <th>Version</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      
+      <th>
+        <a href="v8.6.0b07.html"data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content=" Merge pull request #183 from jedwards4b/jedwards/update_pio_to_262 (Bill Sacks, Fri Sep 22 14:54:19 2023 -0600)"
+             >v8.6.0b07
+        </a>
+      </th>
+      
+    </tr>
+    </thead>
+    <tbody>
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_aocc_4.1.0_mpiuni_None_None_O.html">7</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>aocc</td>
+        <td>4.1.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class="table-warning
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 12389/26</li>
+  <li>STests: 8/0</li>
+  <li>ETests: 44/0</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 10-03 00:06</li>
+  <li>Build time: 10-03 00:39</li>
+  <li>Collect time: 10-03 16:29</li>
+  <li>Phase: all</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/cfbd003c2a2b0132a006976373deb87147fabb77/develop/aocc/4.1.0/O/mpiuni/None" target="_blank">26
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_aocc_4.1.0_mpiuni_None_None_g.html">8</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>aocc</td>
+        <td>4.1.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class="table-warning
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 12389/26</li>
+  <li>STests: 8/0</li>
+  <li>ETests: 44/0</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 10-03 00:08</li>
+  <li>Build time: 10-03 01:39</li>
+  <li>Collect time: 10-03 16:29</li>
+  <li>Phase: all</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/c75b8ac5fd599d20192286e661c174fcad40b915/develop/aocc/4.1.0/g/mpiuni/None" target="_blank">26
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_gfortran_11.2.0_mpich_4.0.0_4.7.4_O.html">5</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>11.2.0</td>
+        <td>mpich</td>
+        <td>4.0.0</td>
+        <td>O</td>
+        <td>4.7.4</td>
+        
+        
+        <td class="table-success
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 14059/0</li>
+  <li>STests: 49/0</li>
+  <li>ETests: 81/0</li>
+  <li>NUOPC: 53/0</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 10-03 00:17</li>
+  <li>Build time: 10-03 04:26</li>
+  <li>Collect time: 10-03 16:31</li>
+  <li>Phase: all</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/3440bbf75678870212e7fcacc0f7f8503175aa13/develop/gfortran/11.2.0/O/mpich/4.0.0" target="_blank">0
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_gfortran_11.2.0_mpich_4.0.0_4.7.4_g.html">6</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>11.2.0</td>
+        <td>mpich</td>
+        <td>4.0.0</td>
+        <td>g</td>
+        <td>4.7.4</td>
+        
+        
+        <td class="table-success
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 14059/0</li>
+  <li>STests: 49/0</li>
+  <li>ETests: 81/0</li>
+  <li>NUOPC: 53/0</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 10-03 00:19</li>
+  <li>Build time: 10-03 04:59</li>
+  <li>Collect time: 10-03 16:30</li>
+  <li>Phase: all</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/0bff6fea486b09b8e4effc61f90ac19c107d03e8/develop/gfortran/11.2.0/g/mpich/4.0.0" target="_blank">0
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_gfortran_7.4.0_mpich_3.3.1_4.7.4_O.html">3</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>7.4.0</td>
+        <td>mpich</td>
+        <td>3.3.1</td>
+        <td>O</td>
+        <td>4.7.4</td>
+        
+        
+        <td class="table-success
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 14059/0</li>
+  <li>STests: 49/0</li>
+  <li>ETests: 81/0</li>
+  <li>NUOPC: 53/0</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 10-03 00:13</li>
+  <li>Build time: 10-03 03:17</li>
+  <li>Collect time: 10-03 16:32</li>
+  <li>Phase: all</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/69329f73f163e51952c4c84939d46db46e99a594/develop/gfortran/7.4.0/O/mpich/3.3.1" target="_blank">0
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_gfortran_7.4.0_mpich_3.3.1_4.7.4_g.html">4</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>7.4.0</td>
+        <td>mpich</td>
+        <td>3.3.1</td>
+        <td>g</td>
+        <td>4.7.4</td>
+        
+        
+        <td class="table-success
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 14059/0</li>
+  <li>STests: 49/0</li>
+  <li>ETests: 81/0</li>
+  <li>NUOPC: 53/0</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 10-03 00:15</li>
+  <li>Build time: 10-03 03:48</li>
+  <li>Collect time: 10-03 16:31</li>
+  <li>Phase: all</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/6b64fefa36d5d5a79cc8c491029e009f81c0a96a/develop/gfortran/7.4.0/g/mpich/3.3.1" target="_blank">0
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_gfortranclang_7.5.0_16.0.3_mpiuni_None_None_O.html">1</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>gfortranclang</td>
+        <td>7.5.0_16.0.3</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class="table-success
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 12415/0</li>
+  <li>STests: 8/0</li>
+  <li>ETests: 44/0</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 10-03 00:10</li>
+  <li>Build time: 10-03 02:25</li>
+  <li>Collect time: 10-03 16:33</li>
+  <li>Phase: all</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7cfe490dc94e60fd8eef45d1b80bf89531ab65f8/develop/gfortranclang/7.5.0_16.0.3/O/mpiuni/None" target="_blank">0
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_gfortranclang_7.5.0_16.0.3_mpiuni_None_None_g.html">2</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>gfortranclang</td>
+        <td>7.5.0_16.0.3</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class="table-success
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 12415/0</li>
+  <li>STests: 8/0</li>
+  <li>ETests: 44/0</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 10-03 00:12</li>
+  <li>Build time: 10-03 02:52</li>
+  <li>Collect time: 10-03 16:33</li>
+  <li>Phase: all</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/ebdf870ed978954b8de078c965a9def28a38aa59/develop/gfortranclang/7.5.0_16.0.3/g/mpiuni/None" target="_blank">0
+</a>
+</td>
+        
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2023-10-03 10:37:54 MDT.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
