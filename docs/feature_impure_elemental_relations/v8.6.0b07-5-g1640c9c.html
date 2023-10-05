@@ -1,0 +1,462 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+
+    
+    <script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+<h3 class="mb-2">ESMF Hash: v8.6.0b07-5-g1640c9c (branch: <a href="index.html">feature_impure_elemental_relations</a>)</h3>
+    <p>Merge remote-tracking branch 'BOGGS/feature/impure_elemental_relations' into feature/impure_elemental_relations (Gerhard Theurich, Thu Oct 5 09:16:45 2023 -0700)</p> 
+    <p><a href="v8.6.0b07-5-g1640c9c.md">Markdown</a>   <a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover">
+    <thead class="table-light">
+    <tr>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
+      <th>Build Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>esmpy Install</th>
+      <th>esmpy Tests</th>
+      <th>Artifacts</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td><a href="../combos/cheyenne_Linux_gfortran_10.1.0_openmpi_4.0.5_4.7.4_O.html">86</a></td>
+      <td>cheyenne</td>
+      <td>Linux</td>
+      <td>gfortran/10.1.0</td>
+      <td>openmpi/4.0.5</td>
+      <td>O</td>
+      <td>4.7.4</td>
+      <td>10-05 11:17</td>
+      <td>10-05 11:48</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/1d3e9afc6db083e61676edea49310cb33d59475e/feature_impure_elemental_relations/gfortran/10.1.0/O/openmpi/4.0.5" target="_blank">1d3e9af</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/cheyenne_Linux_gfortran_10.1.0_openmpi_4.0.5_4.7.4_g.html">87</a></td>
+      <td>cheyenne</td>
+      <td>Linux</td>
+      <td>gfortran/10.1.0</td>
+      <td>openmpi/4.0.5</td>
+      <td>g</td>
+      <td>4.7.4</td>
+      <td>10-05 11:17</td>
+      <td>10-05 11:48</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/296088fda63bc66571a74fcb61cba293c6e9625f/feature_impure_elemental_relations/gfortran/10.1.0/g/openmpi/4.0.5" target="_blank">296088f</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/cheyenne_Linux_gfortran_7.4.0_openmpi_4.0.3_4.7.3_g.html">88</a></td>
+      <td>cheyenne</td>
+      <td>Linux</td>
+      <td>gfortran/7.4.0</td>
+      <td>openmpi/4.0.3</td>
+      <td>g</td>
+      <td>4.7.3</td>
+      <td>10-05 11:14</td>
+      <td>10-05 11:48</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2f95952afb69d07da3b30d44215b99ee2ffdd3c6/feature_impure_elemental_relations/gfortran/7.4.0/g/openmpi/4.0.3" target="_blank">2f95952</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/cheyenne_Linux_gfortran_7.4.0_openmpi_4.0.3_4.7.3_O.html">93</a></td>
+      <td>cheyenne</td>
+      <td>Linux</td>
+      <td>gfortran/7.4.0</td>
+      <td>openmpi/4.0.3</td>
+      <td>O</td>
+      <td>4.7.3</td>
+      <td>10-05 11:14</td>
+      <td>10-05 11:47</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/932299dcb7259a9ea79619b6815a06ef76eb3f12/feature_impure_elemental_relations/gfortran/7.4.0/O/openmpi/4.0.3" target="_blank">932299d</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/cheyenne_Linux_gfortran_9.1.0_mpt_2.22_4.7.3_g.html">91</a></td>
+      <td>cheyenne</td>
+      <td>Linux</td>
+      <td>gfortran/9.1.0</td>
+      <td>mpt/2.22</td>
+      <td>g</td>
+      <td>4.7.3</td>
+      <td>10-05 11:16</td>
+      <td>10-05 11:47</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/27abbfc6cd24d6ab8f7d4c8edc055526a525401d/feature_impure_elemental_relations/gfortran/9.1.0/g/mpt/2.22" target="_blank">27abbfc</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/cheyenne_Linux_gfortran_9.1.0_mpt_2.22_4.7.3_O.html">92</a></td>
+      <td>cheyenne</td>
+      <td>Linux</td>
+      <td>gfortran/9.1.0</td>
+      <td>mpt/2.22</td>
+      <td>O</td>
+      <td>4.7.3</td>
+      <td>10-05 11:16</td>
+      <td>10-05 11:47</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/64c1d121c98c7f349b6e9a74ee195b6ad417d1cd/feature_impure_elemental_relations/gfortran/9.1.0/O/mpt/2.22" target="_blank">64c1d12</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/cheyenne_Linux_gfortran_9.1.0_openmpi_4.0.5_4.7.3_O.html">89</a></td>
+      <td>cheyenne</td>
+      <td>Linux</td>
+      <td>gfortran/9.1.0</td>
+      <td>openmpi/4.0.5</td>
+      <td>O</td>
+      <td>4.7.3</td>
+      <td>10-05 11:15</td>
+      <td>10-05 11:48</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/3c920c9934c73bc679f78182992c64c43448ad7e/feature_impure_elemental_relations/gfortran/9.1.0/O/openmpi/4.0.5" target="_blank">3c920c9</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/cheyenne_Linux_gfortran_9.1.0_openmpi_4.0.5_4.7.3_g.html">90</a></td>
+      <td>cheyenne</td>
+      <td>Linux</td>
+      <td>gfortran/9.1.0</td>
+      <td>openmpi/4.0.5</td>
+      <td>g</td>
+      <td>4.7.3</td>
+      <td>10-05 11:15</td>
+      <td>10-05 11:48</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/1eecc62eb71ae0e2a07402ba798e0362cbb78984/feature_impure_elemental_relations/gfortran/9.1.0/g/openmpi/4.0.5" target="_blank">1eecc62</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/izumi_Linux_gfortran_9.3.0_mpiuni_None_4.7.4_O.html">95</a></td>
+      <td>izumi</td>
+      <td>Linux</td>
+      <td>gfortran/9.3.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.7.4</td>
+      <td>10-05 11:24</td>
+      <td>10-05 11:46</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5d52511955b4de2d18228c422d9c6fb74a9879b9/feature_impure_elemental_relations/gfortran/9.3.0/O/mpiuni/None" target="_blank">5d52511</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/izumi_Linux_gfortran_9.3.0_mpiuni_None_4.7.4_g.html">97</a></td>
+      <td>izumi</td>
+      <td>Linux</td>
+      <td>gfortran/9.3.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.7.4</td>
+      <td>10-05 11:27</td>
+      <td>10-05 11:46</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/4a858ee84ff3c09af48173d66ea4e26bc49fc150/feature_impure_elemental_relations/gfortran/9.3.0/g/mpiuni/None" target="_blank">4a858ee</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/izumi_Linux_intel_20.0.1_mpiuni_None_4.7.4_g.html">94</a></td>
+      <td>izumi</td>
+      <td>Linux</td>
+      <td>intel/20.0.1</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.7.4</td>
+      <td>10-05 11:21</td>
+      <td>10-05 11:47</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7dd1db484755d6c583f225702a1c39b1f0ca9abc/feature_impure_elemental_relations/intel/20.0.1/g/mpiuni/None" target="_blank">7dd1db4</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/izumi_Linux_intel_20.0.1_mpiuni_None_4.7.4_O.html">99</a></td>
+      <td>izumi</td>
+      <td>Linux</td>
+      <td>intel/20.0.1</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.7.4</td>
+      <td>10-05 11:19</td>
+      <td>10-05 11:54</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5466474d05b9c27a5301eccbd053bd5e13a8a15e/feature_impure_elemental_relations/intel/20.0.1/O/mpiuni/None" target="_blank">5466474</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/izumi_Linux_nag_7.0_mpiuni_None_4.7.4_g.html">96</a></td>
+      <td>izumi</td>
+      <td>Linux</td>
+      <td>nag/7.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.7.4</td>
+      <td>10-05 11:33</td>
+      <td>10-05 11:46</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/b9786b89f3671aeb592451cb3955171bc906264e/feature_impure_elemental_relations/nag/7.0/g/mpiuni/None" target="_blank">b9786b8</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/izumi_Linux_nag_7.0_mpiuni_None_4.7.4_O.html">98</a></td>
+      <td>izumi</td>
+      <td>Linux</td>
+      <td>nag/7.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.7.4</td>
+      <td>10-05 11:30</td>
+      <td>10-05 11:45</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2dbb9aa2bb96ed19bcb216681ab2b77cf0f4e155/feature_impure_elemental_relations/nag/7.0/O/mpiuni/None" target="_blank">2dbb9aa</a></td>
+    </tr>
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2023-10-05 11:56:20 MDT.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
