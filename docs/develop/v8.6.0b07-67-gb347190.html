@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: bighorn/Linux/intel/19.1.0/mpiuni/None/O/4.6.1</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.6.0b07-67-gb347190 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Remove the `-check uninit` debugging option now that oneAPI IFX compiler has switched to LLVM memory sanitizer, and there are a number of issues with it, including linking problems and many false positives in the diagnostic output. (Gerhard Theurich, Thu Oct 5 11:50:09 2023 -0700)</p> 
+    <p><a href="v8.6.0b07-67-gb347190.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,68 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.6.0b07-60-gf7c6356</td>
-        <td>develop</td>
-        <td>10-06 00:16</td>
-        <td>10-06 02:14</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/bighorn_Linux_gfortran_8.2.0_mpiuni_None_4.6.1_O.html">15</a></td>
+      <td>bighorn</td>
+      <td>Linux</td>
+      <td>gfortran/8.2.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.6.1</td>
+      <td>10-07 00:15</td>
+      <td>10-07 00:32</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">12423/0</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">44/0</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/95636f8fc2a4ae5e888d94e09c0ecc224afef9b6/develop/intel/19.1.0/O/mpiuni/None" target="_blank">95636f8</a></td>
-    
-      <tr>
-        <td>v8.6.0b07-59-g8901328</td>
-        <td>develop</td>
-        <td>10-05 00:18</td>
-        <td>10-05 02:18</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-danger
-">12350/73</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-danger
-">43/1</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5bb2e75730ea2212ab3b840ae496028a54805c18/develop/intel/19.1.0/O/mpiuni/None" target="_blank">5bb2e75</a></td>
-    
-      <tr>
-        <td>v8.6.0b07</td>
-        <td>develop</td>
-        <td>10-04 00:18</td>
-        <td>10-04 02:17</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-success
-">12415/0</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">44/0</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/3b905d43b7ad774c60771e1c52ffd7b6916ff468/develop/intel/19.1.0/O/mpiuni/None" target="_blank">3b905d4</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7202af91a64e17e5b9210b4b3478bd74a5f4da66/develop/gfortran/8.2.0/O/mpiuni/None" target="_blank">7202af9</a></td>
+    </tr>
     
     </tbody>
   </table>
