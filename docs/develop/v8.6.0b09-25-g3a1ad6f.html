@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: grits/Darwin/gfortranclang/12.2.0_14.0.0/mpich/4.1.1/O/4.9.2</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.6.0b09-25-g3a1ad6f (branch: <a href="index.html">develop</a>)</h3>
+    <p>Merge branch 'feature/devList' into develop (Gerhard Theurich, Wed Oct 18 16:13:06 2023 -0700)</p> 
+    <p><a href="v8.6.0b09-25-g3a1ad6f.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,68 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.6.0b08-19-gea64eb3</td>
-        <td>develop</td>
-        <td>10-12 20:02</td>
-        <td>10-12 20:30</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/bighorn_Linux_gfortran_8.2.0_mpiuni_None_4.6.1_O.html">15</a></td>
+      <td>bighorn</td>
+      <td>Linux</td>
+      <td>gfortran/8.2.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.6.1</td>
+      <td>10-19 00:15</td>
+      <td>10-19 00:32</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-danger
-">14073/1</td>
-        <td class="table-danger
-">48/1</td>
-        <td class="table-success
-">81/0</td>
-        <td class="table-danger
-">43/4</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/fd0b7d5c90587aeb120c9eec865b013d457fa0fd/develop/gfortranclang/12.2.0_14.0.0/O/mpich/4.1.1" target="_blank">fd0b7d5</a></td>
-    
-      <tr>
-        <td>v8.6.0b07-60-gf7c6356</td>
-        <td>develop</td>
-        <td>10-05 20:03</td>
-        <td>10-05 20:32</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-danger
-">14066/1</td>
-        <td class="table-danger
-">48/1</td>
-        <td class="table-success
-">81/0</td>
-        <td class="table-danger
-">49/4</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2e27443683361ff6aedec562fe8ffbf5787beae7/develop/gfortranclang/12.2.0_14.0.0/O/mpich/4.1.1" target="_blank">2e27443</a></td>
-    
-      <tr>
-        <td>v8.6.0b07</td>
-        <td>develop</td>
-        <td>10-03 13:52</td>
-        <td>10-03 14:05</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-danger
-">14058/1</td>
-        <td class="table-success
-">49/0</td>
-        <td class="table-success
-">81/0</td>
-        <td class="table-danger
-">49/4</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/3cc0e9cfa90a60b7b80ad4c2298194560e6c8514/develop/gfortranclang/12.2.0_14.0.0/O/mpich/4.1.1" target="_blank">3cc0e9c</a></td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/05257b02da188d7bbb1ed0d44da448a4c0881b85/develop/gfortran/8.2.0/O/mpiuni/None" target="_blank">05257b0</a></td>
+    </tr>
     
     </tbody>
   </table>
