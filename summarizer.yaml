@@ -12,22 +12,12 @@ include:
 #    - fix_profile_summary_at_scale
 
 exclude:
-  artifact_hash:
-    - 079a206e93bc814fcc5f1751d2ec410ff72e0a2c
-    - 4ea58e8e4224a3ed01acd419b7de31c82dbaaaa9
-    - 852e8781b3c722dd9e270818f5d89f9547c5e961
-    - ac47413d50e6a5a553ca8a4830da89816fbf0e10
-    - 3802ceadf2361bc73f4fc1750ecc3a1d5a882dd4
-    - 124c5614b3d5e25d363115130033710e8dcb2bc5
-    - 3132c1da00a5de01c3caedd94935d3da5eb86b4e
-    - f12c99202bfa9949319fc1037d05e2f2488d4d10
-    - 3aad0ac483191806780f4c2799b715ac2fffa273
-    - e1546903e5cfd67523af1f01c43e74b66ee15b61
-    - 817a1e154ad50339a99032b4488ef288557f9a5a
-    - d86a0a6dac6fadedf16d66188b8a919fda20ddec
-    - 05927ba271242cb6d3478b69c0a1c025dc3ea938
+#  artifact_hash:
+#    - 079a206e93bc814fcc5f1751d2ec410ff72e0a2c
   esmf_hash:
-    - v8.6.0b02*
+    - v8.6.0b07*
+    - v8.6.0b08*
+    - v8.6.0b09*
 #  machine:
 #    - acorn
 #    - hera
