@@ -15,6 +15,7 @@ exclude:
   artifact_hash:
     - e0ce684f654ee3fdd7a9ad32a70969281e571691
   esmf_hash:
+    - v8.5.0*
     - v8.6.0b07*
     - v8.6.0b08*
     - v8.6.0b09*
