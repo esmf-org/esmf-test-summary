@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: perlmutter/Unicos/intel/2023.1.0-oneAPI/mpiuni/None/O/4.9.0</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.6.0b11-2-gb148b07 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Remove DEBUG log messages from the ESMF_FieldCreateFromField() implementation. (Gerhard Theurich, Thu Oct 26 11:27:45 2023 -0700)</p> 
+    <p><a href="v8.6.0b11-2-gb148b07.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,26 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.6.0b11</td>
-        <td>develop</td>
-        <td>10-26 00:51</td>
-        <td>10-26 01:55</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/grits_Darwin_gfortranclang_12.2.0_14.0.0_mpich_4.1.1_4.9.2_O.html">87</a></td>
+      <td>grits</td>
+      <td>Darwin</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>mpich/4.1.1</td>
+      <td>O</td>
+      <td>4.9.2</td>
+      <td>10-26 13:00</td>
+      <td>10-26 13:14</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">12423/0</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">44/0</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/c7cc5bff350ac972253efeddfcfb1b58d1ca10c5/develop/intel/2023.1.0-oneAPI/O/mpiuni/None" target="_blank">c7cc5bf</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/66e36ba3809e18097bbb104796c4a33cc8cdef41/develop/gfortranclang/12.2.0_14.0.0/O/mpich/4.1.1" target="_blank">66e36ba</a></td>
+    </tr>
     
     </tbody>
   </table>
