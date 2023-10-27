@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: perlmutter/Unicos/gfortran/11.2.0/mpiuni/None/g/4.9.0</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.6.0b13-1-gabac056 (branch: <a href="index.html">force_performance_failure</a>)</h3>
+    <p>Force performance failure for ArrayRedistStore (Bill Sacks, Fri Oct 27 11:06:01 2023 -0600)</p> 
+    <p><a href="v8.6.0b13-1-gabac056.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,47 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.6.0b11-2-gb148b07</td>
-        <td>develop</td>
-        <td>10-27 00:32</td>
-        <td>10-27 00:58</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/green_Darwin_gfortranclang_12.2.0_14.0.0_openmpi_4.1.4_4.9.2_O.html">84</a></td>
+      <td>green</td>
+      <td>Darwin</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>openmpi/4.1.4</td>
+      <td>O</td>
+      <td>4.9.2</td>
+      <td>10-27 13:26</td>
+      <td>10-27 13:45</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">12423/0</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">44/0</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/752d783168fcf7a82c71bbfc7554b17ab67b5261/develop/gfortran/11.2.0/g/mpiuni/None" target="_blank">752d783</a></td>
-    
-      <tr>
-        <td>v8.6.0b11</td>
-        <td>develop</td>
-        <td>10-26 00:44</td>
-        <td>10-26 01:04</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-success
-">12423/0</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">44/0</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/9c38610d0d4e267c4aae6669336977110d92e429/develop/gfortran/11.2.0/g/mpiuni/None" target="_blank">9c38610</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/95818daa1c8d12d77abfcbd2b82c626fd63c8e8c/force_performance_failure/gfortranclang/12.2.0_14.0.0/O/openmpi/4.1.4" target="_blank">95818da</a></td>
+    </tr>
     
     </tbody>
   </table>
