@@ -13,15 +13,7 @@ include:
 
 exclude:
   artifact_hash:
-    - e0ce684f654ee3fdd7a9ad32a70969281e571691
-    - c03518803cb313b0c9f0a97e03f78324a0ed3196
-    - aaa961c7b41378a5aed6d1d13de102046d76c7fc
-    - e79bce63df897e9250d20c846812edc5545033c9
-    - bc4d70bd3a9263017d7efb958f4b8492c183886a
-    - 61be2b1a1856e980b0d31b8ae87617ee2b4605db
-    - bdf1bfff7599e473a1b36d4fd214e2f780277fb6
-    - f662fe8979a8f992ba46905c1c35eabea0c4f15f
-    - 087754198ab300fc0e8cfedee4f675d42b2f4b70
+    - c621ace3fa6b9aea69f9d4d6014a040d92d8f4cd
   esmf_hash:
     - v8.5.0*
     - v8.6.0b07*
