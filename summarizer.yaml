@@ -18,10 +18,8 @@ exclude:
     - abf7ce35106855bee80989938e7ae57368f54c6a
     - 065cdbe4a564bea0ba1385c313309ab504a4a773
   esmf_hash:
-    - v8.5.0*
-    - v8.6.0b07*
-    - v8.6.0b08*
-    - v8.6.0b09*
+    - v8.7.0b01*
+    - v8.7.0b02*
 #  machine:
 #    - acorn
 #    - hera
