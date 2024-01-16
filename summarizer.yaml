@@ -26,7 +26,8 @@ exclude:
   esmf_hash:
     - v8.7.0b01*
     - v8.7.0b02*
-#  machine:
+  machine:
+   - cheyenne
 #    - acorn
 #    - hera
 #    - jet
@@ -37,6 +38,7 @@ exclude:
 #    - discover
 #    - gaea
 #    - rockylaptop
-#  esmf_branch:
+  esmf_branch:
+  - hconfig_change_equal
 #    - develop
 #    - branch2
