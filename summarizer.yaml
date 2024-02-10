@@ -25,6 +25,7 @@ exclude:
     - 7c7d43c5a6ad18ea5ac779e75c680330e9de103b
     - 8d4244b5f46ca62b6f726b2fe679fd7024c6238e
     - 9d0621c162373ee8cd45b2e429d575da902ec067
+    - 02a2beafa61d04bd37682f974acb21f70eae3f63
   esmf_hash:
     - v8.7.0b01*
     - v8.7.0b02*
