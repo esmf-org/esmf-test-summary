@@ -21,7 +21,7 @@ on:
         type: boolean
         default: false 
 
-# disallow concurrent runs of the summarizer
+# Disallow concurrent runs of the summarizer
 concurrency: esmf-summarizer
 
 jobs:
