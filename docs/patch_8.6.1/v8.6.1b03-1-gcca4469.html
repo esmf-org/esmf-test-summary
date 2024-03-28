@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: gaeaC5/None/intel/2023.1.0/mpi/8.1.25/O/None</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.6.1b03-1-gcca4469 (branch: <a href="index.html">patch_8.6.1</a>)</h3>
+    <p>Fix ESMF_ConfigGetLen for blank config lines (Daniel Rosen, Wed Mar 27 19:28:40 2024 -0600)</p> 
+    <p><a href="v8.6.1b03-1-gcca4469.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,26 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.7.0b05-23-g6c1de14</td>
-        <td>develop</td>
-        <td>03-23 03:37</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/derecho_Unicos_gfortran_12.2.0_pio2.5.10_mpi_8.1.25_4.9.2_O.html">78</a></td>
+      <td>derecho</td>
+      <td>Unicos</td>
+      <td>gfortran/12.2.0_pio2.5.10</td>
+      <td>mpi/8.1.25</td>
+      <td>O</td>
+      <td>4.9.2</td>
+      <td>03-28 01:16</td>
+      <td>03-28 02:06</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e3913e85f8281f004bd524210310c0982306447f/develop/intel/2023.1.0/O/mpi/8.1.25" target="_blank">e3913e8</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/721bd548cc66babf877b2d215edf7829418ae83f/patch_8.6.1/gfortran/12.2.0_pio2.5.10/O/mpi/8.1.25" target="_blank">721bd54</a></td>
+    </tr>
     
     </tbody>
   </table>
