@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: hera/Linux/intel/18.0.5/mpiuni/None/O/None</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.6.1b04 (branch: <a href="index.html">patch_8.6.1</a>)</h3>
+    <p>Simplify and robustify code to access index info. Should work correctly now for all stagger locations. (Gerhard Theurich, Mon Mar 11 14:50:30 2024 -0700)</p> 
+    <p><a href="v8.6.1b04.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,68 +67,59 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.7.0b05-43-g27f054d</td>
-        <td>develop</td>
-        <td>04-01 22:12</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/grits_Darwin_gfortranclang_12.2.0_14.0.0_mpich_4.1.1_4.9.2_O.html">1</a></td>
+      <td>grits</td>
+      <td>Darwin</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>mpich/4.1.1</td>
+      <td>O</td>
+      <td>4.9.2</td>
+      <td>04-01 17:36</td>
+      <td>04-01 17:49</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14093/0</td>
+      <td class="table-danger
+">48/1</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">47/0</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/70bffa9d1a42bdaff0206c74bc9b11fd6afe405e/develop/intel/18.0.5/O/mpiuni/None" target="_blank">70bffa9</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/67d8561dcc61610346556b34074b4e78c8c39728/patch_8.6.1/gfortranclang/12.2.0_14.0.0/O/mpich/4.1.1" target="_blank">67d8561</a></td>
+    </tr>
     
-      <tr>
-        <td>v8.7.0b05-41-ge0e0f9f</td>
-        <td>develop</td>
-        <td>03-28 20:14</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/grits_Darwin_gfortranclang_12.2.0_14.0.0_mpich_4.1.1_4.9.2_g.html">2</a></td>
+      <td>grits</td>
+      <td>Darwin</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>mpich/4.1.1</td>
+      <td>g</td>
+      <td>4.9.2</td>
+      <td>04-01 17:38</td>
+      <td>04-01 18:12</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/8c2b73e8c11f1ca5104e54f97a7dbb7d7fd9a7c4/develop/intel/18.0.5/O/mpiuni/None" target="_blank">8c2b73e</a></td>
-    
-      <tr>
-        <td>v8.6.1b03-1-gcca4469</td>
-        <td>patch_8.6.1</td>
-        <td>03-28 20:15</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5da5e2d1348546cb84889b6143ebde1f9e48508a/patch_8.6.1/intel/18.0.5/O/mpiuni/None" target="_blank">5da5e2d</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/731efa8c9e3ba00be243a03e418023f7a2f028a8/patch_8.6.1/gfortranclang/12.2.0_14.0.0/g/mpich/4.1.1" target="_blank">731efa8</a></td>
+    </tr>
     
     </tbody>
   </table>
