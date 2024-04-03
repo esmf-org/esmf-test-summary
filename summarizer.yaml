@@ -1,4 +1,4 @@
-## summarizer.yaml
+## sumAmarizer.yaml
 ## This file allows excluding specific ESMF hashes and branches and entire machines from 
 ## the generated test summarization tables.  A * can be used as a wildcard (matches any number of
 ## characters) in any of the entries.
@@ -13,6 +13,7 @@ include:
 
 exclude:
   artifact_hash:
+    - c7a7f91182988c9021e6d3d4b9f9ac0b28d179c9
     - a2727f58e1e3a9a948c9e1f722666f0d43b27aaa
     - 686edddefdf6fac26d7e82b195709aa7d9b43140
     - cdd455cbcceab3e0b6036bae8cd0bff4b120bf73
@@ -28,7 +29,7 @@ exclude:
     - eafbd65dcdb9493019bab85c432fcb8e4c445938
     - 18e56ea02ea0117ec593f6e625060ef6418b9f8a
   esmf_hash:
-    - v8.7.0b04*
+    - v8.7.0b05-23-g6c1de14
 
 #  machine:
 #    - cheyenne
