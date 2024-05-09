@@ -13,9 +13,9 @@ include:
 
 exclude:
   artifact_hash:
-    - 1946aa1e3326c6bfa12b8182c5b9e2d5af1649ce
+#    - 1946aa1e3326c6bfa12b8182c5b9e2d5af1649ce
   esmf_hash:
-    - v8.7.0b05-43-g27f054d
+#    - v8.7.0b05-43-g27f054d
     
 #  machine:
 #    - cheyenne
