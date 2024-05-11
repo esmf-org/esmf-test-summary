@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: gaeaC5/Unicos/gfortran/12.2.0/mpiuni/None/g/4.9.0</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.7.0b05-64-gacdb5de (branch: <a href="index.html">develop</a>)</h3>
+    <p>Add discussion templates (Daniel Rosen, Fri May 10 16:55:20 2024 -0600)</p> 
+    <p><a href="v8.7.0b05-64-gacdb5de.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,26 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.7.0b05-63-g26f506f</td>
-        <td>develop</td>
-        <td>05-10 03:14</td>
-        <td>05-10 03:53</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/breve_Linux_aocc_4.1.0_mpiuni_None_None_O.html">5</a></td>
+      <td>breve</td>
+      <td>Linux</td>
+      <td>aocc/4.1.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>None</td>
+      <td>05-10 22:11</td>
+      <td>05-10 22:50</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">12441/0</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">44/0</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/1409217bca73bd12d1ab5da3c103fe025b8dfde0/develop/gfortran/12.2.0/g/mpiuni/None" target="_blank">1409217</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/9352fb7c79643c263330a553fee305f131885b90/develop/aocc/4.1.0/O/mpiuni/None" target="_blank">9352fb7</a></td>
+    </tr>
     
     </tbody>
   </table>
