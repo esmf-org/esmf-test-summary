@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: gaeaC5/Unicos/gfortran/12.2.0/mpiuni/None/g/4.9.0</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.7.0b05-79-ga8d1e7b (branch: <a href="index.html">develop</a>)</h3>
+    <p>Fix LaTeX issues in BOP/EOP section. (Gerhard Theurich, Mon May 13 14:38:14 2024 -0700)</p> 
+    <p><a href="v8.7.0b05-79-ga8d1e7b.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,68 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.7.0b05-64-gacdb5de</td>
-        <td>develop</td>
-        <td>05-11 03:11</td>
-        <td>05-11 03:58</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/green_Darwin_gfortranclang_12.2.0_14.0.0_openmpi_4.1.4_4.9.2_g.html">73</a></td>
+      <td>green</td>
+      <td>Darwin</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>openmpi/4.1.4</td>
+      <td>g</td>
+      <td>4.9.2</td>
+      <td>05-13 19:01</td>
+      <td>05-13 19:32</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/6380130c13df75d675159f40a4cc71af069f2024/develop/gfortran/12.2.0/g/mpiuni/None" target="_blank">6380130</a></td>
-    
-      <tr>
-        <td>v8.7.0b05-64-gacdb5de</td>
-        <td>develop</td>
-        <td>05-12 03:11</td>
-        <td>05-12 03:59</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/91766335fc3436483ce655105b611dd8f9b4b56f/develop/gfortran/12.2.0/g/mpiuni/None" target="_blank">9176633</a></td>
-    
-      <tr>
-        <td>v8.7.0b05-63-g26f506f</td>
-        <td>develop</td>
-        <td>05-10 03:14</td>
-        <td>05-10 03:53</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-success
-">12441/0</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">44/0</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/1409217bca73bd12d1ab5da3c103fe025b8dfde0/develop/gfortran/12.2.0/g/mpiuni/None" target="_blank">1409217</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7a742f849ce142d8f50f5190d27405b73180c88e/develop/gfortranclang/12.2.0_14.0.0/g/openmpi/4.1.4" target="_blank">7a742f8</a></td>
+    </tr>
     
     </tbody>
   </table>
