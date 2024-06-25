@@ -13,6 +13,7 @@ include:
 
 exclude:
   artifact_hash:
+     - cbb0c363a60922fe06baf6cb008a6f3ae05c9533
      - c365728db20f0c131150e4150b7185b51378950b
      - 8df583de19499d42f8ecb748521a84f1e73309af
      - cb0738e6eea33d4582bff570760f20b7f87bed3a
@@ -23,17 +24,7 @@ exclude:
     
 #  machine:
 #    - cheyenne
-#    - acorn
-#    - hera
-#    - jet
-#    - orion
-#    - catania
-#    - cori
-#    - chianti
-#    - discover
-#    - gaea
 #    - rockylaptop
 #  esmf_branch:
-#    - hconfig_change_equal
 #    - develop
 #    - branch2
