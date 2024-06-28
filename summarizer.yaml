@@ -21,6 +21,7 @@ exclude:
      - 7fa3d643d9887595a66bbb9787d2e0057542c6ee
   esmf_hash:
     - v8.7.0b07-2-ga1ccd5d
+    - v8.7.0b05*
     
 #  machine:
 #    - cheyenne
