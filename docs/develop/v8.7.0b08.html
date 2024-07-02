@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: grits/Darwin/gfortranclang/12.2.0_14.0.0/mpiuni/None/O/4.9.2</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.7.0b08 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Merge pull request #205 from esmf-org/feature/pio_with_mpiuni (Bill Sacks, Thu Jun 27 17:07:10 2024 -0600)</p> 
+    <p><a href="v8.7.0b08.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,68 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.7.0b07-20-g1e77226</td>
-        <td>develop</td>
-        <td>06-28 11:04</td>
-        <td>06-28 12:06</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/discover_Linux_intel_19.1.3_intelmpi_19.1.3.304_4.8.0-development_g.html">45</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>intel/19.1.3</td>
+      <td>intelmpi/19.1.3.304</td>
+      <td>g</td>
+      <td>4.8.0-development</td>
+      <td>07-02 00:55</td>
+      <td>07-02 02:06</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">12442/0</td>
-        <td class="table-success
-">8/0</td>
-        <td class="table-success
-">44/0</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d04cd8ca25f14b7854c4bb81d5ed4b2110a2cac3/develop/gfortranclang/12.2.0_14.0.0/O/mpiuni/None" target="_blank">d04cd8c</a></td>
-    
-      <tr>
-        <td>v8.7.0b06-6-g5fb1a7b</td>
-        <td>develop</td>
-        <td>05-29 15:36</td>
-        <td>05-29 16:35</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/57323dd432f9b396c7318583df28e0db7c4c1b46/develop/gfortranclang/12.2.0_14.0.0/O/mpiuni/None" target="_blank">57323dd</a></td>
-    
-      <tr>
-        <td>v8.7.0b06-6-g5fb1a7b</td>
-        <td>develop</td>
-        <td>05-29 16:56</td>
-        <td>05-29 17:55</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/32039a2ec0e46bfcf46a7be85fc7230a39900eb2/develop/gfortranclang/12.2.0_14.0.0/O/mpiuni/None" target="_blank">32039a2</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/eba2527017b064e658bedaa4ce6ebeaa9756c729/develop/intel/19.1.3/g/intelmpi/19.1.3.304" target="_blank">eba2527</a></td>
+    </tr>
     
     </tbody>
   </table>
