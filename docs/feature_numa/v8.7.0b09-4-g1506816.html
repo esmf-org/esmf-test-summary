@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: gaeaC5/None/intel/2023.1.0-classic/mpiuni/None/O/None</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.7.0b09-4-g1506816 (branch: <a href="index.html">feature_numa</a>)</h3>
+    <p>Deal with ESMF_NUMA==OFF correctly, and add NUMA section to ESMF User Doc. (Gerhard Theurich, Mon Jul 22 10:56:04 2024 -0700)</p> 
+    <p><a href="v8.7.0b09-4-g1506816.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,26 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.7.0b06</td>
-        <td>develop</td>
-        <td>05-23 03:22</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/green_Darwin_gfortranclang_12.2.0_14.0.0_openmpi_4.1.4_4.9.2_g.html">65</a></td>
+      <td>green</td>
+      <td>Darwin</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>openmpi/4.1.4</td>
+      <td>g</td>
+      <td>4.9.2</td>
+      <td>07-22 19:00</td>
+      <td>07-22 21:00</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/cf38eb7c31de7ed96352c133af1871bfa0718c27/develop/intel/2023.1.0-classic/O/mpiuni/None" target="_blank">cf38eb7</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/c39dea5333dc16034a7cf9c3e70e9fed46079c23/feature_numa/gfortranclang/12.2.0_14.0.0/g/openmpi/4.1.4" target="_blank">c39dea5</a></td>
+    </tr>
     
     </tbody>
   </table>
