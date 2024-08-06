@@ -13,23 +13,11 @@ include:
 
 exclude:
   artifact_hash:
-     - 6fe156df41482cafb6d51fb583042f37b1014824
-     - 8f78dfcd49af072ad9e0e661c02bdf3df9570241
-     - fbdc930c1c362aaa3806d667974b36df36a5c3e1
-     - 8cae99fdf3409ab9233162f10e2be9dc4be1b713
-     - cf89e219bd72804d23bc437fef7cabd50d489c2d
-     - e5cf492f0ff53e674f27f36dd79f6b9fd0af3008
-     - 475fc1c63fcff3798831023b4d1b2e10f085a317
-     - e0f841b2287030a98084c7aa1cf551c8e3614a12
-     - cbb0c363a60922fe06baf6cb008a6f3ae05c9533
-     - c365728db20f0c131150e4150b7185b51378950b
-     - 8df583de19499d42f8ecb748521a84f1e73309af
-     - cb0738e6eea33d4582bff570760f20b7f87bed3a
-     - 9ea533c9b86ef63affb448d47d6c9d7407a63209
-     - 7fa3d643d9887595a66bbb9787d2e0057542c6ee
+#     - 6fe156df41482cafb6d51fb583042f37b1014824
+
   esmf_hash:
-    - v8.7.0b07-2-ga1ccd5d
-    - v8.7.0b05*
+#    - v8.7.0b07-2-ga1ccd5d
+
     
 #  machine:
 #    - cheyenne
