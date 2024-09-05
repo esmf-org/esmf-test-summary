@@ -16,7 +16,7 @@ exclude:
   - bb7c6b376ff0ffaf083deef7addddafdfa4aa98b
 
   esmf_hash:
-#    - v8.7.0b07-2-ga1ccd5d
+  - v8.7.0b11*
 
     
 #  machine:
