@@ -1,0 +1,435 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+
+    
+    <script>
+      $(document).ready(function () {
+          $('#results').DataTable({
+              paging: false
+          });
+          $('[data-bs-toggle="popover"]').popover();
+      });
+  </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+<h3 class="mb-2">Combination: orion/Linux/gfortran/12.2.0/openmpi/4.1.4/O/None</h3><p><a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover text-nowrap">
+    <thead class="table-light">
+    <tr>
+      <th>ESMF Hash</th>
+      <th>ESMF Branch</th>
+      <th>Clone Time</th>
+      <th>Build Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>esmpy Install</th>
+      <th>esmpy Tests</th>
+      <th>Artifacts</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+      <tr>
+        <td>v8.7.0b13-1-g82ba326</td>
+        <td>develop</td>
+        <td>09-05 02:18</td>
+        <td>09-05 02:36</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-success
+">14198/0</td>
+        <td class="table-success
+">50/0</td>
+        <td class="table-success
+">81/0</td>
+        <td class="table-danger
+">44/12</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/c2f74f679b488ed87b5b6384f0561de067eb094b/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">c2f74f6</a></td>
+    
+      <tr>
+        <td>v8.7.0b13</td>
+        <td>develop</td>
+        <td>09-04 02:18</td>
+        <td>09-04 02:37</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-success
+">14198/0</td>
+        <td class="table-success
+">50/0</td>
+        <td class="table-success
+">81/0</td>
+        <td class="table-danger
+">44/12</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/99d4277fdcc10a30088ad2ac75709e302be4fc54/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">99d4277</a></td>
+    
+      <tr>
+        <td>v8.7.0b12-2-gbfe22b5</td>
+        <td>develop</td>
+        <td>08-31 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/1dc54d9974bed362d72a26de41571ecba81db92c/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">1dc54d9</a></td>
+    
+      <tr>
+        <td>v8.7.0b12-2-gbfe22b5</td>
+        <td>develop</td>
+        <td>09-01 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/4756dd0d218f95128c8f077d83c96eb078518a76/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">4756dd0</a></td>
+    
+      <tr>
+        <td>v8.7.0b12-2-gbfe22b5</td>
+        <td>develop</td>
+        <td>09-02 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/55c1cc210820f84de4cebde4d16b130f6edcfe60/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">55c1cc2</a></td>
+    
+      <tr>
+        <td>v8.7.0b12-2-gbfe22b5</td>
+        <td>develop</td>
+        <td>09-03 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/f075d5d413a4f07d670da2f6cb8d856fa6f3dea5/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">f075d5d</a></td>
+    
+      <tr>
+        <td>v8.7.0b11-6-g82f8052</td>
+        <td>develop</td>
+        <td>08-29 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d21eb6f858271c25362a40be4ff9a5ca0340cfc8/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">d21eb6f</a></td>
+    
+      <tr>
+        <td>v8.7.0b11-6-g82f8052</td>
+        <td>develop</td>
+        <td>08-30 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/97c43aedfac2b763c06b6ce3398be8f7db5b6486/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">97c43ae</a></td>
+    
+      <tr>
+        <td>v8.7.0b11-5-gfda68a9</td>
+        <td>develop</td>
+        <td>08-20 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/75115dffd4d31756cc4908834d147bfcf3a7b17d/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">75115df</a></td>
+    
+      <tr>
+        <td>v8.7.0b11-5-gfda68a9</td>
+        <td>develop</td>
+        <td>08-21 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/b639b660058394db8b220f95d69d91e6a41846da/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">b639b66</a></td>
+    
+      <tr>
+        <td>v8.7.0b11-5-gfda68a9</td>
+        <td>develop</td>
+        <td>08-22 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/4aa16d02402af33e262b1e41651d18d6a08c53c7/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">4aa16d0</a></td>
+    
+      <tr>
+        <td>v8.7.0b11-5-gfda68a9</td>
+        <td>develop</td>
+        <td>08-23 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/8e5dbaa2fbfbc8cbe556341d320bef2e70399ca3/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">8e5dbaa</a></td>
+    
+      <tr>
+        <td>v8.7.0b11-5-gfda68a9</td>
+        <td>develop</td>
+        <td>08-24 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5bc6d16818b4b1216ac9169fd6394f2e8ba21b6b/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">5bc6d16</a></td>
+    
+      <tr>
+        <td>v8.7.0b11-5-gfda68a9</td>
+        <td>develop</td>
+        <td>08-25 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/9914d331dbe24d825a85c02dca10ac2ecaa55a9b/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">9914d33</a></td>
+    
+      <tr>
+        <td>v8.7.0b11-5-gfda68a9</td>
+        <td>develop</td>
+        <td>08-26 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/908133003b838902c05c130630d88c929b554125/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">9081330</a></td>
+    
+      <tr>
+        <td>v8.7.0b11-5-gfda68a9</td>
+        <td>develop</td>
+        <td>08-27 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/15d51b4951d7eec2b0d9c1bb8f6483ceea8ce3f1/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">15d51b4</a></td>
+    
+      <tr>
+        <td>v8.7.0b11-5-gfda68a9</td>
+        <td>develop</td>
+        <td>08-28 02:18</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/6c660bb35c977a65d14f292d582ae4a90b86f1da/develop/gfortran/12.2.0/O/openmpi/4.1.4" target="_blank">6c660bb</a></td>
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2024-09-05 10:09:09 MDT.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
