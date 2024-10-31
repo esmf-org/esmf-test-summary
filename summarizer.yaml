@@ -18,7 +18,10 @@ exclude:
   - 2f0d0ace1423fa2f05176a0c5ca2e271d5cd8ccd
 
   esmf_hash:
-    
+  - v8.8.0b01*
+  - v8.8.0b00*
+  - v8.7.0*
+
 #  machine:
 #    - cheyenne
 #    - rockylaptop
