@@ -13,6 +13,7 @@ include:
 
 exclude:
   artifact_hash:
+  - b6d85214dc06b33b8f8fba2330b4acd1a90b7cac
   - f8d97aac03cc97db7798c435f9e4f9a27e24d52e
   - 5990fe5d663973eabbcd985d770c89b186046358
   - 2f0d0ace1423fa2f05176a0c5ca2e271d5cd8ccd
