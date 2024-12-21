@@ -1,0 +1,192 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+
+    
+    <script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+<h3 class="mb-2">ESMF Hash: v8.8.0b11-2-gc9c3763 (branch: <a href="index.html">release_8.8.0</a>)</h3>
+    <p>Merge pull request #339 from danrosen25/doc/nuopc_attingest (Gerhard Theurich, Fri Dec 20 11:21:01 2024 -0800)</p> 
+    <p><a href="v8.8.0b11-2-gc9c3763.md">Markdown</a>   <a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover">
+    <thead class="table-light">
+    <tr>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
+      <th>Build Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>esmpy Install</th>
+      <th>esmpy Tests</th>
+      <th>Artifacts</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td><a href="../combos/perlmutter_Unicos_gfortran_12.3.0_mpi_8.1.28_4.9.0_g.html">129</a></td>
+      <td>perlmutter</td>
+      <td>Unicos</td>
+      <td>gfortran/12.3.0</td>
+      <td>mpi/8.1.28</td>
+      <td>g</td>
+      <td>4.9.0</td>
+      <td>12-20 13:41</td>
+      <td>12-20 16:14</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2733372e56cf5bbd2b90de55c2724b867d3998e5/release_8.8.0/gfortran/12.3.0/g/mpi/8.1.28" target="_blank">2733372</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/perlmutter_Unicos_gfortran_12.3.0_mpi_8.1.28_4.9.0_O.html">130</a></td>
+      <td>perlmutter</td>
+      <td>Unicos</td>
+      <td>gfortran/12.3.0</td>
+      <td>mpi/8.1.28</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>12-20 13:40</td>
+      <td>12-20 16:03</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e7a56cf2f4e5a5c4fdfb66d3e9789d3f40ca2bb7/release_8.8.0/gfortran/12.3.0/O/mpi/8.1.28" target="_blank">e7a56cf</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/perlmutter_Unicos_gfortran_12.3.0_mpiuni_None_4.9.0_g.html">131</a></td>
+      <td>perlmutter</td>
+      <td>Unicos</td>
+      <td>gfortran/12.3.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.9.0</td>
+      <td>12-20 13:39</td>
+      <td>12-20 15:28</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/69bae3a5426e55361eed2ab5664e90c188fe66f9/release_8.8.0/gfortran/12.3.0/g/mpiuni/None" target="_blank">69bae3a</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/perlmutter_Unicos_gfortran_12.3.0_mpiuni_None_4.9.0_O.html">132</a></td>
+      <td>perlmutter</td>
+      <td>Unicos</td>
+      <td>gfortran/12.3.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>12-20 13:38</td>
+      <td>12-20 15:29</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/4a5566af87604388578228be6d18e71567b97238/release_8.8.0/gfortran/12.3.0/O/mpiuni/None" target="_blank">4a5566a</a></td>
+    </tr>
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2024-12-20 17:23:52 MST.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
