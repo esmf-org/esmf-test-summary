@@ -1,0 +1,3931 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+
+    
+    <script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false,
+                order: [[1, 'asc'], [3, 'asc'], [4, 'asc'], [5, 'asc'], [6, 'asc']],
+            });
+            $('[data-bs-toggle="popover"]').popover();
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+    <h3 class="mb-2">ESMF Branch: v8.8.0</h3><p><a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover text-nowrap">
+    <thead class="table-light">
+    <tr>
+      <th colspan="9" class="text-center">Combination</th>
+      <th colspan="1" class="text-center">ESMF Tested Hash</th>
+    </tr>
+    <tr>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>Version</th>
+      <th>MPI</th>
+      <th>Version</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      
+      <th>
+        <a href="v8.8.0.html"data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content=" tag v8.8.0
+Tagger: Gerhard Theurich <theurich@sourcespring.net>
+
+Release 8.8.0.
+Merge branch 'release/8.8.0' into main (Gerhard Theurich, Wed Jan 8 11:40:31 2025 -0800)"
+             >v8.8.0
+        </a>
+      </th>
+      
+    </tr>
+    </thead>
+    <tbody>
+    
+      <tr>
+        <td><a href="../combos/bighorn_Linux_gfortran_8.2.0_mpiuni_None_4.6.1_O.html">4</a></td>
+        <td>bighorn</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>8.2.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.6.1</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/bighorn_Linux_gfortran_8.2.0_mpiuni_None_4.6.1_g.html">3</a></td>
+        <td>bighorn</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>8.2.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.6.1</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/bighorn_Linux_nag_7.0_mpiuni_None_4.6.1_O.html">2</a></td>
+        <td>bighorn</td>
+        <td>Linux</td>
+        <td>nag</td>
+        <td>7.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.6.1</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/bighorn_Linux_nag_7.0_mpiuni_None_4.6.1_g.html">1</a></td>
+        <td>bighorn</td>
+        <td>Linux</td>
+        <td>nag</td>
+        <td>7.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.6.1</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_aocc_4.1.0_mpiuni_None_None_O.html">12</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>aocc</td>
+        <td>4.1.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_aocc_4.1.0_mpiuni_None_None_g.html">11</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>aocc</td>
+        <td>4.1.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_gfortran_11.2.0_mpich_4.0.0_4.7.4_O.html">6</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>11.2.0</td>
+        <td>mpich</td>
+        <td>4.0.0</td>
+        <td>O</td>
+        <td>4.7.4</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_gfortran_11.2.0_mpich_4.0.0_4.7.4_g.html">5</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>11.2.0</td>
+        <td>mpich</td>
+        <td>4.0.0</td>
+        <td>g</td>
+        <td>4.7.4</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_gfortran_7.4.0_mpich_3.3.1_4.7.4_O.html">8</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>7.4.0</td>
+        <td>mpich</td>
+        <td>3.3.1</td>
+        <td>O</td>
+        <td>4.7.4</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_gfortran_7.4.0_mpich_3.3.1_4.7.4_g.html">7</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>7.4.0</td>
+        <td>mpich</td>
+        <td>3.3.1</td>
+        <td>g</td>
+        <td>4.7.4</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_gfortranclang_7.5.0_16.0.3_mpiuni_None_None_O.html">10</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>gfortranclang</td>
+        <td>7.5.0_16.0.3</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/breve_Linux_gfortranclang_7.5.0_16.0.3_mpiuni_None_None_g.html">9</a></td>
+        <td>breve</td>
+        <td>Linux</td>
+        <td>gfortranclang</td>
+        <td>7.5.0_16.0.3</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_cce_15.0.1_mpi_8.1.25_4.9.2_O.html">14</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>cce</td>
+        <td>15.0.1</td>
+        <td>mpi</td>
+        <td>8.1.25</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_cce_15.0.1_mpi_8.1.25_4.9.2_g.html">17</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>cce</td>
+        <td>15.0.1</td>
+        <td>mpi</td>
+        <td>8.1.25</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_cce_15.0.1_mpiuni_None_4.9.2_O.html">18</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>cce</td>
+        <td>15.0.1</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_cce_15.0.1_mpiuni_None_4.9.2_g.html">20</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>cce</td>
+        <td>15.0.1</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_gfortran_12.2.0_pio2.5.10_mpi_8.1.25_4.9.2_O.html">34</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>gfortran</td>
+        <td>12.2.0_pio2.5.10</td>
+        <td>mpi</td>
+        <td>8.1.25</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_gfortran_12.2.0_pio2.5.10_mpi_8.1.25_4.9.2_g.html">31</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>gfortran</td>
+        <td>12.2.0_pio2.5.10</td>
+        <td>mpi</td>
+        <td>8.1.25</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_gfortran_12.2.0_pio2.6.2_mpi_8.1.27_4.9.2_O.html">32</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>gfortran</td>
+        <td>12.2.0_pio2.6.2</td>
+        <td>mpi</td>
+        <td>8.1.27</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_gfortran_12.2.0_pio2.6.2_mpi_8.1.27_4.9.2_g.html">29</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>gfortran</td>
+        <td>12.2.0_pio2.6.2</td>
+        <td>mpi</td>
+        <td>8.1.27</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_intel_2023.2.1_mpi_8.1.27_4.9.2_O.html">33</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.1</td>
+        <td>mpi</td>
+        <td>8.1.27</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_intel_2023.2.1_mpi_8.1.27_4.9.2_g.html">30</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.1</td>
+        <td>mpi</td>
+        <td>8.1.27</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_intel_2023.2.1_mpiuni_None_4.9.2_O.html">36</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.1</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_intel_2023.2.1_mpiuni_None_4.9.2_g.html">35</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.1</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_intel_2023.2.1-classic_mpi_8.1.27_4.9.2_O.html">22</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.1-classic</td>
+        <td>mpi</td>
+        <td>8.1.27</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_intel_2023.2.1-classic_mpi_8.1.27_4.9.2_g.html">23</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.1-classic</td>
+        <td>mpi</td>
+        <td>8.1.27</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_intel_2023.2.1-classic_mpiuni_None_4.9.2_O.html">28</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.1-classic</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_intel_2023.2.1-classic_mpiuni_None_4.9.2_g.html">26</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.1-classic</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_intel_2023.2.1-oneAPI_mpi_8.1.27_4.9.2_O.html">24</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.1-oneAPI</td>
+        <td>mpi</td>
+        <td>8.1.27</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_intel_2023.2.1-oneAPI_mpi_8.1.27_4.9.2_g.html">21</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.1-oneAPI</td>
+        <td>mpi</td>
+        <td>8.1.27</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_intel_2023.2.1-oneAPI_mpiuni_None_4.9.2_O.html">27</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.1-oneAPI</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_intel_2023.2.1-oneAPI_mpiuni_None_4.9.2_g.html">25</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.1-oneAPI</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_nvhpc_23.7_mpi_8.1.27_4.9.2_O.html">15</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>nvhpc</td>
+        <td>23.7</td>
+        <td>mpi</td>
+        <td>8.1.27</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_nvhpc_23.7_mpi_8.1.27_4.9.2_g.html">13</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>nvhpc</td>
+        <td>23.7</td>
+        <td>mpi</td>
+        <td>8.1.27</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_nvhpc_23.7_mpiuni_None_4.9.2_O.html">19</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>nvhpc</td>
+        <td>23.7</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/derecho_Unicos_nvhpc_23.7_mpiuni_None_4.9.2_g.html">16</a></td>
+        <td>derecho</td>
+        <td>Unicos</td>
+        <td>nvhpc</td>
+        <td>23.7</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_gfortran_13.2.0_openmpi_gcc-13.2.0_4.9.2_O.html">44</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>13.2.0</td>
+        <td>openmpi</td>
+        <td>gcc-13.2.0</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_gfortran_13.2.0_openmpi_gcc-13.2.0_4.9.2_g.html">43</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>13.2.0</td>
+        <td>openmpi</td>
+        <td>gcc-13.2.0</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_gfortran_14.2.0_mpiuni_none_None_O.html">47</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>14.2.0</td>
+        <td>mpiuni</td>
+        <td>none</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_gfortran_14.2.0_mpiuni_none_None_g.html">52</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>14.2.0</td>
+        <td>mpiuni</td>
+        <td>none</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_intel_2021.13.0_intelmpi_2021.13_4.9.2_O.html">50</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2021.13.0</td>
+        <td>intelmpi</td>
+        <td>2021.13</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_intel_2021.13.0_intelmpi_2021.13_4.9.2_g.html">38</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2021.13.0</td>
+        <td>intelmpi</td>
+        <td>2021.13</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_intel_2021.6.0_intelmpi_2021.13_None_O.html">48</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2021.6.0</td>
+        <td>intelmpi</td>
+        <td>2021.13</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_intel_2021.6.0_intelmpi_2021.13_None_g.html">51</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2021.6.0</td>
+        <td>intelmpi</td>
+        <td>2021.13</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_intel_2024.2.0_intelmpi_2021.13_None_O.html">42</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2024.2.0</td>
+        <td>intelmpi</td>
+        <td>2021.13</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_intel_2024.2.0_intelmpi_2021.13_None_g.html">41</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2024.2.0</td>
+        <td>intelmpi</td>
+        <td>2021.13</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_intel_2024.2.0_mpiuni_None_None_O.html">46</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2024.2.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_intel_2024.2.0_mpiuni_None_None_g.html">45</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2024.2.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_llvm_20.0.0git69774_mpich_llvm-flang-2024-10-01_None_O.html">37</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>llvm</td>
+        <td>20.0.0git69774</td>
+        <td>mpich</td>
+        <td>llvm-flang-2024-10-01</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_llvm_20.0.0git69774_mpich_llvm-flang-2024-10-01_None_g.html">49</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>llvm</td>
+        <td>20.0.0git69774</td>
+        <td>mpich</td>
+        <td>llvm-flang-2024-10-01</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_nag_7.2.15_openmpi_nag_7.2.7215-gcc_12.3.0_None_O.html">40</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>nag</td>
+        <td>7.2.15</td>
+        <td>openmpi</td>
+        <td>nag_7.2.7215-gcc_12.3.0</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/discover_Linux_nag_7.2.15_openmpi_nag_7.2.7215-gcc_12.3.0_None_g.html">39</a></td>
+        <td>discover</td>
+        <td>Linux</td>
+        <td>nag</td>
+        <td>7.2.15</td>
+        <td>openmpi</td>
+        <td>nag_7.2.7215-gcc_12.3.0</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_gfortran_12.3.0_mpi_8.1.28_4.9.0_O.html">56</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>gfortran</td>
+        <td>12.3.0</td>
+        <td>mpi</td>
+        <td>8.1.28</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_gfortran_12.3.0_mpi_8.1.28_4.9.0_g.html">54</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>gfortran</td>
+        <td>12.3.0</td>
+        <td>mpi</td>
+        <td>8.1.28</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_gfortran_12.3.0_mpiuni_None_4.9.0_O.html">59</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>gfortran</td>
+        <td>12.3.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_gfortran_12.3.0_mpiuni_None_4.9.0_g.html">62</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>gfortran</td>
+        <td>12.3.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_intel_2023.2.0_mpi_8.1.28_4.9.0_O.html">66</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.0</td>
+        <td>mpi</td>
+        <td>8.1.28</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_intel_2023.2.0_mpi_8.1.28_4.9.0_g.html">65</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.0</td>
+        <td>mpi</td>
+        <td>8.1.28</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_intel_2023.2.0_mpiuni_None_4.9.0_O.html">57</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_intel_2023.2.0_mpiuni_None_4.9.0_g.html">64</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_intel_2023.2.0-classic_mpi_8.1.28_4.9.0_O.html">53</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.0-classic</td>
+        <td>mpi</td>
+        <td>8.1.28</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_intel_2023.2.0-classic_mpi_8.1.28_4.9.0_g.html">60</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.0-classic</td>
+        <td>mpi</td>
+        <td>8.1.28</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_intel_2023.2.0-classic_mpiuni_None_4.9.0_O.html">68</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.0-classic</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_intel_2023.2.0-classic_mpiuni_None_4.9.0_g.html">61</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.0-classic</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_intel_2023.2.0-oneAPI_mpi_8.1.28_4.9.0_O.html">63</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.0-oneAPI</td>
+        <td>mpi</td>
+        <td>8.1.28</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_intel_2023.2.0-oneAPI_mpi_8.1.28_4.9.0_g.html">67</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.0-oneAPI</td>
+        <td>mpi</td>
+        <td>8.1.28</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_intel_2023.2.0-oneAPI_mpiuni_None_4.9.0_O.html">58</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.0-oneAPI</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/gaeaC5_Unicos_intel_2023.2.0-oneAPI_mpiuni_None_4.9.0_g.html">55</a></td>
+        <td>gaeaC5</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.2.0-oneAPI</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/green_Darwin_gfortranclang_12.2.0_14.0.0_mpiuni_None_4.9.2_g.html">69</a></td>
+        <td>green</td>
+        <td>Darwin</td>
+        <td>gfortranclang</td>
+        <td>12.2.0_14.0.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/green_Darwin_gfortranclang_12.2.0_14.0.0_openmpi_4.1.4_4.9.2_g.html">70</a></td>
+        <td>green</td>
+        <td>Darwin</td>
+        <td>gfortranclang</td>
+        <td>12.2.0_14.0.0</td>
+        <td>openmpi</td>
+        <td>4.1.4</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/grits_Darwin_gfortranclang_12.2.0_14.0.0_mpich_4.1.1_4.9.2_O.html">74</a></td>
+        <td>grits</td>
+        <td>Darwin</td>
+        <td>gfortranclang</td>
+        <td>12.2.0_14.0.0</td>
+        <td>mpich</td>
+        <td>4.1.1</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/grits_Darwin_gfortranclang_12.2.0_14.0.0_mpich_4.1.1_4.9.2_g.html">73</a></td>
+        <td>grits</td>
+        <td>Darwin</td>
+        <td>gfortranclang</td>
+        <td>12.2.0_14.0.0</td>
+        <td>mpich</td>
+        <td>4.1.1</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/grits_Darwin_gfortranclang_12.2.0_14.0.0_mpiuni_None_4.9.2_O.html">72</a></td>
+        <td>grits</td>
+        <td>Darwin</td>
+        <td>gfortranclang</td>
+        <td>12.2.0_14.0.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/grits_Darwin_gfortranclang_12.2.0_14.0.0_mpiuni_None_4.9.2_g.html">71</a></td>
+        <td>grits</td>
+        <td>Darwin</td>
+        <td>gfortranclang</td>
+        <td>12.2.0_14.0.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hearhear_Darwin_gfortran_14.1.0_mpich_4.2.3_4.9.2_O.html">78</a></td>
+        <td>hearhear</td>
+        <td>Darwin</td>
+        <td>gfortran</td>
+        <td>14.1.0</td>
+        <td>mpich</td>
+        <td>4.2.3</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hearhear_Darwin_gfortran_14.1.0_mpich_4.2.3_4.9.2_g.html">77</a></td>
+        <td>hearhear</td>
+        <td>Darwin</td>
+        <td>gfortran</td>
+        <td>14.1.0</td>
+        <td>mpich</td>
+        <td>4.2.3</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hearhear_Darwin_gfortran_14.1.0_mpiuni_None_4.9.2_O.html">76</a></td>
+        <td>hearhear</td>
+        <td>Darwin</td>
+        <td>gfortran</td>
+        <td>14.1.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hearhear_Darwin_gfortran_14.1.0_mpiuni_None_4.9.2_g.html">75</a></td>
+        <td>hearhear</td>
+        <td>Darwin</td>
+        <td>gfortran</td>
+        <td>14.1.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hearhear_Darwin_gfortran_14.1.0_openmpi_5.0.5_4.9.2_O.html">80</a></td>
+        <td>hearhear</td>
+        <td>Darwin</td>
+        <td>gfortran</td>
+        <td>14.1.0</td>
+        <td>openmpi</td>
+        <td>5.0.5</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hearhear_Darwin_gfortran_14.1.0_openmpi_5.0.5_4.9.2_g.html">79</a></td>
+        <td>hearhear</td>
+        <td>Darwin</td>
+        <td>gfortran</td>
+        <td>14.1.0</td>
+        <td>openmpi</td>
+        <td>5.0.5</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hearhear_Darwin_gfortranclang_14.1.0_16.0.0_mpich_4.2.3_4.9.2_O.html">84</a></td>
+        <td>hearhear</td>
+        <td>Darwin</td>
+        <td>gfortranclang</td>
+        <td>14.1.0_16.0.0</td>
+        <td>mpich</td>
+        <td>4.2.3</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hearhear_Darwin_gfortranclang_14.1.0_16.0.0_mpich_4.2.3_4.9.2_g.html">83</a></td>
+        <td>hearhear</td>
+        <td>Darwin</td>
+        <td>gfortranclang</td>
+        <td>14.1.0_16.0.0</td>
+        <td>mpich</td>
+        <td>4.2.3</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hearhear_Darwin_gfortranclang_14.1.0_16.0.0_mpiuni_None_4.9.2_O.html">82</a></td>
+        <td>hearhear</td>
+        <td>Darwin</td>
+        <td>gfortranclang</td>
+        <td>14.1.0_16.0.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hearhear_Darwin_gfortranclang_14.1.0_16.0.0_mpiuni_None_4.9.2_g.html">81</a></td>
+        <td>hearhear</td>
+        <td>Darwin</td>
+        <td>gfortranclang</td>
+        <td>14.1.0_16.0.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hearhear_Darwin_gfortranclang_14.1.0_16.0.0_openmpi_5.0.5_4.9.2_O.html">86</a></td>
+        <td>hearhear</td>
+        <td>Darwin</td>
+        <td>gfortranclang</td>
+        <td>14.1.0_16.0.0</td>
+        <td>openmpi</td>
+        <td>5.0.5</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hearhear_Darwin_gfortranclang_14.1.0_16.0.0_openmpi_5.0.5_4.9.2_g.html">85</a></td>
+        <td>hearhear</td>
+        <td>Darwin</td>
+        <td>gfortranclang</td>
+        <td>14.1.0_16.0.0</td>
+        <td>openmpi</td>
+        <td>5.0.5</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_gfortran_13.2.0_mpiuni_None_None_O.html">99</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>13.2.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_gfortran_13.2.0_mpiuni_None_None_g.html">98</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>13.2.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_gfortran_13.2.0_openmpi_4.1.6_None_O.html">95</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>13.2.0</td>
+        <td>openmpi</td>
+        <td>4.1.6</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_gfortran_13.2.0_openmpi_4.1.6_None_g.html">92</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>13.2.0</td>
+        <td>openmpi</td>
+        <td>4.1.6</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_intel_2023.2.0_intelmpi_2023.2.0_4.7.0_O.html">91</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2023.2.0</td>
+        <td>intelmpi</td>
+        <td>2023.2.0</td>
+        <td>O</td>
+        <td>4.7.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_intel_2023.2.0_intelmpi_2023.2.0_4.7.0_g.html">102</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2023.2.0</td>
+        <td>intelmpi</td>
+        <td>2023.2.0</td>
+        <td>g</td>
+        <td>4.7.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_intel_2023.2.0_mpiuni_None_4.7.0_O.html">96</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2023.2.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.7.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_intel_2023.2.0_mpiuni_None_4.7.0_g.html">94</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2023.2.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.7.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_intel_2023.2.0-oneAPI_intelmpi_2023.2.0_4.7.0_O.html">100</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2023.2.0-oneAPI</td>
+        <td>intelmpi</td>
+        <td>2023.2.0</td>
+        <td>O</td>
+        <td>4.7.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_intel_2023.2.0-oneAPI_intelmpi_2023.2.0_4.7.0_g.html">101</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2023.2.0-oneAPI</td>
+        <td>intelmpi</td>
+        <td>2023.2.0</td>
+        <td>g</td>
+        <td>4.7.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_intel_2023.2.0-oneAPI_mpiuni_None_4.7.0_O.html">97</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2023.2.0-oneAPI</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.7.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_intel_2023.2.0-oneAPI_mpiuni_None_4.7.0_g.html">93</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2023.2.0-oneAPI</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.7.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_nvhpc_24.1_mpiuni_None_None_O.html">90</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>nvhpc</td>
+        <td>24.1</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_nvhpc_24.1_mpiuni_None_None_g.html">89</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>nvhpc</td>
+        <td>24.1</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_nvhpc_24.1_openmpi_None_None_O.html">88</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>nvhpc</td>
+        <td>24.1</td>
+        <td>openmpi</td>
+        <td>None</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/hera_Linux_nvhpc_24.1_openmpi_None_None_g.html">87</a></td>
+        <td>hera</td>
+        <td>Linux</td>
+        <td>nvhpc</td>
+        <td>24.1</td>
+        <td>openmpi</td>
+        <td>None</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/izumi_Linux_gfortran_9.3.0_mpiuni_None_4.7.4_O.html">108</a></td>
+        <td>izumi</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>9.3.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.7.4</td>
+        
+        
+        <td class="table-success
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 12528/0</li>
+  <li>STests: 9/0</li>
+  <li>ETests: 42/0</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 01-08 15:33</li>
+  <li>Build time: 01-08 15:44</li>
+  <li>Collect time: 01-08 23:05</li>
+  <li>Phase: test</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/20f39b5114e2fb150133dc9ce363a20152c937db/v8.8.0/gfortran/9.3.0/O/mpiuni/None" target="_blank">0
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/izumi_Linux_gfortran_9.3.0_mpiuni_None_4.7.4_g.html">105</a></td>
+        <td>izumi</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>9.3.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.7.4</td>
+        
+        
+        <td class="table-success
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 12528/0</li>
+  <li>STests: 9/0</li>
+  <li>ETests: 42/0</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 01-08 15:33</li>
+  <li>Build time: 01-08 15:44</li>
+  <li>Collect time: 01-08 23:10</li>
+  <li>Phase: test</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d22792331f425650e5fd17b9c6443bae5778274d/v8.8.0/gfortran/9.3.0/g/mpiuni/None" target="_blank">0
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/izumi_Linux_intel_20.0.1_mpiuni_None_4.7.4_O.html">104</a></td>
+        <td>izumi</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>20.0.1</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.7.4</td>
+        
+        
+        <td class="table-primary
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: None/None</li>
+  <li>STests: None/None</li>
+  <li>ETests: None/None</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 01-08 15:32</li>
+  <li>Build time: 01-08 15:53</li>
+  <li>Collect time: 01-08 22:53</li>
+  <li>Phase: build</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/91ce1c686901e254eb451678aba368f5f75d6061/v8.8.0/intel/20.0.1/O/mpiuni/None" target="_blank">?
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/izumi_Linux_intel_20.0.1_mpiuni_None_4.7.4_g.html">103</a></td>
+        <td>izumi</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>20.0.1</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.7.4</td>
+        
+        
+        <td class="table-primary
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: None/None</li>
+  <li>STests: None/None</li>
+  <li>ETests: None/None</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 01-08 15:32</li>
+  <li>Build time: 01-08 15:45</li>
+  <li>Collect time: 01-08 22:45</li>
+  <li>Phase: build</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/28873a2a7dc973359de79091131a68ad931dadba/v8.8.0/intel/20.0.1/g/mpiuni/None" target="_blank">?
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/izumi_Linux_nag_7.0_mpiuni_None_4.7.4_O.html">107</a></td>
+        <td>izumi</td>
+        <td>Linux</td>
+        <td>nag</td>
+        <td>7.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.7.4</td>
+        
+        
+        <td class="table-success
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 12528/0</li>
+  <li>STests: 9/0</li>
+  <li>ETests: 42/0</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 01-08 15:34</li>
+  <li>Build time: 01-08 15:43</li>
+  <li>Collect time: 01-08 23:08</li>
+  <li>Phase: test</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e1fee604a14411d0d2fa60bc6f10f0b15e8b5d1d/v8.8.0/nag/7.0/O/mpiuni/None" target="_blank">0
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/izumi_Linux_nag_7.0_mpiuni_None_4.7.4_g.html">106</a></td>
+        <td>izumi</td>
+        <td>Linux</td>
+        <td>nag</td>
+        <td>7.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.7.4</td>
+        
+        
+        <td class="table-success
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 12528/0</li>
+  <li>STests: 9/0</li>
+  <li>ETests: 42/0</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 01-08 15:34</li>
+  <li>Build time: 01-08 15:44</li>
+  <li>Collect time: 01-08 23:09</li>
+  <li>Phase: test</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/147d4f8bb80428aef72b637dcdf87402569a1f76/v8.8.0/nag/7.0/g/mpiuni/None" target="_blank">0
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/jet_Linux_gfortran_13.2.0_openmpi_4.1.6_None_O.html">110</a></td>
+        <td>jet</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>13.2.0</td>
+        <td>openmpi</td>
+        <td>4.1.6</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/jet_Linux_gfortran_13.2.0_openmpi_4.1.6_None_g.html">109</a></td>
+        <td>jet</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>13.2.0</td>
+        <td>openmpi</td>
+        <td>4.1.6</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/orion_Linux_gfortran_12.2.0_mpiuni_None_None_O.html">116</a></td>
+        <td>orion</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>12.2.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/orion_Linux_gfortran_12.2.0_mpiuni_None_None_g.html">115</a></td>
+        <td>orion</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>12.2.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/orion_Linux_gfortran_12.2.0_openmpi_4.1.4_None_O.html">114</a></td>
+        <td>orion</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>12.2.0</td>
+        <td>openmpi</td>
+        <td>4.1.4</td>
+        <td>O</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/orion_Linux_gfortran_12.2.0_openmpi_4.1.4_None_g.html">113</a></td>
+        <td>orion</td>
+        <td>Linux</td>
+        <td>gfortran</td>
+        <td>12.2.0</td>
+        <td>openmpi</td>
+        <td>4.1.4</td>
+        <td>g</td>
+        <td>None</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/orion_Linux_intel_2020.2.1_intelmpi_2021.7.1_4.9.2_O.html">112</a></td>
+        <td>orion</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2020.2.1</td>
+        <td>intelmpi</td>
+        <td>2021.7.1</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/orion_Linux_intel_2020.2.1_intelmpi_2021.7.1_4.9.2_g.html">111</a></td>
+        <td>orion</td>
+        <td>Linux</td>
+        <td>intel</td>
+        <td>2020.2.1</td>
+        <td>intelmpi</td>
+        <td>2021.7.1</td>
+        <td>g</td>
+        <td>4.9.2</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_gfortran_12.3.0_mpi_8.1.28_4.9.0_O.html">130</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>gfortran</td>
+        <td>12.3.0</td>
+        <td>mpi</td>
+        <td>8.1.28</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_gfortran_12.3.0_mpi_8.1.28_4.9.0_g.html">129</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>gfortran</td>
+        <td>12.3.0</td>
+        <td>mpi</td>
+        <td>8.1.28</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_gfortran_12.3.0_mpiuni_None_4.9.0_O.html">132</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>gfortran</td>
+        <td>12.3.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_gfortran_12.3.0_mpiuni_None_4.9.0_g.html">131</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>gfortran</td>
+        <td>12.3.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_intel_2023.1.0_mpi_8.1.25_4.9.0_O.html">121</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.1.0</td>
+        <td>mpi</td>
+        <td>8.1.25</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_intel_2023.1.0_mpi_8.1.25_4.9.0_g.html">119</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.1.0</td>
+        <td>mpi</td>
+        <td>8.1.25</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_intel_2023.1.0_mpiuni_None_4.9.0_O.html">126</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.1.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_intel_2023.1.0_mpiuni_None_4.9.0_g.html">124</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.1.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_intel_2023.1.0-classic_mpi_8.1.25_4.9.0_O.html">125</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.1.0-classic</td>
+        <td>mpi</td>
+        <td>8.1.25</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_intel_2023.1.0-classic_mpi_8.1.25_4.9.0_g.html">123</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.1.0-classic</td>
+        <td>mpi</td>
+        <td>8.1.25</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_intel_2023.1.0-classic_mpiuni_None_4.9.0_O.html">128</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.1.0-classic</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_intel_2023.1.0-classic_mpiuni_None_4.9.0_g.html">127</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.1.0-classic</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_intel_2023.1.0-oneAPI_mpi_8.1.25_4.9.0_O.html">118</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.1.0-oneAPI</td>
+        <td>mpi</td>
+        <td>8.1.25</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_intel_2023.1.0-oneAPI_mpi_8.1.25_4.9.0_g.html">117</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.1.0-oneAPI</td>
+        <td>mpi</td>
+        <td>8.1.25</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_intel_2023.1.0-oneAPI_mpiuni_None_4.9.0_O.html">122</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.1.0-oneAPI</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/perlmutter_Unicos_intel_2023.1.0-oneAPI_mpiuni_None_4.9.0_g.html">120</a></td>
+        <td>perlmutter</td>
+        <td>Unicos</td>
+        <td>intel</td>
+        <td>2023.1.0-oneAPI</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.0</td>
+        
+        
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
+</ul>">
+
+</td>
+        
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2025-01-08 16:17:09 MST.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
