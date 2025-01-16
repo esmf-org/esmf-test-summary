@@ -36,14 +36,14 @@ jobs:
         df -h
     
     - name: Checkout summarizer scripts
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: esmf-org/esmf-test-scripts
         path: esmf-test-scripts
         ref: main
     
     - name: Restore summarizer database
-      uses: actions/cache@v2
+      uses: actions/cache@v4
       with:
         path: summarizer-db
         key: summarizer-db-${{github.run_id}}
@@ -54,14 +54,14 @@ jobs:
         git clone --progress --filter=blob:none https://github.com/esmf-org/esmf-test-artifacts
     
     - name: Checkout ESMF 
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: esmf-org/esmf
         path: esmf   
         fetch-depth: 0
     
     - name: Set up Python 3.10
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v5
       with:
         python-version: "3.10"
     
@@ -73,7 +73,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     
     - name: Checkout esmf-test-summary
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: esmf-org/esmf-test-summary
         path: esmf-test-summary
