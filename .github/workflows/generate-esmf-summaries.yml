@@ -115,7 +115,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: summarizer-db
         path: ${{ github.workspace }}/summarizer-db
