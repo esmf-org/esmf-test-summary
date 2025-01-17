@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: hera/Linux/intel/2023.2.0/mpiuni/None/O/4.7.0</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.9.0b01-6-gd366abc (branch: <a href="index.html">develop</a>)</h3>
+    <p>Merge pull request #315 from esmf-org/DWesl-patch-1 (Bill Sacks, Thu Jan 16 12:34:50 2025 -0700)</p> 
+    <p><a href="v8.9.0b01-6-gd366abc.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,68 +67,59 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.9.0b01-1-g84b8fec</td>
-        <td>develop</td>
-        <td>01-15 07:02</td>
-        <td>01-15 07:31</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/jet_Linux_gfortran_13.2.0_openmpi_4.1.6_None_O.html">2</a></td>
+      <td>jet</td>
+      <td>Linux</td>
+      <td>gfortran/13.2.0</td>
+      <td>openmpi/4.1.6</td>
+      <td>O</td>
+      <td>None</td>
+      <td>01-17 01:10</td>
+      <td>01-17 01:30</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">12528/0</td>
-        <td class="table-success
-">9/0</td>
-        <td class="table-success
-">42/0</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/8f3fe71b0eed671147b929f568dc25bf99a1fd3c/develop/intel/2023.2.0/O/mpiuni/None" target="_blank">8f3fe71</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/76de70a03372b43cee9f833846ed73104c340cbf/develop/gfortran/13.2.0/O/openmpi/4.1.6" target="_blank">76de70a</a></td>
+    </tr>
     
-      <tr>
-        <td>v8.9.0b01-1-g84b8fec</td>
-        <td>develop</td>
-        <td>01-16 07:03</td>
-        <td>01-16 07:31</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/jet_Linux_gfortran_13.2.0_openmpi_4.1.6_None_g.html">3</a></td>
+      <td>jet</td>
+      <td>Linux</td>
+      <td>gfortran/13.2.0</td>
+      <td>openmpi/4.1.6</td>
+      <td>g</td>
+      <td>None</td>
+      <td>01-17 01:10</td>
+      <td>01-17 01:29</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">12528/0</td>
-        <td class="table-success
-">9/0</td>
-        <td class="table-success
-">42/0</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/27851753b8a2f14e4f14c63a2657ab9e76afaaee/develop/intel/2023.2.0/O/mpiuni/None" target="_blank">2785175</a></td>
-    
-      <tr>
-        <td>v8.9.0b01</td>
-        <td>develop</td>
-        <td>01-14 07:04</td>
-        <td>01-14 07:32</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-success
-">12528/0</td>
-        <td class="table-success
-">9/0</td>
-        <td class="table-success
-">42/0</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/eb01678da173bd3d2e27b4af1333e51488e62767/develop/intel/2023.2.0/O/mpiuni/None" target="_blank">eb01678</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/ce44349158e0e3bf081a15832eed7037f5b2459c/develop/gfortran/13.2.0/g/openmpi/4.1.6" target="_blank">ce44349</a></td>
+    </tr>
     
     </tbody>
   </table>
