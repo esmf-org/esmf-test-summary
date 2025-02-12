@@ -23,15 +23,11 @@
     
     <script>
         $(document).ready(function () {
-            $('#branches').DataTable({
-                paging: false
-            });
-        });
-        $(document).ready(function () {
-            $('#combos').DataTable({
+            $('#results').DataTable({
                 paging: false,
                 order: [[1, 'asc'], [3, 'asc'], [4, 'asc'], [5, 'asc'], [6, 'asc']],
             });
+            $('[data-bs-toggle="popover"]').popover();
         });
     </script>
 
@@ -40,33 +36,21 @@
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
+    <h3 class="mb-2">ESMF Branch: develop</h3><p><a href="../index.html">Top</a></p>
+
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="branches" class="table table-bordered table-hover">
+  <table id="results" class="table table-bordered table-hover text-nowrap">
     <thead class="table-light">
     <tr>
-      <th class="text-center">Tested ESMF Branches</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-    <tr>
-      <td><a href="develop/index.html">develop</a></td>
-    </tr>
-    
-    </tbody>
-  </table>
-  <br/>
-  <table id="combos"  class="table table-bordered table-hover">
-    <thead class="table-light">
-    <tr>
-      <th class="text-center" colspan="10">Combinations</th>
+      <th colspan="9" class="text-center">Combination</th>
+      <th colspan="1" class="text-center">ESMF Tested Hash</th>
     </tr>
     <tr>
-      <th>No.</th>
+      <th>Combo No.</th>
       <th>Machine</th>
       <th>OS</th>
       <th>Compiler</th>
@@ -75,23 +59,47 @@
       <th>Version</th>
       <th>BOPT</th>
       <th>NetCDF</th>
-      <th>Last Reported</th>
+      
+      <th>
+        <a href="v8.9.0b02.html"data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content=" Move development tests to ESMF all tests (Daniel Rosen, Wed Feb 5 10:32:05 2025 -0700)"
+             >v8.9.0b02
+        </a>
+      </th>
+      
     </tr>
     </thead>
     <tbody>
     
-    <tr>
-      <td><a href="combos/grits_Darwin_gfortranclang_12.2.0_14.0.0_mpich_4.1.1_4.9.2_O.html">1</a></td>
-      <td>grits</td>
-      <td>Darwin</td>
-      <td>gfortranclang</td>
-      <td>12.2.0_14.0.0</td>
-      <td>mpich</td>
-      <td>4.1.1</td>
-      <td>O</td>
-      <td>4.9.2</td>
-      <td>02-12 19:52</td>
-    </tr>
+      <tr>
+        <td><a href="../combos/grits_Darwin_gfortranclang_12.2.0_14.0.0_mpich_4.1.1_4.9.2_O.html">1</a></td>
+        <td>grits</td>
+        <td>Darwin</td>
+        <td>gfortranclang</td>
+        <td>12.2.0_14.0.0</td>
+        <td>mpich</td>
+        <td>4.1.1</td>
+        <td>O</td>
+        <td>4.9.2</td>
+        
+        
+        <td class="table-primary
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: None/None</li>
+  <li>STests: None/None</li>
+  <li>ETests: None/None</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 02-12 12:44</li>
+  <li>Build time: 02-12 12:52</li>
+  <li>Collect time: 02-12 19:52</li>
+  <li>Phase: build</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/453953154dfb5d346d06770f03ed424e4074d796/develop/gfortranclang/12.2.0_14.0.0/O/mpich/4.1.1" target="_blank">?
+</a>
+</td>
+        
     
     </tbody>
   </table>

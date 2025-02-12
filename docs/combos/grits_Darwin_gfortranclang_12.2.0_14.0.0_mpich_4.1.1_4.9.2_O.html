@@ -22,76 +22,65 @@
 
     
     <script>
-        $(document).ready(function () {
-            $('#branches').DataTable({
-                paging: false
-            });
-        });
-        $(document).ready(function () {
-            $('#combos').DataTable({
-                paging: false,
-                order: [[1, 'asc'], [3, 'asc'], [4, 'asc'], [5, 'asc'], [6, 'asc']],
-            });
-        });
-    </script>
+      $(document).ready(function () {
+          $('#results').DataTable({
+              paging: false
+          });
+          $('[data-bs-toggle="popover"]').popover();
+      });
+  </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
+<h3 class="mb-2">Combination: grits/Darwin/gfortranclang/12.2.0_14.0.0/mpich/4.1.1/O/4.9.2</h3><p><a href="../index.html">Top</a></p>
+
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="branches" class="table table-bordered table-hover">
+  <table id="results" class="table table-bordered table-hover text-nowrap">
     <thead class="table-light">
     <tr>
-      <th class="text-center">Tested ESMF Branches</th>
+      <th>ESMF Hash</th>
+      <th>ESMF Branch</th>
+      <th>Clone Time</th>
+      <th>Build Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>esmpy Install</th>
+      <th>esmpy Tests</th>
+      <th>Artifacts</th>
     </tr>
     </thead>
     <tbody>
     
-    <tr>
-      <td><a href="develop/index.html">develop</a></td>
-    </tr>
-    
-    </tbody>
-  </table>
-  <br/>
-  <table id="combos"  class="table table-bordered table-hover">
-    <thead class="table-light">
-    <tr>
-      <th class="text-center" colspan="10">Combinations</th>
-    </tr>
-    <tr>
-      <th>No.</th>
-      <th>Machine</th>
-      <th>OS</th>
-      <th>Compiler</th>
-      <th>Version</th>
-      <th>MPI</th>
-      <th>Version</th>
-      <th>BOPT</th>
-      <th>NetCDF</th>
-      <th>Last Reported</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-    <tr>
-      <td><a href="combos/grits_Darwin_gfortranclang_12.2.0_14.0.0_mpich_4.1.1_4.9.2_O.html">1</a></td>
-      <td>grits</td>
-      <td>Darwin</td>
-      <td>gfortranclang</td>
-      <td>12.2.0_14.0.0</td>
-      <td>mpich</td>
-      <td>4.1.1</td>
-      <td>O</td>
-      <td>4.9.2</td>
-      <td>02-12 19:52</td>
-    </tr>
+      <tr>
+        <td>v8.9.0b02</td>
+        <td>develop</td>
+        <td>02-12 12:44</td>
+        <td>02-12 12:52</td>
+        <td class="table-success
+">PASS</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/453953154dfb5d346d06770f03ed424e4074d796/develop/gfortranclang/12.2.0_14.0.0/O/mpich/4.1.1" target="_blank">4539531</a></td>
     
     </tbody>
   </table>
