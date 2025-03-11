@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: perlmutter/Unicos/intel/2023.1.0/mpi/8.1.25/g/4.9.0</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.9.0b03-13-gbf628cb (branch: <a href="index.html">develop</a>)</h3>
+    <p>Merge in code that broadens the types of new elements that can be created from element centers during the creation of a dual mesh. (Robert Oehmke, Mon Mar 10 14:09:53 2025 -0600)</p> 
+    <p><a href="v8.9.0b03-13-gbf628cb.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,68 +67,59 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.9.0b03</td>
-        <td>develop</td>
-        <td>03-03 23:40</td>
-        <td>03-04 07:57</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/jet_Linux_gfortran_13.2.0_openmpi_4.1.6_None_O.html">5</a></td>
+      <td>jet</td>
+      <td>Linux</td>
+      <td>gfortran/13.2.0</td>
+      <td>openmpi/4.1.6</td>
+      <td>O</td>
+      <td>None</td>
+      <td>03-11 01:10</td>
+      <td>03-11 01:31</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">14197/0</td>
-        <td class="table-success
-">51/0</td>
-        <td class="table-success
-">80/0</td>
-        <td class="table-success
-">57/0</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d672d63fe5a91c16f046ac89686e200b6c5b5c94/develop/intel/2023.1.0/g/mpi/8.1.25" target="_blank">d672d63</a></td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/093de073dbcfa3935ea4b2445ebc32bb1a12ea95/develop/gfortran/13.2.0/O/openmpi/4.1.6" target="_blank">093de07</a></td>
+    </tr>
     
-      <tr>
-        <td>v8.9.0b02-2-gcd78384</td>
-        <td>develop</td>
-        <td>02-17 23:47</td>
-        <td>02-18 01:40</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/jet_Linux_gfortran_13.2.0_openmpi_4.1.6_None_g.html">6</a></td>
+      <td>jet</td>
+      <td>Linux</td>
+      <td>gfortran/13.2.0</td>
+      <td>openmpi/4.1.6</td>
+      <td>g</td>
+      <td>None</td>
+      <td>03-11 01:10</td>
+      <td>03-11 01:30</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">14197/0</td>
-        <td class="table-success
-">51/0</td>
-        <td class="table-success
-">80/0</td>
-        <td class="table-success
-">57/0</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/34349519fe5778e5fd4abdba6259086da6f01814/develop/intel/2023.1.0/g/mpi/8.1.25" target="_blank">3434951</a></td>
-    
-      <tr>
-        <td>v8.9.0b02-11-g7f55bfb</td>
-        <td>develop</td>
-        <td>02-24 23:40</td>
-        <td>02-25 04:39</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-success
-">14197/0</td>
-        <td class="table-success
-">51/0</td>
-        <td class="table-success
-">80/0</td>
-        <td class="table-success
-">57/0</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/0cd7025d2bc450c43ae4b675330b5d9c017992b4/develop/intel/2023.1.0/g/mpi/8.1.25" target="_blank">0cd7025</a></td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2afeb4573b2d643c3f33997b503b22a1ba6a9fcb/develop/gfortran/13.2.0/g/openmpi/4.1.6" target="_blank">2afeb45</a></td>
+    </tr>
     
     </tbody>
   </table>
