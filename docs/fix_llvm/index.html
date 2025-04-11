@@ -36,7 +36,7 @@
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-    <h3 class="mb-2">ESMF Branch: fix_mvapich</h3><p><a href="../index.html">Top</a></p>
+    <h3 class="mb-2">ESMF Branch: fix_llvm</h3><p><a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
@@ -61,8 +61,8 @@
       <th>NetCDF</th>
       
       <th>
-        <a href="v8.9.0b05-12-g9285fd0.html"data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content=" Consistently use ESMF_COMM=mvapich to refer to MVAPICH of any version. Remove the ESMF_COMM=mvapich2 branch inside build_rules.mk, but continue to support it from the user level for backward compatibility. However, issue a WARNING advicing users to set ESMF_COMM=mvapich for any MVAPICH version. Update relevant documentation. (Gerhard Theurich, Thu Apr 10 15:11:42 2025 -0700)"
-             >v8.9.0b05-12-g9285fd0
+        <a href="v8.9.0b05-20-gd959df2.html"data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content=" Adjust to LLVM 21 update: flang-new -> flang, gone is libFortranRuntime. (Gerhard Theurich, Fri Apr 11 09:47:48 2025 -0700)"
+             >v8.9.0b05-20-gd959df2
         </a>
       </th>
       
@@ -1300,22 +1300,20 @@
         <td>None</td>
         
         
-        <td class="table-danger
- text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
-  <li>Build: FAIL</li>
-  <li>UTests: None/None</li>
-  <li>STests: None/None</li>
-  <li>ETests: None/None</li>
-  <li>NUOPC: None/None</li>
-  <li>esmpy install: NONE</li>
-  <li>esmpy: None/None</li>
-  <li>Clone Time: 04-11 09:32</li>
-  <li>Build time: None</li>
-  <li>Collect time: 04-11 13:50</li>
-  <li>Phase: build</li>
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
 </ul>">
-<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5b47eefb306e890a689fb77fccfd83e7f532408e/fix_mvapich/intel/2021.13.0-mvapich/O/intelmpi/ifort-2021.13.0" target="_blank">?
-</a>
+
 </td>
         
     
@@ -1331,22 +1329,20 @@
         <td>None</td>
         
         
-        <td class="table-danger
- text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
-  <li>Build: FAIL</li>
-  <li>UTests: None/None</li>
-  <li>STests: None/None</li>
-  <li>ETests: None/None</li>
-  <li>NUOPC: None/None</li>
-  <li>esmpy install: NONE</li>
-  <li>esmpy: None/None</li>
-  <li>Clone Time: 04-11 09:33</li>
-  <li>Build time: None</li>
-  <li>Collect time: 04-11 13:51</li>
-  <li>Phase: test</li>
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
 </ul>">
-<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/ddd87f220a612be81b68f517f0053948605a8e5b/fix_mvapich/intel/2021.13.0-mvapich/g/intelmpi/ifort-2021.13.0" target="_blank">0
-</a>
+
 </td>
         
     
@@ -1362,22 +1358,20 @@
         <td>None</td>
         
         
-        <td class="table-success
-   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
-  <li>Build: PASS</li>
-  <li>UTests: 14204/0</li>
-  <li>STests: 51/0</li>
-  <li>ETests: 80/0</li>
-  <li>NUOPC: 57/0</li>
-  <li>esmpy install: NONE</li>
-  <li>esmpy: None/None</li>
-  <li>Clone Time: 04-11 09:52</li>
-  <li>Build time: 04-11 10:32</li>
-  <li>Collect time: 04-11 15:34</li>
-  <li>Phase: test</li>
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
 </ul>">
-<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/58504e12823a4c57e49285d6f64e2d6c459c3ec7/fix_mvapich/intel/2021.13.0-mvapich/O/mvapich/ifort-2021.13.0" target="_blank">0
-</a>
+
 </td>
         
     
@@ -1393,22 +1387,20 @@
         <td>None</td>
         
         
-        <td class="table-success
-   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
-  <li>Build: PASS</li>
-  <li>UTests: 14204/0</li>
-  <li>STests: 51/0</li>
-  <li>ETests: 80/0</li>
-  <li>NUOPC: 57/0</li>
-  <li>esmpy install: NONE</li>
-  <li>esmpy: None/None</li>
-  <li>Clone Time: 04-11 09:52</li>
-  <li>Build time: 04-11 10:32</li>
-  <li>Collect time: 04-11 15:39</li>
-  <li>Phase: test</li>
+        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: </li>
+  <li>UTests: /</li>
+  <li>STests: /</li>
+  <li>ETests: /</li>
+  <li>NUOPC: /</li>
+  <li>esmpy install: </li>
+  <li>esmpy: /</li>
+  <li>Clone Time: </li>
+  <li>Build time: </li>
+  <li>Collect time: </li>
+  <li>Phase: </li>
 </ul>">
-<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/4efa0a14e4d411603a7c1f74e11593b20b7760dd/fix_mvapich/intel/2021.13.0-mvapich/g/mvapich/ifort-2021.13.0" target="_blank">0
-</a>
+
 </td>
         
     
@@ -1656,20 +1648,22 @@
         <td>None</td>
         
         
-        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
-  <li>Build: </li>
-  <li>UTests: /</li>
-  <li>STests: /</li>
-  <li>ETests: /</li>
-  <li>NUOPC: /</li>
-  <li>esmpy install: </li>
-  <li>esmpy: /</li>
-  <li>Clone Time: </li>
-  <li>Build time: </li>
-  <li>Collect time: </li>
-  <li>Phase: </li>
+        <td class="table-warning
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: None/None</li>
+  <li>STests: None/None</li>
+  <li>ETests: None/None</li>
+  <li>NUOPC: 0/57</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 04-11 12:59</li>
+  <li>Build time: 04-11 13:54</li>
+  <li>Collect time: 04-11 17:56</li>
+  <li>Phase: test</li>
 </ul>">
-
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/a270b114b197d817cfce11b513eed14bbe370532/fix_llvm/llvm/21.0.0git06721/O/mpich/llvm-flang-2025-04-01" target="_blank">57
+</a>
 </td>
         
     
@@ -1685,20 +1679,22 @@
         <td>None</td>
         
         
-        <td class=" text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
-  <li>Build: </li>
-  <li>UTests: /</li>
-  <li>STests: /</li>
-  <li>ETests: /</li>
-  <li>NUOPC: /</li>
-  <li>esmpy install: </li>
-  <li>esmpy: /</li>
-  <li>Clone Time: </li>
-  <li>Build time: </li>
-  <li>Collect time: </li>
-  <li>Phase: </li>
+        <td class="table-warning
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: None/None</li>
+  <li>STests: None/None</li>
+  <li>ETests: None/None</li>
+  <li>NUOPC: 0/57</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 04-11 12:59</li>
+  <li>Build time: 04-11 13:52</li>
+  <li>Collect time: 04-11 17:55</li>
+  <li>Phase: test</li>
 </ul>">
-
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/907312511da646cb9e2b5405b310c3259a4189f0/fix_llvm/llvm/21.0.0git06721/g/mpich/llvm-flang-2025-04-01" target="_blank">57
+</a>
 </td>
         
     
