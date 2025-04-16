@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: gaeaC5/None/gfortran/12.3.0/mpi/8.1.28/g/None</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.9.0b05-24-g2685f48 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Fix srcTermProcessing in NUOPC docs (Daniel Rosen, Tue Apr 15 09:38:22 2025 -0600)</p> 
+    <p><a href="v8.9.0b05-24-g2685f48.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,26 +67,59 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.9.0b05-19-g10359f5</td>
-        <td>develop</td>
-        <td>04-14 03:11</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/jet_Linux_gfortran_13.2.0_openmpi_4.1.6_None_O.html">5</a></td>
+      <td>jet</td>
+      <td>Linux</td>
+      <td>gfortran/13.2.0</td>
+      <td>openmpi/4.1.6</td>
+      <td>O</td>
+      <td>None</td>
+      <td>04-16 01:10</td>
+      <td>04-16 01:29</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/8d3e0ec1af89ba70a2e878d0a1e9d4e0b55fa762/develop/gfortran/12.3.0/g/mpi/8.1.28" target="_blank">8d3e0ec</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/06e1dd9969f748603af799830756fbe1e078d5f6/develop/gfortran/13.2.0/O/openmpi/4.1.6" target="_blank">06e1dd9</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/jet_Linux_gfortran_13.2.0_openmpi_4.1.6_None_g.html">6</a></td>
+      <td>jet</td>
+      <td>Linux</td>
+      <td>gfortran/13.2.0</td>
+      <td>openmpi/4.1.6</td>
+      <td>g</td>
+      <td>None</td>
+      <td>04-16 01:10</td>
+      <td>04-16 01:29</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/0414dbb9fac9f16a0d46c90fd6a5e389b6ee91c7/develop/gfortran/13.2.0/g/openmpi/4.1.6" target="_blank">0414dbb</a></td>
+    </tr>
     
     </tbody>
   </table>
