@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: discover/Linux/intel/2021.13.0-mvapich/intelmpi/ifort-2021.13.0/O/None</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.9.0b05-39-gedfe6e3 (branch: <a href="index.html">feature_internal-state-cleanup</a>)</h3>
+    <p>Access to platform dependent macros now that ESMF_NO_F2018ASSUMEDTYPE might be set version dependent. (Gerhard Theurich, Mon Apr 28 17:01:46 2025 -0700)</p> 
+    <p><a href="v8.9.0b05-39-gedfe6e3.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,26 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.9.0b05-12-g9285fd0</td>
-        <td>fix_mvapich</td>
-        <td>04-11 09:32</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/bighorn_Linux_nag_7.0_mpiuni_None_4.6.1_g.html">70</a></td>
+      <td>bighorn</td>
+      <td>Linux</td>
+      <td>nag/7.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.6.1</td>
+      <td>04-28 18:04</td>
+      <td>04-28 18:19</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12555/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-success
 ">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5b47eefb306e890a689fb77fccfd83e7f532408e/fix_mvapich/intel/2021.13.0-mvapich/O/intelmpi/ifort-2021.13.0" target="_blank">5b47eef</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/71ce9b1e201a3bcd054ee04c7a5d6509ac005009/feature_internal-state-cleanup/nag/7.0/g/mpiuni/None" target="_blank">71ce9b1</a></td>
+    </tr>
     
     </tbody>
   </table>
