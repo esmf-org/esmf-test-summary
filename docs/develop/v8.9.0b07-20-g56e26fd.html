@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: discover/None/intel/2021.13.0-mvapich/mvapich/ifort-2021.13.0/g/None</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.9.0b07-20-g56e26fd (branch: <a href="index.html">develop</a>)</h3>
+    <p>The top level ESMX CMakeLists.txt file should not set custom compiler flags. This leads to unexpected behavior when ESMX is leveraged to build a project that uses CMake. (Gerhard Theurich, Mon May 5 15:48:57 2025 -0700)</p> 
+    <p><a href="v8.9.0b07-20-g56e26fd.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,26 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.8.1</td>
-        <td>patch_8.8.1</td>
-        <td>04-17 22:03</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/bighorn_Linux_gfortran_8.2.0_mpiuni_None_4.6.1_O.html">14</a></td>
+      <td>bighorn</td>
+      <td>Linux</td>
+      <td>gfortran/8.2.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.6.1</td>
+      <td>05-06 10:43</td>
+      <td>05-06 11:00</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-success
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/cfa25ed242ccadf52df896b328835339b7431244/patch_8.8.1/intel/2021.13.0-mvapich/g/mvapich/ifort-2021.13.0" target="_blank">cfa25ed</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/c43e8c7494147501f44e1a6adc1c77cc1729405f/develop/gfortran/8.2.0/O/mpiuni/None" target="_blank">c43e8c7</a></td>
+    </tr>
     
     </tbody>
   </table>
