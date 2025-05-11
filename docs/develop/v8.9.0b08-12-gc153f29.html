@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: derecho/Unicos/intel/2023.2.1-classic/mpiuni/None/g/4.9.2</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.9.0b08-12-gc153f29 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Merge branch 'esmpy_vectorregrid' into develop (Bill Sacks, Sat May 10 11:07:56 2025 -0600)</p> 
+    <p><a href="v8.9.0b08-12-gc153f29.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,68 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.9.0b08-9-gea72ab2</td>
-        <td>develop</td>
-        <td>05-09 01:29</td>
-        <td>05-09 02:47</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/green_Darwin_gfortranclang_12.2.0_14.0.0_openmpi_4.1.4_4.9.3_g.html">18</a></td>
+      <td>green</td>
+      <td>Darwin</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>openmpi/4.1.4</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>05-10 19:18</td>
+      <td>05-10 19:36</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">12558/0</td>
-        <td class="table-success
-">9/0</td>
-        <td class="table-success
-">42/0</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/111718e94e6a9d6608254d872a81b42eb05663cc/develop/intel/2023.2.1-classic/g/mpiuni/None" target="_blank">111718e</a></td>
-    
-      <tr>
-        <td>v8.9.0b08-9-gea72ab2</td>
-        <td>develop</td>
-        <td>05-10 01:30</td>
-        <td>05-10 02:46</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-success
-">12558/0</td>
-        <td class="table-success
-">9/0</td>
-        <td class="table-success
-">42/0</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/739557add36b82a9fc8b0b72b1dbd2e26246a229/develop/intel/2023.2.1-classic/g/mpiuni/None" target="_blank">739557a</a></td>
-    
-      <tr>
-        <td>v8.9.0b08-5-g079ca68</td>
-        <td>develop</td>
-        <td>05-08 01:27</td>
-        <td>05-08 02:50</td>
-        <td class="table-success
-">PASS</td>
-        <td class="table-success
-">12558/0</td>
-        <td class="table-success
-">9/0</td>
-        <td class="table-success
-">42/0</td>
-        <td class="table-success
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e3a7ba61226b20c0c713494217f6110dfaba8774/develop/intel/2023.2.1-classic/g/mpiuni/None" target="_blank">e3a7ba6</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/1769b70b42eecb94f70933da03b127fe4b765a22/develop/gfortranclang/12.2.0_14.0.0/g/openmpi/4.1.4" target="_blank">1769b70</a></td>
+    </tr>
     
     </tbody>
   </table>
