@@ -22,32 +22,38 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: grits/Darwin/gfortranclang/12.2.0_14.0.0/mpiuni/None/g/4.9.3</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v8.9.0b13-1-gca4c860 (branch: <a href="index.html">esmpy_enable_withaux_test</a>)</h3>
+    <p>Restore test_field_regrid_file_withaux (Bill Sacks, Wed Jul 9 16:44:07 2025 -0600)</p> 
+    <p><a href="v8.9.0b13-1-gca4c860.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,26 +67,32 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v8.9.0b12</td>
-        <td>develop</td>
-        <td>06-23 10:23</td>
-        <td>06-23 11:46</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/green_Darwin_gfortranclang_12.2.0_14.0.0_openmpi_4.1.4_4.9.3_g.html">18</a></td>
+      <td>green</td>
+      <td>Darwin</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>openmpi/4.1.4</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>07-09 16:47</td>
+      <td>07-09 16:58</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">12562/0</td>
-        <td class="table-success
-">9/0</td>
-        <td class="table-success
-">43/0</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/ba5685b8cbf5e6d392f5014e707d938a40918254/develop/gfortranclang/12.2.0_14.0.0/g/mpiuni/None" target="_blank">ba5685b</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/4bac43687ab5b9d42acf41a5a94d9f6c7a0392f3/esmpy_enable_withaux_test/gfortranclang/12.2.0_14.0.0/g/openmpi/4.1.4" target="_blank">4bac436</a></td>
+    </tr>
     
     </tbody>
   </table>
