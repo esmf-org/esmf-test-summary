@@ -1,7 +1,8 @@
-## sumAmarizer.yaml
-## This file allows excluding specific ESMF hashes and branches and entire machines from 
-## the generated test summarization tables.  A * can be used as a wildcard (matches any number of
-## characters) in any of the entries.
+## summarizer.yaml
+## This file allows excluding specific ESMF hashes and branches and entire
+## machines from the generated test summarization tables.
+## A * can be used as a wildcard (matches any number of characters) in any
+## of the entries.
 
 ## !!! anything in include takes priority over exclude !!!
 
