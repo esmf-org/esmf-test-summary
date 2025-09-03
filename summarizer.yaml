@@ -12,7 +12,7 @@ include:
 #  esmf_branch:
 #    - fix_profile_summary_at_scale
 
-#exclude:
+exclude:
 #  artifact_hash:
 #    - d3e38ad3cda77798eb96d2c5fbd26167d6066c87
 #  esmf_hash:
