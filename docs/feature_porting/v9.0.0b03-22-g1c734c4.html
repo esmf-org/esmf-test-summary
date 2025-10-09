@@ -1,0 +1,589 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+
+    
+    <script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+<h3 class="mb-2">ESMF Hash: v9.0.0b03-22-g1c734c4 (branch: <a href="index.html">feature_porting</a>)</h3>
+    <p>Supply flags for a larger range of CMAKE_Fortran_COMPILER_ID options when building ESMX. (Gerhard Theurich, Thu Oct 9 18:09:43 2025 -0400)</p> 
+    <p><a href="v9.0.0b03-22-g1c734c4.md">Markdown</a>   <a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover">
+    <thead class="table-light">
+    <tr>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Arch</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
+      <th>Build Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>esmpy Install</th>
+      <th>esmpy Tests</th>
+      <th>Artifacts</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_aocc_5.0.0_mpi_8.1.32_4.9.0_O.html">141</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>aocc/5.0.0</td>
+      <td>mpi/8.1.32</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>10-09 18:23</td>
+      <td>10-09 19:07</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/8f989a717f0a4e51cd7e0f00837a1bfd4644225b/feature_porting/aocc/5.0.0/O/mpi/8.1.32" target="_blank">8f989a7</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_aocc_5.0.0_mpiuni_None_4.9.0_O.html">144</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>aocc/5.0.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>10-09 18:21</td>
+      <td>10-09 19:06</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/a0858edb5b2900e19cc2d5f7e441c1aebc013754/feature_porting/aocc/5.0.0/O/mpiuni/None" target="_blank">a0858ed</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_gfortran_12.3.0_mpi_8.1.28_4.9.0_g.html">78</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>gfortran/12.3.0</td>
+      <td>mpi/8.1.28</td>
+      <td>g</td>
+      <td>4.9.0</td>
+      <td>10-09 18:31</td>
+      <td>10-09 18:58</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/cddc95c05b23c4dca199edb43db4e95df01c317a/feature_porting/gfortran/12.3.0/g/mpi/8.1.28" target="_blank">cddc95c</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_gfortran_12.3.0_mpi_8.1.28_4.9.0_O.html">86</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>gfortran/12.3.0</td>
+      <td>mpi/8.1.28</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>10-09 18:30</td>
+      <td>10-09 18:58</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/532e9b87603fc84e3b06aae9d1f7c0e1cf9d3dd2/feature_porting/gfortran/12.3.0/O/mpi/8.1.28" target="_blank">532e9b8</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_gfortran_12.3.0_mpiuni_None_4.9.0_g.html">85</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>gfortran/12.3.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.9.0</td>
+      <td>10-09 18:29</td>
+      <td>10-09 18:58</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e9804b6066ae15b8627ae13b59fd94812b469c4d/feature_porting/gfortran/12.3.0/g/mpiuni/None" target="_blank">e9804b6</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_gfortran_12.3.0_mpiuni_None_4.9.0_O.html">88</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>gfortran/12.3.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>10-09 18:29</td>
+      <td>10-09 18:58</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/9dafb1ae68a102c074cdf389e74985eb730440af/feature_porting/gfortran/12.3.0/O/mpiuni/None" target="_blank">9dafb1a</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_intel_2023.2.0_mpi_8.1.28_4.9.0_g.html">76</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0</td>
+      <td>mpi/8.1.28</td>
+      <td>g</td>
+      <td>4.9.0</td>
+      <td>10-09 18:38</td>
+      <td>10-09 19:00</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/f1343f1c127d1e9b37cecb6adb37afbcbc05a737/feature_porting/intel/2023.2.0/g/mpi/8.1.28" target="_blank">f1343f1</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_intel_2023.2.0_mpi_8.1.28_4.9.0_O.html">82</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0</td>
+      <td>mpi/8.1.28</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>10-09 18:37</td>
+      <td>10-09 19:01</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d5eb650c5808420fa994413f3805bfb7ccb0f231/feature_porting/intel/2023.2.0/O/mpi/8.1.28" target="_blank">d5eb650</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_intel_2023.2.0_mpiuni_None_4.9.0_g.html">80</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.9.0</td>
+      <td>10-09 18:36</td>
+      <td>10-09 18:59</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/3e4985515c5869be1660380280fbd983f45f1815/feature_porting/intel/2023.2.0/g/mpiuni/None" target="_blank">3e49855</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_intel_2023.2.0_mpiuni_None_4.9.0_O.html">87</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>10-09 18:35</td>
+      <td>10-09 19:01</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/fdafd4a23aa941e2962257b9e3d2113b2d2e685b/feature_porting/intel/2023.2.0/O/mpiuni/None" target="_blank">fdafd4a</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_intel_2023.2.0-classic_mpi_8.1.28_4.9.0_O.html">73</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0-classic</td>
+      <td>mpi/8.1.28</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>10-09 18:33</td>
+      <td>10-09 19:04</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/69618e4c627ffb12f4d4cda8105533e32457b4a6/feature_porting/intel/2023.2.0-classic/O/mpi/8.1.28" target="_blank">69618e4</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_intel_2023.2.0-classic_mpi_8.1.28_4.9.0_g.html">74</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0-classic</td>
+      <td>mpi/8.1.28</td>
+      <td>g</td>
+      <td>4.9.0</td>
+      <td>10-09 18:34</td>
+      <td>10-09 19:04</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/533f48a2503551864021b485451b925c5a8827cd/feature_porting/intel/2023.2.0-classic/g/mpi/8.1.28" target="_blank">533f48a</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_intel_2023.2.0-classic_mpiuni_None_4.9.0_O.html">83</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0-classic</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>10-09 18:32</td>
+      <td>10-09 19:03</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7920c4f1a6cbb93a4faf7b6814882513a31c97ee/feature_porting/intel/2023.2.0-classic/O/mpiuni/None" target="_blank">7920c4f</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_intel_2023.2.0-classic_mpiuni_None_4.9.0_g.html">84</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0-classic</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.9.0</td>
+      <td>10-09 18:33</td>
+      <td>10-09 19:03</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/f30bf7ee2af9c13c52986e8877603db79e570461/feature_porting/intel/2023.2.0-classic/g/mpiuni/None" target="_blank">f30bf7e</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_intel_2025.0.0_mpi_8.1.32_4.9.0_O.html">75</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2025.0.0</td>
+      <td>mpi/8.1.32</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>10-09 18:40</td>
+      <td>10-09 19:02</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d58d06557a61547d33f9a27535974532964793ba/feature_porting/intel/2025.0.0/O/mpi/8.1.32" target="_blank">d58d065</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_intel_2025.0.0_mpi_8.1.32_4.9.0_g.html">79</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2025.0.0</td>
+      <td>mpi/8.1.32</td>
+      <td>g</td>
+      <td>4.9.0</td>
+      <td>10-09 18:41</td>
+      <td>10-09 19:01</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e0a4ea19b5316246ddd7063a7d04b907d02eed91/feature_porting/intel/2025.0.0/g/mpi/8.1.32" target="_blank">e0a4ea1</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_intel_2025.0.0_mpiuni_None_4.9.0_O.html">77</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2025.0.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.0</td>
+      <td>10-09 18:39</td>
+      <td>10-09 19:01</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/717154a18da4dd6f3df53e28880ec8aa797e9330/feature_porting/intel/2025.0.0/O/mpiuni/None" target="_blank">717154a</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/gaeaC5_Unicos_x86_64_intel_2025.0.0_mpiuni_None_4.9.0_g.html">81</a></td>
+      <td>gaeaC5</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2025.0.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.9.0</td>
+      <td>10-09 18:39</td>
+      <td>10-09 19:00</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/43b9f25d09e0c673d10bdb97823fefabbc0c2df8/feature_porting/intel/2025.0.0/g/mpiuni/None" target="_blank">43b9f25</a></td>
+    </tr>
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2025-10-09 17:11:32 MDT.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
