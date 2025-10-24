@@ -22,32 +22,39 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: gaeaC5/Unicos/x86_64/cce/20.0.0/mpiuni/None/g/None</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v9.0.0b04-13-gc8ecfef (branch: <a href="index.html">develop</a>)</h3>
+    <p>Change title to better match RWG one. (Robert Oehmke, Thu Oct 23 11:43:34 2025 -0600)</p> 
+    <p><a href="v9.0.0b04-13-gc8ecfef.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Arch</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,26 +68,61 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v9.0.0b03-17-g73a3846</td>
-        <td>feature_porting</td>
-        <td>10-07 20:47</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_gfortranclang_14.2.0_17.0.0_openmpi_jeyhxfm_4.9.2_O.html">57</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>gfortranclang/14.2.0_17.0.0</td>
+      <td>openmpi/jeyhxfm</td>
+      <td>O</td>
+      <td>4.9.2</td>
+      <td>10-23 19:00</td>
+      <td>10-23 19:10</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14331/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">63/0</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">494/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/128f9ceed06efdaf53b815b75dc856c37e49aaf1/develop/gfortranclang/14.2.0_17.0.0/O/openmpi/jeyhxfm" target="_blank">128f9ce</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/green_Darwin_arm64_gfortranclang_12.2.0_14.0.0_openmpi_4.1.4_4.9.3_g.html">90</a></td>
+      <td>green</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>openmpi/4.1.4</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>10-23 19:00</td>
+      <td>10-23 19:19</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/a2b88647970b6b5b7614527c7f1e09cbc932d045/feature_porting/cce/20.0.0/g/mpiuni/None" target="_blank">a2b8864</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/3f42afeb1ed116613e9d8aef66fa266260ac90da/develop/gfortranclang/12.2.0_14.0.0/g/openmpi/4.1.4" target="_blank">3f42afe</a></td>
+    </tr>
     
     </tbody>
   </table>
