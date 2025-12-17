@@ -23,14 +23,8 @@
     
     <script>
         $(document).ready(function () {
-            $('#branches').DataTable({
+            $('#results').DataTable({
                 paging: false
-            });
-        });
-        $(document).ready(function () {
-            $('#combos').DataTable({
-                paging: false,
-                order: [[1, 'asc'], [3, 'asc'], [4, 'asc'], [5, 'asc'], [6, 'asc']],
             });
         });
     </script>
@@ -40,59 +34,66 @@
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
+<h3 class="mb-2">ESMF Hash: v9.0.0b07-10-g65eb8b6 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Merge pull request #508 from esmf-org/fix_hconfigisdef (oehmke, Tue Dec 16 11:49:37 2025 -0700)</p> 
+    <p><a href="v9.0.0b07-10-g65eb8b6.md">Markdown</a>   <a href="../index.html">Top</a></p>
+
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="branches" class="table table-bordered table-hover">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th class="text-center">Tested ESMF Branches</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-    <tr>
-      <td><a href="develop/index.html">develop</a></td>
-    </tr>
-    
-    </tbody>
-  </table>
-  <br/>
-  <table id="combos"  class="table table-bordered table-hover">
-    <thead class="table-light">
-    <tr>
-      <th class="text-center" colspan="10">Combinations</th>
-    </tr>
-    <tr>
-      <th>No.</th>
+      <th>Combo No.</th>
       <th>Machine</th>
       <th>OS</th>
       <th>Arch</th>
       <th>Compiler</th>
-      <th>Version</th>
       <th>MPI</th>
-      <th>Version</th>
       <th>BOPT</th>
       <th>NetCDF</th>
-      <th>Last Reported</th>
+      <th>Cloned Time</th>
+      <th>Build Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>esmpy Install</th>
+      <th>esmpy Tests</th>
+      <th>Artifacts</th>
     </tr>
     </thead>
     <tbody>
     
     <tr>
-      <td><a href="combos/grits_Darwin_arm64_gfortranclang_12.2.0_14.0.0_mpich_4.1.1_4.9.3_O.html">1</a></td>
+      <td><a href="../combos/grits_Darwin_arm64_gfortranclang_12.2.0_14.0.0_mpich_4.1.1_4.9.3_O.html">1</a></td>
       <td>grits</td>
       <td>Darwin</td>
       <td>arm64</td>
-      <td>gfortranclang</td>
-      <td>12.2.0_14.0.0</td>
-      <td>mpich</td>
-      <td>4.1.1</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>mpich/4.1.1</td>
       <td>O</td>
       <td>4.9.3</td>
-      <td>12-17 01:15</td>
+      <td>12-16 18:00</td>
+      <td>12-16 18:15</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/1f771993d8476961f9e2023e2f6638192449aac6/develop/gfortranclang/12.2.0_14.0.0/O/mpich/4.1.1" target="_blank">1f77199</a></td>
     </tr>
     
     </tbody>
