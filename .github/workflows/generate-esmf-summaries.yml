@@ -24,6 +24,9 @@ on:
 # Disallow concurrent runs of the summarizer
 concurrency: esmf-summarizer
 
+permissions:
+  contents: write
+
 jobs:
   build:
 
@@ -109,10 +112,14 @@ jobs:
         cp -R $GITHUB_WORKSPACE/htmlout/* $GITHUB_WORKSPACE/esmf-test-summary/docs
     
     - name: Commit and push HTML
-      uses: actions-js/push@master
-      with:
-        directory: ${{ github.workspace }}/esmf-test-summary
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        CDATE=$(date +'%y-%m-%dT%H:%M:%SZ')
+        cd $GITHUB_WORKSPACE/esmf-test-summary
+        git config user.name "esmf-actions[bot]"
+        git config user.email "esmf_support@ucar.edu"
+        git add -A
+        git commit -m "Publish ESMF Test Results Summary ${CDATE}"
+        git push origin
         
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
