@@ -22,32 +22,39 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: perlmutter/Unicos/x86_64/intel/2023.1.0-oneAPI/mpiuni/None/O/4.9.0</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v9.0.0b10 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Add workflow to automate copyright maintenance (#522) (Daniel Rosen, Tue Feb 10 21:23:23 2026 -0700)</p> 
+    <p><a href="v9.0.0b10.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Arch</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,47 +68,61 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v9.0.0b08</td>
-        <td>develop</td>
-        <td>12-22 23:46</td>
-        <td>12-23 08:44</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/discover_Linux_x86_64_llvm_22.1.0-rc3_mpich_llvm-flang-22.1.0-rc3_None_O.html">141</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>llvm/22.1.0-rc3</td>
+      <td>mpich/llvm-flang-22.1.0-rc3</td>
+      <td>O</td>
+      <td>None</td>
+      <td>02-11 14:39</td>
+      <td>02-11 15:14</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2a52cfba338208fd7edf39f68785eb4e97c9bf61/develop/intel/2023.1.0-oneAPI/O/mpiuni/None" target="_blank">2a52cfb</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/cc7b7220e6ba78d7893ac347bfd7c00db2bf04a2/develop/llvm/22.1.0-rc3/O/mpich/llvm-flang-22.1.0-rc3" target="_blank">cc7b722</a></td>
+    </tr>
     
-      <tr>
-        <td>v9.0.0b08</td>
-        <td>develop</td>
-        <td>12-29 23:42</td>
-        <td>12-30 04:37</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/discover_Linux_x86_64_llvm_22.1.0-rc3_mpich_llvm-flang-22.1.0-rc3_None_g.html">142</a></td>
+      <td>discover</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>llvm/22.1.0-rc3</td>
+      <td>mpich/llvm-flang-22.1.0-rc3</td>
+      <td>g</td>
+      <td>None</td>
+      <td>02-11 14:49</td>
+      <td>02-11 15:13</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">12664/0</td>
-        <td class="table-success
-">9/0</td>
-        <td class="table-success
-">43/0</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e47ad9d16eb478cf55e110724fbf3dc5da03c531/develop/intel/2023.1.0-oneAPI/O/mpiuni/None" target="_blank">e47ad9d</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/4e86ecd46a7561e965c209cdac6da50cda0846c2/develop/llvm/22.1.0-rc3/g/mpich/llvm-flang-22.1.0-rc3" target="_blank">4e86ecd</a></td>
+    </tr>
     
     </tbody>
   </table>
