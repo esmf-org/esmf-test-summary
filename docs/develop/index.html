@@ -1,0 +1,216 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+
+    
+    <script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false,
+                order: [[1, 'asc'], [3, 'asc'], [4, 'asc'], [5, 'asc'], [6, 'asc']],
+            });
+            $('[data-bs-toggle="popover"]').popover();
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+    <h3 class="mb-2">ESMF Branch: develop</h3><p><a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover text-nowrap">
+    <thead class="table-light">
+    <tr>
+      <th colspan="9" class="text-center">Combination</th>
+      <th colspan="1" class="text-center">ESMF Tested Hash</th>
+    </tr>
+    <tr>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Arch</th>
+      <th>Compiler</th>
+      <th>Version</th>
+      <th>MPI</th>
+      <th>Version</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      
+      <th>
+        <a href="v9.0.0b11-21-g73c0487.html"data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content=" Switch to using Fortran linker for linking Fortran main programs. (Gerhard Theurich, Wed Apr 29 17:05:35 2026 -0700)"
+             >v9.0.0b11-21-g73c0487
+        </a>
+      </th>
+      
+    </tr>
+    </thead>
+    <tbody>
+    
+      <tr>
+        <td><a href="../combos/fairy_Darwin_arm64_nagclang_7.2.44_17.0.0_mpiuni_None_4.9.3_O.html">2</a></td>
+        <td>fairy</td>
+        <td>Darwin</td>
+        <td>arm64</td>
+        <td>nagclang</td>
+        <td>7.2.44_17.0.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>O</td>
+        <td>4.9.3</td>
+        
+        
+        <td class="table-success
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 12665/0</li>
+  <li>STests: 9/0</li>
+  <li>ETests: 43/0</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: PASS</li>
+  <li>esmpy: 193/0</li>
+  <li>Clone Time: 05-04 19:00</li>
+  <li>Build time: 05-04 19:09</li>
+  <li>Collect time: 05-05 01:26</li>
+  <li>Phase: test</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5307d4bf8a9ed2e1cef75ee91abb6b4af5428309/develop/nagclang/7.2.44_17.0.0/O/mpiuni/None" target="_blank">0
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/fairy_Darwin_arm64_nagclang_7.2.44_17.0.0_mpiuni_None_4.9.3_g.html">1</a></td>
+        <td>fairy</td>
+        <td>Darwin</td>
+        <td>arm64</td>
+        <td>nagclang</td>
+        <td>7.2.44_17.0.0</td>
+        <td>mpiuni</td>
+        <td>None</td>
+        <td>g</td>
+        <td>4.9.3</td>
+        
+        
+        <td class="table-primary
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: None/None</li>
+  <li>STests: None/None</li>
+  <li>ETests: None/None</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 05-04 19:00</li>
+  <li>Build time: 05-04 19:32</li>
+  <li>Collect time: 05-05 01:33</li>
+  <li>Phase: build</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/0768d30ce93a9840a09d2c095dec6dd2d49a0ccd/develop/nagclang/7.2.44_17.0.0/g/mpiuni/None" target="_blank">?
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/grits_Darwin_arm64_gfortranclang_12.2.0_14.0.0_mpich_4.1.1_4.10.0_O.html">4</a></td>
+        <td>grits</td>
+        <td>Darwin</td>
+        <td>arm64</td>
+        <td>gfortranclang</td>
+        <td>12.2.0_14.0.0</td>
+        <td>mpich</td>
+        <td>4.1.1</td>
+        <td>O</td>
+        <td>4.10.0</td>
+        
+        
+        <td class="table-warning
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: 14333/3</li>
+  <li>STests: 51/0</li>
+  <li>ETests: 81/0</li>
+  <li>NUOPC: 63/0</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 05-04 18:28</li>
+  <li>Build time: 05-04 18:45</li>
+  <li>Collect time: 05-05 01:09</li>
+  <li>Phase: test</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/9f461a6a518f635f0940a30abe896621432330f4/develop/gfortranclang/12.2.0_14.0.0/O/mpich/4.1.1" target="_blank">3
+</a>
+</td>
+        
+    
+      <tr>
+        <td><a href="../combos/grits_Darwin_arm64_gfortranclang_12.2.0_14.0.0_mpich_4.1.1_4.10.0_g.html">3</a></td>
+        <td>grits</td>
+        <td>Darwin</td>
+        <td>arm64</td>
+        <td>gfortranclang</td>
+        <td>12.2.0_14.0.0</td>
+        <td>mpich</td>
+        <td>4.1.1</td>
+        <td>g</td>
+        <td>4.10.0</td>
+        
+        
+        <td class="table-primary
+   text-center" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover" data-bs-placement="auto" data-bs-content="<ul>
+  <li>Build: PASS</li>
+  <li>UTests: None/None</li>
+  <li>STests: None/None</li>
+  <li>ETests: None/None</li>
+  <li>NUOPC: None/None</li>
+  <li>esmpy install: NONE</li>
+  <li>esmpy: None/None</li>
+  <li>Clone Time: 05-04 18:31</li>
+  <li>Build time: 05-04 19:17</li>
+  <li>Collect time: 05-05 01:17</li>
+  <li>Phase: build</li>
+</ul>">
+<a href="https://github.com/esmf-org/esmf-test-artifacts/tree/b6900e7f7f15bd8ddee65f810ddb23f9a9279076/develop/gfortranclang/12.2.0_14.0.0/g/mpich/4.1.1" target="_blank">?
+</a>
+</td>
+        
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2026-05-04 19:36:56 MDT.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
