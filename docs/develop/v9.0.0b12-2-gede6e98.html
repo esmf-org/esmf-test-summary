@@ -22,32 +22,39 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: hera/Linux/x86_64/intel/2023.2.0-oneAPI/intelmpi/2023.2.0/g/4.7.0</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v9.0.0b12-2-gede6e98 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Fix ESMF_MeshWriteVTK() so it also outputs data for triangles resulting from splitting >4 sided elements. (Robert Oehmke, Thu May 7 11:11:56 2026 -0600)</p> 
+    <p><a href="v9.0.0b12-2-gede6e98.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Arch</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,68 +68,61 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v9.0.0b12</td>
-        <td>develop</td>
-        <td>05-07 07:12</td>
-        <td>05-07 07:38</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nagclang_7.2.44_17.0.0_mpiuni_None_4.9.3_g.html">1</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nagclang/7.2.44_17.0.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>05-07 19:01</td>
+      <td>05-07 19:33</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">14338/0</td>
-        <td class="table-success
-">51/0</td>
-        <td class="table-success
-">81/0</td>
-        <td class="table-success
-">63/0</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d57e9423aa2b524b2c47a63f70843ed51eae6b56/develop/intel/2023.2.0-oneAPI/g/intelmpi/2023.2.0" target="_blank">d57e942</a></td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/64e86c0611204576dc85632c078594caa2af96f6/develop/nagclang/7.2.44_17.0.0/g/mpiuni/None" target="_blank">64e86c0</a></td>
+    </tr>
     
-      <tr>
-        <td>v9.0.0b11-30-g0ae3009</td>
-        <td>develop</td>
-        <td>05-05 07:08</td>
-        <td>05-05 07:36</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nagclang_7.2.44_17.0.0_mpiuni_None_4.9.3_O.html">2</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nagclang/7.2.44_17.0.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.3</td>
+      <td>05-07 19:01</td>
+      <td>05-07 19:10</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-danger
+      <td class="table-success
+">12668/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
 ">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/65ceac48a13bb05f853c2af05b9d3f671c82528c/develop/intel/2023.2.0-oneAPI/g/intelmpi/2023.2.0" target="_blank">65ceac4</a></td>
-    
-      <tr>
-        <td>v9.0.0b11-30-g0ae3009</td>
-        <td>develop</td>
-        <td>05-06 07:11</td>
-        <td>05-06 07:37</td>
-        <td class="table-success
+      <td class="table-success
 ">PASS</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/486a669257a9fd528ca9e97c141eb0c8ea1dd5b4/develop/intel/2023.2.0-oneAPI/g/intelmpi/2023.2.0" target="_blank">486a669</a></td>
+      <td class="table-success
+">193/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/1a5874b1830ebabb12612bfe4205135bc4a639fb/develop/nagclang/7.2.44_17.0.0/O/mpiuni/None" target="_blank">1a5874b</a></td>
+    </tr>
     
     </tbody>
   </table>
