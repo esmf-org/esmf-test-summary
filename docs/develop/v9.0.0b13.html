@@ -22,32 +22,39 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: grits/Darwin/arm64/gfortranclang/12.2.0_14.0.0/mpiuni/None/O/4.10.0</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v9.0.0b13 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Fix ESMF_MeshWriteVTK() so it also outputs data for triangles resulting from splitting >4 sided elements. (Robert Oehmke, Thu May 7 11:11:56 2026 -0600)</p> 
+    <p><a href="v9.0.0b13.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Arch</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,47 +68,61 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v9.0.0b12</td>
-        <td>develop</td>
-        <td>05-07 10:12</td>
-        <td>05-07 11:47</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nagclang_7.2.44_17.0.0_mpiuni_None_4.9.3_g.html">1</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nagclang/7.2.44_17.0.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>05-08 19:00</td>
+      <td>05-08 19:32</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">12667/0</td>
-        <td class="table-success
-">9/0</td>
-        <td class="table-success
-">43/0</td>
-        <td class="table-success
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/8877a30d8e5e812e3f00de3176e935410773ae02/develop/gfortranclang/12.2.0_14.0.0/O/mpiuni/None" target="_blank">8877a30</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2f14219a2bd37488c965c40250ed793fb609f371/develop/nagclang/7.2.44_17.0.0/g/mpiuni/None" target="_blank">2f14219</a></td>
+    </tr>
     
-      <tr>
-        <td>v9.0.0b11-21-g73c0487</td>
-        <td>develop</td>
-        <td>05-04 18:33</td>
-        <td>05-04 19:51</td>
-        <td class="table-success
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nagclang_7.2.44_17.0.0_mpiuni_None_4.9.3_O.html">2</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nagclang/7.2.44_17.0.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.3</td>
+      <td>05-08 19:00</td>
+      <td>05-08 19:09</td>
+      <td class="table-success
 ">PASS</td>
-        <td class="table-success
-">12665/0</td>
-        <td class="table-success
+      <td class="table-success
+">12668/0</td>
+      <td class="table-success
 ">9/0</td>
-        <td class="table-success
+      <td class="table-success
 ">43/0</td>
-        <td class="table-success
+      <td class="table-success
 ">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/f3e5d09ec4c72e00802426088776b0a1a9a62b3a/develop/gfortranclang/12.2.0_14.0.0/O/mpiuni/None" target="_blank">f3e5d09</a></td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">193/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/4f68d2a39dd7db048946af427d20061ef2c6e31f/develop/nagclang/7.2.44_17.0.0/O/mpiuni/None" target="_blank">4f68d2a</a></td>
+    </tr>
     
     </tbody>
   </table>
