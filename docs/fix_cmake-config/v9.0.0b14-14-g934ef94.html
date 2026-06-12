@@ -34,9 +34,9 @@
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">ESMF Hash: v9.0.0b14-11-g1c9a7e9 (branch: <a href="index.html">fix_cmake-config</a>)</h3>
-    <p>Address issue where ESMF configuration might need to explicitly link against object file(s) provided by compiler for cross-langage linking, but will confuse CMake. E.g. NAG. Do not touch other linker flags, preserve order. (Gerhard Theurich, Fri Jun 12 10:37:05 2026 -0400)</p> 
-    <p><a href="v9.0.0b14-11-g1c9a7e9.md">Markdown</a>   <a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v9.0.0b14-14-g934ef94 (branch: <a href="index.html">fix_cmake-config</a>)</h3>
+    <p>Correctly consider .dylib shared library suffix for Darwin. (Gerhard Theurich, Fri Jun 12 15:00:40 2026 -0700)</p> 
+    <p><a href="v9.0.0b14-14-g934ef94.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
@@ -69,16 +69,16 @@
     <tbody>
     
     <tr>
-      <td><a href="../combos/discover_Linux_x86_64_llvm_22.1.0_mpich_llvm-flang-22.1.0_None_g.html">99</a></td>
-      <td>discover</td>
-      <td>Linux</td>
-      <td>x86_64</td>
-      <td>llvm/22.1.0</td>
-      <td>mpich/llvm-flang-22.1.0</td>
+      <td><a href="../combos/fairy_Darwin_arm64_nagclang_7.2.44_17.0.0_openmpi_fjdj7gt_4.9.3_g.html">6</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nagclang/7.2.44_17.0.0</td>
+      <td>openmpi/fjdj7gt</td>
       <td>g</td>
-      <td>None</td>
-      <td>06-12 10:40</td>
-      <td>06-12 11:05</td>
+      <td>4.9.3</td>
+      <td>06-12 16:05</td>
+      <td>06-12 16:13</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -87,41 +87,13 @@
 ">51/0</td>
       <td class="table-success
 ">81/0</td>
-      <td class="table-danger
-">0/0</td>
+      <td class="table-success
+">63/0</td>
       <td class="table-danger
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/34dfd850610ffc32de8a9e6fb351f6350d61f329/fix_cmake-config/llvm/22.1.0/g/mpich/llvm-flang-22.1.0" target="_blank">34dfd85</a></td>
-    </tr>
-    
-    <tr>
-      <td><a href="../combos/discover_Linux_x86_64_nag_7.2.28_openmpi_nag_7.2.7228-gcc_12.3.0_4.9.2_g.html">100</a></td>
-      <td>discover</td>
-      <td>Linux</td>
-      <td>x86_64</td>
-      <td>nag/7.2.28</td>
-      <td>openmpi/nag_7.2.7228-gcc_12.3.0</td>
-      <td>g</td>
-      <td>4.9.2</td>
-      <td>06-12 10:40</td>
-      <td>06-12 10:55</td>
-      <td class="table-success
-">PASS</td>
-      <td class="table-success
-">14340/0</td>
-      <td class="table-success
-">51/0</td>
-      <td class="table-success
-">81/0</td>
-      <td class="table-danger
-">62/1</td>
-      <td class="table-danger
-">NONE</td>
-      <td class="table-danger
-">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7d59a6a566bfe2d6c4a81e48038077960142e028/fix_cmake-config/nag/7.2.28/g/openmpi/nag_7.2.7228-gcc_12.3.0" target="_blank">7d59a6a</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5280a3f4d49474d9fa00680e4f1c80613b4335cd/fix_cmake-config/nagclang/7.2.44_17.0.0/g/openmpi/fjdj7gt" target="_blank">5280a3f</a></td>
     </tr>
     
     </tbody>
