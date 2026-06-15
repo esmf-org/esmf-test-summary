@@ -22,32 +22,39 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: gaeaC5/None/None/aocc/5.0.0/mpi/8.1.32/g/None</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v9.0.0b15-5-gdf5d230 (branch: <a href="index.html">feature_darwin-work</a>)</h3>
+    <p>Explicitly link against GNU stdc++ when using nagfor as F90 linker front-end. (Gerhard Theurich, Mon Jun 15 13:56:27 2026 -0600)</p> 
+    <p><a href="v9.0.0b15-5-gdf5d230.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Arch</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,26 +68,33 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v9.0.0b14-1-gf183dd1</td>
-        <td>develop</td>
-        <td>06-06 03:08</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nag_7.2.44_mpiuni_None_4.9.3_g.html">124</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nag/7.2.44</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>06-15 13:58</td>
+      <td>06-15 14:05</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-success
 ">None/None</td>
-        <td class="table-danger
+      <td class="table-danger
 ">NONE</td>
-        <td class="table-danger
+      <td class="table-danger
 ">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d425761cb52c7841593f12f35f5bc71dabd89c92/develop/aocc/5.0.0/g/mpi/8.1.32" target="_blank">d425761</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/31a4f1cad2eddf0a80daa700f058f0e856bf9c89/feature_darwin-work/nag/7.2.44/g/mpiuni/None" target="_blank">31a4f1c</a></td>
+    </tr>
     
     </tbody>
   </table>
