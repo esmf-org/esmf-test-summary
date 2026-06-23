@@ -22,39 +22,32 @@
 
     
     <script>
-        $(document).ready(function () {
-            $('#results').DataTable({
-                paging: false
-            });
-        });
-    </script>
+      $(document).ready(function () {
+          $('#results').DataTable({
+              paging: false
+          });
+          $('[data-bs-toggle="popover"]').popover();
+      });
+  </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">ESMF Hash: v9.0.0b14-11-g1c9a7e9 (branch: <a href="index.html">fix_cmake-config</a>)</h3>
-    
-    <p><a href="v9.0.0b14-11-g1c9a7e9.md">Markdown</a>   <a href="../index.html">Top</a></p>
+<h3 class="mb-2">Combination: alderaan/Darwin/arm64/llvm/22.1/openmpi/5.0.10/O/None</h3><p><a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover">
+  <table id="results" class="table table-bordered table-hover text-nowrap">
     <thead class="table-light">
     <tr>
-      <th>Combo No.</th>
-      <th>Machine</th>
-      <th>OS</th>
-      <th>Arch</th>
-      <th>Compiler</th>
-      <th>MPI</th>
-      <th>BOPT</th>
-      <th>NetCDF</th>
-      <th>Cloned Time</th>
+      <th>ESMF Hash</th>
+      <th>ESMF Branch</th>
+      <th>Clone Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -68,61 +61,26 @@
     </thead>
     <tbody>
     
-    <tr>
-      <td><a href="../combos/discover_Linux_x86_64_llvm_22.1.0_mpich_llvm-flang-22.1.0_None_g.html">99</a></td>
-      <td>discover</td>
-      <td>Linux</td>
-      <td>x86_64</td>
-      <td>llvm/22.1.0</td>
-      <td>mpich/llvm-flang-22.1.0</td>
-      <td>g</td>
-      <td>None</td>
-      <td>06-12 10:40</td>
-      <td>06-12 11:05</td>
-      <td class="table-success
-">PASS</td>
-      <td class="table-success
-">14340/0</td>
-      <td class="table-success
-">51/0</td>
-      <td class="table-success
-">81/0</td>
-      <td class="table-danger
-">0/0</td>
-      <td class="table-danger
-">NONE</td>
-      <td class="table-danger
+      <tr>
+        <td>v9.0.0b15-6-g272b638</td>
+        <td>feature_darwin-work</td>
+        <td>06-23 10:36</td>
+        <td>None</td>
+        <td class="table-danger
+">FAIL</td>
+        <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/34dfd850610ffc32de8a9e6fb351f6350d61f329/fix_cmake-config/llvm/22.1.0/g/mpich/llvm-flang-22.1.0" target="_blank">34dfd85</a></td>
-    </tr>
-    
-    <tr>
-      <td><a href="../combos/discover_Linux_x86_64_nag_7.2.28_openmpi_nag_7.2.7228-gcc_12.3.0_4.9.2_g.html">100</a></td>
-      <td>discover</td>
-      <td>Linux</td>
-      <td>x86_64</td>
-      <td>nag/7.2.28</td>
-      <td>openmpi/nag_7.2.7228-gcc_12.3.0</td>
-      <td>g</td>
-      <td>4.9.2</td>
-      <td>06-12 10:40</td>
-      <td>06-12 10:55</td>
-      <td class="table-success
-">PASS</td>
-      <td class="table-success
-">14340/0</td>
-      <td class="table-success
-">51/0</td>
-      <td class="table-success
-">81/0</td>
-      <td class="table-danger
-">62/1</td>
-      <td class="table-danger
-">NONE</td>
-      <td class="table-danger
+        <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7d59a6a566bfe2d6c4a81e48038077960142e028/fix_cmake-config/nag/7.2.28/g/openmpi/nag_7.2.7228-gcc_12.3.0" target="_blank">7d59a6a</a></td>
-    </tr>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">None/None</td>
+        <td class="table-danger
+">NONE</td>
+        <td class="table-danger
+">None/None</td>
+        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/af01b9a3c9348ee118a9d1d1757e3f98198116c2/feature_darwin-work/llvm/22.1/O/openmpi/5.0.10" target="_blank">af01b9a</a></td>
     
     </tbody>
   </table>
