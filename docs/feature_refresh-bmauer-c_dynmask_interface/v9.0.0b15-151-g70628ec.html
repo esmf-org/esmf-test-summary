@@ -1,0 +1,309 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+
+    
+    <script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+<h3 class="mb-2">ESMF Hash: v9.0.0b15-151-g70628ec (branch: <a href="index.html">feature_refresh-bmauer-c_dynmask_interface</a>)</h3>
+    <p>Fix ESMPy votemask tests by using global indices to set test field and by switching to conservative regridding. (Robert Oehmke, Sun Jul 5 11:06:27 2026 -0600)</p> 
+    <p><a href="v9.0.0b15-151-g70628ec.md">Markdown</a>   <a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover">
+    <thead class="table-light">
+    <tr>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Arch</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
+      <th>Build Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>esmpy Install</th>
+      <th>esmpy Tests</th>
+      <th>Artifacts</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td><a href="../combos/derecho_Unicos_x86_64_gfortran_12.2.0_pio2.6.2_mpi_8.1.27_4.9.2_g.html">81</a></td>
+      <td>derecho</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>gfortran/12.2.0_pio2.6.2</td>
+      <td>mpi/8.1.27</td>
+      <td>g</td>
+      <td>4.9.2</td>
+      <td>07-07 01:15</td>
+      <td>07-07 01:54</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14367/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">63/0</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">332/1</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/3f82740c4da6b4b056560ee420bb7e4d3dae3980/feature_refresh-bmauer-c_dynmask_interface/gfortran/12.2.0_pio2.6.2/g/mpi/8.1.27" target="_blank">3f82740</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/derecho_Unicos_x86_64_gfortran_12.2.0_pio2.6.2_mpi_8.1.27_4.9.2_O.html">82</a></td>
+      <td>derecho</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>gfortran/12.2.0_pio2.6.2</td>
+      <td>mpi/8.1.27</td>
+      <td>O</td>
+      <td>4.9.2</td>
+      <td>07-07 01:15</td>
+      <td>07-07 01:36</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14367/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">63/0</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">332/1</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/00531b07c535843bdba24671a27974344cca9f9b/feature_refresh-bmauer-c_dynmask_interface/gfortran/12.2.0_pio2.6.2/O/mpi/8.1.27" target="_blank">00531b0</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/derecho_Unicos_x86_64_intel_2024.2.1_mpi_8.1.29_4.9.3_O.html">83</a></td>
+      <td>derecho</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2024.2.1</td>
+      <td>mpi/8.1.29</td>
+      <td>O</td>
+      <td>4.9.3</td>
+      <td>07-07 01:16</td>
+      <td>07-07 01:51</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14367/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">64/0</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">331/1</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/65535f2c55994f468fe773bf061839d51cc4a6ca/feature_refresh-bmauer-c_dynmask_interface/intel/2024.2.1/O/mpi/8.1.29" target="_blank">65535f2</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/derecho_Unicos_x86_64_intel_2024.2.1_mpi_8.1.29_4.9.3_g.html">86</a></td>
+      <td>derecho</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2024.2.1</td>
+      <td>mpi/8.1.29</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>07-07 01:16</td>
+      <td>07-07 02:03</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/bf7810b7dfd497d3e678bd2ff1a64b571327ac12/feature_refresh-bmauer-c_dynmask_interface/intel/2024.2.1/g/mpi/8.1.29" target="_blank">bf7810b</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/derecho_Unicos_x86_64_intel_2024.2.1-oneAPI_mpi_8.1.29_4.9.3_O.html">84</a></td>
+      <td>derecho</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2024.2.1-oneAPI</td>
+      <td>mpi/8.1.29</td>
+      <td>O</td>
+      <td>4.9.3</td>
+      <td>07-07 01:17</td>
+      <td>07-07 02:07</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14367/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">63/0</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/513e804945274db874b1025ccc1f8881b188b0b3/feature_refresh-bmauer-c_dynmask_interface/intel/2024.2.1-oneAPI/O/mpi/8.1.29" target="_blank">513e804</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/derecho_Unicos_x86_64_intel_2024.2.1-oneAPI_mpi_8.1.29_4.9.3_g.html">85</a></td>
+      <td>derecho</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>intel/2024.2.1-oneAPI</td>
+      <td>mpi/8.1.29</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>07-07 01:17</td>
+      <td>07-07 02:07</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14367/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">63/0</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7fd1ae7234722bff4836b7241d997f53d2b50419/feature_refresh-bmauer-c_dynmask_interface/intel/2024.2.1-oneAPI/g/mpi/8.1.29" target="_blank">7fd1ae7</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/derecho_Unicos_x86_64_nvhpc_26.1_mpiuni_None_4.9.3_O.html">87</a></td>
+      <td>derecho</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>nvhpc/26.1</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.3</td>
+      <td>07-07 01:18</td>
+      <td>07-07 02:19</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12696/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/97eb589de1a7e5dcb017552ac5c438903f296037/feature_refresh-bmauer-c_dynmask_interface/nvhpc/26.1/O/mpiuni/None" target="_blank">97eb589</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/derecho_Unicos_x86_64_nvhpc_26.1_mpiuni_None_4.9.3_g.html">88</a></td>
+      <td>derecho</td>
+      <td>Unicos</td>
+      <td>x86_64</td>
+      <td>nvhpc/26.1</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>07-07 01:18</td>
+      <td>07-07 02:17</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12696/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/226a43c7bcb54e1d9b08da953a062c1e33c9ad81/feature_refresh-bmauer-c_dynmask_interface/nvhpc/26.1/g/mpiuni/None" target="_blank">226a43c</a></td>
+    </tr>
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2026-07-07 04:38:41 MDT.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
