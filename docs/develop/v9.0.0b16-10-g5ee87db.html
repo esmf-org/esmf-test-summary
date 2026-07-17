@@ -1,0 +1,533 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+
+    
+    <script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+<h3 class="mb-2">ESMF Hash: v9.0.0b16-10-g5ee87db (branch: <a href="index.html">develop</a>)</h3>
+    <p>Add the explict 'recursive' function attribute to make compilers using older Fortran default of non-recursive happy. (Gerhard Theurich, Fri Jul 17 07:39:58 2026 -0700)</p> 
+    <p><a href="v9.0.0b16-10-g5ee87db.md">Markdown</a>   <a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover">
+    <thead class="table-light">
+    <tr>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Arch</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
+      <th>Build Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>esmpy Install</th>
+      <th>esmpy Tests</th>
+      <th>Artifacts</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_gfortran_13.2.0_mpiuni_None_None_O.html">30</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>gfortran/13.2.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>None</td>
+      <td>07-17 14:48</td>
+      <td>07-17 15:12</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12670/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/710c46874246067d67d981af2177789f9dafdb85/develop/gfortran/13.2.0/O/mpiuni/None" target="_blank">710c468</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_gfortran_13.2.0_mpiuni_None_None_g.html">31</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>gfortran/13.2.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>None</td>
+      <td>07-17 14:49</td>
+      <td>07-17 15:12</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12670/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/95845fab51539ebfd551995e3f176cdfaa0c49d2/develop/gfortran/13.2.0/g/mpiuni/None" target="_blank">95845fa</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_gfortran_13.2.0_openmpi_4.1.6_None_O.html">28</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>gfortran/13.2.0</td>
+      <td>openmpi/4.1.6</td>
+      <td>O</td>
+      <td>None</td>
+      <td>07-17 14:50</td>
+      <td>07-17 15:15</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14341/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">63/0</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/40d2372816c849b22c3591d16299c4e14055b93f/develop/gfortran/13.2.0/O/openmpi/4.1.6" target="_blank">40d2372</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_gfortran_13.2.0_openmpi_4.1.6_None_g.html">29</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>gfortran/13.2.0</td>
+      <td>openmpi/4.1.6</td>
+      <td>g</td>
+      <td>None</td>
+      <td>07-17 14:50</td>
+      <td>07-17 15:15</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">14324/17</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">63/0</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/ba97a1a28fa1545b988cc78dafebeca8a1361675/develop/gfortran/13.2.0/g/openmpi/4.1.6" target="_blank">ba97a1a</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_intel_2023.2.0_intelmpi_2023.2.0_4.7.0_O.html">21</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0</td>
+      <td>intelmpi/2023.2.0</td>
+      <td>O</td>
+      <td>4.7.0</td>
+      <td>07-17 14:52</td>
+      <td>07-17 15:19</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14341/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">63/0</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/013d85ccff96be9cf3f2d89b2fd9728e55948ea5/develop/intel/2023.2.0/O/intelmpi/2023.2.0" target="_blank">013d85c</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_intel_2023.2.0_intelmpi_2023.2.0_4.7.0_g.html">26</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0</td>
+      <td>intelmpi/2023.2.0</td>
+      <td>g</td>
+      <td>4.7.0</td>
+      <td>07-17 14:53</td>
+      <td>07-17 15:16</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/f51c59ee2374249bb1227aadbb822abbc1d08048/develop/intel/2023.2.0/g/intelmpi/2023.2.0" target="_blank">f51c59e</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_intel_2023.2.0_mpiuni_None_4.7.0_O.html">24</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.7.0</td>
+      <td>07-17 14:50</td>
+      <td>07-17 15:17</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12670/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/9cb13ac39f65f769657b0b2d6325e4300391df38/develop/intel/2023.2.0/O/mpiuni/None" target="_blank">9cb13ac</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_intel_2023.2.0_mpiuni_None_4.7.0_g.html">27</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.7.0</td>
+      <td>07-17 14:51</td>
+      <td>07-17 15:13</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12670/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5898610e42b1333f75382eb7a87572630324cc53/develop/intel/2023.2.0/g/mpiuni/None" target="_blank">5898610</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_intel_2023.2.0-oneAPI_intelmpi_2023.2.0_4.7.0_O.html">20</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0-oneAPI</td>
+      <td>intelmpi/2023.2.0</td>
+      <td>O</td>
+      <td>4.7.0</td>
+      <td>07-17 14:54</td>
+      <td>07-17 15:20</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14341/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">63/0</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/c071078a4ae0c6de53fd7c770028d6d239a3a046/develop/intel/2023.2.0-oneAPI/O/intelmpi/2023.2.0" target="_blank">c071078</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_intel_2023.2.0-oneAPI_intelmpi_2023.2.0_4.7.0_g.html">22</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0-oneAPI</td>
+      <td>intelmpi/2023.2.0</td>
+      <td>g</td>
+      <td>4.7.0</td>
+      <td>07-17 14:54</td>
+      <td>07-17 15:18</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/44df861ca5131e9b144edf3f753dfa276e6596f0/develop/intel/2023.2.0-oneAPI/g/intelmpi/2023.2.0" target="_blank">44df861</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_intel_2023.2.0-oneAPI_mpiuni_None_4.7.0_O.html">23</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0-oneAPI</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.7.0</td>
+      <td>07-17 14:53</td>
+      <td>07-17 15:18</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12670/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/01b6b2d8839acb8da395c4ca4abf6a673f1a8060/develop/intel/2023.2.0-oneAPI/O/mpiuni/None" target="_blank">01b6b2d</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_intel_2023.2.0-oneAPI_mpiuni_None_4.7.0_g.html">25</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>intel/2023.2.0-oneAPI</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.7.0</td>
+      <td>07-17 14:54</td>
+      <td>07-17 15:16</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12670/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/da02b1f2c1cca1c71441e48ed2e507aa83944e6d/develop/intel/2023.2.0-oneAPI/g/mpiuni/None" target="_blank">da02b1f</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_nvhpc_24.1_mpiuni_None_None_g.html">72</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>nvhpc/24.1</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>None</td>
+      <td>07-17 14:55</td>
+      <td>07-17 15:29</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/9c614447aebc54a4a27d107595d1ee6337f4f756/develop/nvhpc/24.1/g/mpiuni/None" target="_blank">9c61444</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_nvhpc_24.1_mpiuni_None_None_O.html">73</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>nvhpc/24.1</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>None</td>
+      <td>07-17 14:55</td>
+      <td>07-17 15:31</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/0fcf18cc51a32b65ca8473259ba701f9b7a0de9e/develop/nvhpc/24.1/O/mpiuni/None" target="_blank">0fcf18c</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_nvhpc_24.1_openmpi_None_None_O.html">74</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>nvhpc/24.1</td>
+      <td>openmpi/None</td>
+      <td>O</td>
+      <td>None</td>
+      <td>07-17 14:56</td>
+      <td>07-17 15:33</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/9b0f9c74259edb3c33ebf44ffa81f6ecaaa57ef0/develop/nvhpc/24.1/O/openmpi/None" target="_blank">9b0f9c7</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/hera_Linux_x86_64_nvhpc_24.1_openmpi_None_None_g.html">75</a></td>
+      <td>hera</td>
+      <td>Linux</td>
+      <td>x86_64</td>
+      <td>nvhpc/24.1</td>
+      <td>openmpi/None</td>
+      <td>g</td>
+      <td>None</td>
+      <td>07-17 14:56</td>
+      <td>07-17 15:30</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/986752d1dcbb0ee143b481ffefaf9a78e5db39da/develop/nvhpc/24.1/g/openmpi/None" target="_blank">986752d</a></td>
+    </tr>
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2026-07-17 10:23:22 MDT.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
