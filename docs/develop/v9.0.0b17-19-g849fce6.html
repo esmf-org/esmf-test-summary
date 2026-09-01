@@ -22,32 +22,39 @@
 
     
     <script>
-      $(document).ready(function () {
-          $('#results').DataTable({
-              paging: false
-          });
-          $('[data-bs-toggle="popover"]').popover();
-      });
-  </script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
 
   </head>
   <body>
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">Combination: derecho/None/None/gfortran/12.2.0_pio2.6.2/mpi/8.1.27/g/None</h3><p><a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v9.0.0b17-19-g849fce6 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Merge pull request #585 from esmf-org/fix/esmx-data-internal-state (Gerhard Theurich, Mon Aug 31 15:46:29 2026 -0700)</p> 
+    <p><a href="v9.0.0b17-19-g849fce6.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
         <div class="col">
           <div class="container-fluid overflow-auto">
           
-  <table id="results" class="table table-bordered table-hover text-nowrap">
+  <table id="results" class="table table-bordered table-hover">
     <thead class="table-light">
     <tr>
-      <th>ESMF Hash</th>
-      <th>ESMF Branch</th>
-      <th>Clone Time</th>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Arch</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
       <th>Build Time</th>
       <th>Build</th>
       <th>UTests</th>
@@ -61,26 +68,33 @@
     </thead>
     <tbody>
     
-      <tr>
-        <td>v9.0.0b17-9-g1082792</td>
-        <td>develop</td>
-        <td>08-29 01:16</td>
-        <td>None</td>
-        <td class="table-danger
-">FAIL</td>
-        <td class="table-danger
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nagclang_7.2.44_17.0.0_mpiuni_None_4.9.3_O.html">34</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nagclang/7.2.44_17.0.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.3</td>
+      <td>08-31 19:01</td>
+      <td>08-31 19:14</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12697/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
 ">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">None/None</td>
-        <td class="table-danger
-">NONE</td>
-        <td class="table-danger
-">None/None</td>
-        <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/69bf9dd4e16be73fbfaffb40fb498866775c2375/develop/gfortran/12.2.0_pio2.6.2/g/mpi/8.1.27" target="_blank">69bf9dd</a></td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">197/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/41913d16880d4816352a37175429f169a10aa5c2/develop/nagclang/7.2.44_17.0.0/O/mpiuni/None" target="_blank">41913d1</a></td>
+    </tr>
     
     </tbody>
   </table>
