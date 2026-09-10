@@ -17,7 +17,8 @@ exclude:
   - 719c0dbc762a45a11bc4d37c9395331da15c98e8
 
   esmf_hash:
-
+  - v9.0.0b10*
+  - v8.9.0b12*
 
 ## Examples
 #  artifact_hash:
