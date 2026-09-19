@@ -1,0 +1,365 @@
+
+
+<html>
+  <head>
+    
+    
+    <title>ESMF Test Results</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Styling -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"/>
+
+    
+    <script>
+        $(document).ready(function () {
+            $('#results').DataTable({
+                paging: false
+            });
+        });
+    </script>
+
+  </head>
+  <body>
+    <div class="container-fluid ms-4 me-4">
+      <div class="p-3 text-left bg-light">
+        
+<h3 class="mb-2">ESMF Hash: v9.0.0b19 (branch: <a href="index.html">develop</a>)</h3>
+    <p>Remove ESMX test infrastructure from ESMX (#597) (Daniel Rosen, Thu Sep 17 11:35:29 2026 -0600)</p> 
+    <p><a href="v9.0.0b19.md">Markdown</a>   <a href="../index.html">Top</a></p>
+
+      </div>
+      <div class="row align-items-center gx-5">
+        <div class="col">
+          <div class="container-fluid overflow-auto">
+          
+  <table id="results" class="table table-bordered table-hover">
+    <thead class="table-light">
+    <tr>
+      <th>Combo No.</th>
+      <th>Machine</th>
+      <th>OS</th>
+      <th>Arch</th>
+      <th>Compiler</th>
+      <th>MPI</th>
+      <th>BOPT</th>
+      <th>NetCDF</th>
+      <th>Cloned Time</th>
+      <th>Build Time</th>
+      <th>Build</th>
+      <th>UTests</th>
+      <th>STests</th>
+      <th>ETests</th>
+      <th>NUOPC</th>
+      <th>esmpy Install</th>
+      <th>esmpy Tests</th>
+      <th>Artifacts</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nag_7.2.44_mpiuni_None_4.9.3_g.html">56</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nag/7.2.44</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>09-18 19:01</td>
+      <td>09-18 22:08</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12697/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">197/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/0fd5611aa503c0a769f67d5175014d1c9f0ccd6d/develop/nag/7.2.44/g/mpiuni/None" target="_blank">0fd5611</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nag_7.2.44_mpiuni_None_4.9.3_O.html">57</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nag/7.2.44</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.3</td>
+      <td>09-18 19:01</td>
+      <td>09-18 21:38</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12697/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">197/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/78e658679440409830f15134c681cc4fff0a7f16/develop/nag/7.2.44/O/mpiuni/None" target="_blank">78e6586</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nag_7.2.44_openmpi_a7f5nwa_4.9.3_g.html">54</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nag/7.2.44</td>
+      <td>openmpi/a7f5nwa</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>09-18 19:01</td>
+      <td>09-18 23:23</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">None/None</td>
+      <td class="table-danger
+">NONE</td>
+      <td class="table-danger
+">None/None</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d7f28d250ae24119ebb56e841bd17f19bf0dbbf9/develop/nag/7.2.44/g/openmpi/a7f5nwa" target="_blank">d7f28d2</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nag_7.2.44_openmpi_a7f5nwa_4.9.3_O.html">55</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nag/7.2.44</td>
+      <td>openmpi/a7f5nwa</td>
+      <td>O</td>
+      <td>4.9.3</td>
+      <td>09-18 19:01</td>
+      <td>09-18 22:40</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14376/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">65/0</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">553/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/73bffed96763fa75d9154da65047254f02049c0a/develop/nag/7.2.44/O/openmpi/a7f5nwa" target="_blank">73bffed</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nagclang_7.2.44_17.0.0_mpiuni_None_4.9.3_g.html">60</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nagclang/7.2.44_17.0.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>09-18 19:00</td>
+      <td>09-18 19:42</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12697/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">197/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2c898c1e70139a63e3dd08f59acd7bd9cf9989b4/develop/nagclang/7.2.44_17.0.0/g/mpiuni/None" target="_blank">2c898c1</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nagclang_7.2.44_17.0.0_mpiuni_None_4.9.3_O.html">61</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nagclang/7.2.44_17.0.0</td>
+      <td>mpiuni/None</td>
+      <td>O</td>
+      <td>4.9.3</td>
+      <td>09-18 19:00</td>
+      <td>09-18 19:13</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12697/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">197/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/81f21f7b969f3416626d85d60166d2474caea942/develop/nagclang/7.2.44_17.0.0/O/mpiuni/None" target="_blank">81f21f7</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nagclang_7.2.44_17.0.0_openmpi_fjdj7gt_4.9.3_g.html">58</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nagclang/7.2.44_17.0.0</td>
+      <td>openmpi/fjdj7gt</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>09-18 19:00</td>
+      <td>09-18 20:55</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14376/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">65/0</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">553/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/84e12025a32688f453c80d4d30dd9be14f88f444/develop/nagclang/7.2.44_17.0.0/g/openmpi/fjdj7gt" target="_blank">84e1202</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/fairy_Darwin_arm64_nagclang_7.2.44_17.0.0_openmpi_fjdj7gt_4.9.3_O.html">59</a></td>
+      <td>fairy</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>nagclang/7.2.44_17.0.0</td>
+      <td>openmpi/fjdj7gt</td>
+      <td>O</td>
+      <td>4.9.3</td>
+      <td>09-18 19:00</td>
+      <td>09-18 20:13</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14376/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">65/0</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">553/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2e2122e4203c05ff158afe22aa8a9d3798865052/develop/nagclang/7.2.44_17.0.0/O/openmpi/fjdj7gt" target="_blank">2e2122e</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/green_Darwin_arm64_gfortranclang_12.2.0_14.0.0_mpiuni_None_4.9.3_g.html">94</a></td>
+      <td>green</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>mpiuni/None</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>09-18 19:01</td>
+      <td>09-18 22:14</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">12697/0</td>
+      <td class="table-success
+">9/0</td>
+      <td class="table-success
+">43/0</td>
+      <td class="table-success
+">None/None</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">198/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/77233be1587c924b3e26609022daed493d821c4e/develop/gfortranclang/12.2.0_14.0.0/g/mpiuni/None" target="_blank">77233be</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="../combos/green_Darwin_arm64_gfortranclang_12.2.0_14.0.0_openmpi_4.1.4_4.9.3_g.html">95</a></td>
+      <td>green</td>
+      <td>Darwin</td>
+      <td>arm64</td>
+      <td>gfortranclang/12.2.0_14.0.0</td>
+      <td>openmpi/4.1.4</td>
+      <td>g</td>
+      <td>4.9.3</td>
+      <td>09-18 19:00</td>
+      <td>09-18 19:50</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">14376/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">66/0</td>
+      <td class="table-success
+">PASS</td>
+      <td class="table-success
+">554/0</td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/dc1153cfcb7340b784cffbf7a57b343da6073708/develop/gfortranclang/12.2.0_14.0.0/g/openmpi/4.1.4" target="_blank">dc1153c</a></td>
+    </tr>
+    
+    </tbody>
+  </table>
+
+          </div>
+        </div>
+      </div>
+      <br/>
+      <footer>
+        <div class="text-center p-2 bg-light">
+          This page was generated at 2026-09-19 00:01:26 MDT.  <a href="https://github.com/esmf-org/esmf-test-summary">esmf-test-summary</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
