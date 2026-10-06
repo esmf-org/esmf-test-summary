@@ -34,9 +34,9 @@
     <div class="container-fluid ms-4 me-4">
       <div class="p-3 text-left bg-light">
         
-<h3 class="mb-2">ESMF Hash: v9.0.0b17-20-g8c62426 (branch: <a href="index.html">fix_esmx-data-internal-state</a>)</h3>
-    <p>One more issue fixed with InternalState on compilers without assumed-type dummy arg support. (Gerhard Theurich, Tue Sep 1 07:48:07 2026 -0700)</p> 
-    <p><a href="v9.0.0b17-20-g8c62426.md">Markdown</a>   <a href="../index.html">Top</a></p>
+<h3 class="mb-2">ESMF Hash: v9.0.0b19-3-g763bfc8 (branch: <a href="index.html">feature_esmx-sanitizer</a>)</h3>
+    <p>Re-factor configure_sanitizers() function as per review. (Gerhard Theurich, Tue Oct 6 08:09:57 2026 -0700)</p> 
+    <p><a href="v9.0.0b19-3-g763bfc8.md">Markdown</a>   <a href="../index.html">Top</a></p>
 
       </div>
       <div class="row align-items-center gx-5">
@@ -77,8 +77,8 @@
       <td>mpiuni/None</td>
       <td>g</td>
       <td>None</td>
-      <td>09-01 15:41</td>
-      <td>09-01 16:05</td>
+      <td>10-06 16:04</td>
+      <td>10-06 16:28</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -93,7 +93,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/c745cfc4abae648ca14bdda651761724d23dcb2e/fix_esmx-data-internal-state/gfortran/13.2.0/g/mpiuni/None" target="_blank">c745cfc</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/756d09caa9273c351e7bbcbe6d6dcfd2feaf686b/feature_esmx-sanitizer/gfortran/13.2.0/g/mpiuni/None" target="_blank">756d09c</a></td>
     </tr>
     
     <tr>
@@ -105,8 +105,8 @@
       <td>mpiuni/None</td>
       <td>O</td>
       <td>None</td>
-      <td>09-01 15:40</td>
-      <td>09-01 16:05</td>
+      <td>10-06 16:03</td>
+      <td>10-06 16:28</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -121,7 +121,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/c10210f42f03346633e5991f893c3b08359c206d/fix_esmx-data-internal-state/gfortran/13.2.0/O/mpiuni/None" target="_blank">c10210f</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e69c5221dbca8d321bbe04c660edd1d38fad516a/feature_esmx-sanitizer/gfortran/13.2.0/O/mpiuni/None" target="_blank">e69c522</a></td>
     </tr>
     
     <tr>
@@ -133,12 +133,12 @@
       <td>openmpi/4.1.6</td>
       <td>g</td>
       <td>None</td>
-      <td>09-01 15:41</td>
-      <td>09-01 16:08</td>
+      <td>10-06 16:06</td>
+      <td>10-06 16:31</td>
       <td class="table-success
 ">PASS</td>
-      <td class="table-success
-">14376/0</td>
+      <td class="table-danger
+">14336/40</td>
       <td class="table-success
 ">51/0</td>
       <td class="table-success
@@ -149,7 +149,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/4d54ce1ede5cb954c79d7792bd1314eb4a889214/fix_esmx-data-internal-state/gfortran/13.2.0/g/openmpi/4.1.6" target="_blank">4d54ce1</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/47a0e739dc4fb740d6f557ec9852735a9f74b93d/feature_esmx-sanitizer/gfortran/13.2.0/g/openmpi/4.1.6" target="_blank">47a0e73</a></td>
     </tr>
     
     <tr>
@@ -161,8 +161,8 @@
       <td>openmpi/4.1.6</td>
       <td>O</td>
       <td>None</td>
-      <td>09-01 15:41</td>
-      <td>09-01 16:07</td>
+      <td>10-06 16:05</td>
+      <td>10-06 16:30</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -177,7 +177,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/e56b7ae24e415ab2a2e7113b224a24ab87e7226a/fix_esmx-data-internal-state/gfortran/13.2.0/O/openmpi/4.1.6" target="_blank">e56b7ae</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2c14ca0ce5fdcc06e6447308a8fb92f2d662f60a/feature_esmx-sanitizer/gfortran/13.2.0/O/openmpi/4.1.6" target="_blank">2c14ca0</a></td>
     </tr>
     
     <tr>
@@ -189,23 +189,23 @@
       <td>intelmpi/2023.2.0</td>
       <td>O</td>
       <td>4.7.0</td>
-      <td>09-01 15:43</td>
-      <td>09-01 16:12</td>
+      <td>10-06 16:07</td>
+      <td>10-06 16:35</td>
       <td class="table-success
 ">PASS</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
-      <td class="table-danger
-">None/None</td>
+      <td class="table-success
+">14376/0</td>
+      <td class="table-success
+">51/0</td>
+      <td class="table-success
+">81/0</td>
+      <td class="table-success
+">65/0</td>
       <td class="table-danger
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/b813ab6f950e814d105ef4e97d51cbcf6834e334/fix_esmx-data-internal-state/intel/2023.2.0/O/intelmpi/2023.2.0" target="_blank">b813ab6</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/f69e1cce58e01e18642e9e3ab2833a845e91912d/feature_esmx-sanitizer/intel/2023.2.0/O/intelmpi/2023.2.0" target="_blank">f69e1cc</a></td>
     </tr>
     
     <tr>
@@ -217,8 +217,8 @@
       <td>intelmpi/2023.2.0</td>
       <td>g</td>
       <td>4.7.0</td>
-      <td>09-01 15:44</td>
-      <td>09-01 16:08</td>
+      <td>10-06 16:08</td>
+      <td>10-06 16:31</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -233,7 +233,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/a35505f772274f26ed6db00a1fa8895b86176571/fix_esmx-data-internal-state/intel/2023.2.0/g/intelmpi/2023.2.0" target="_blank">a35505f</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/7e118f183202383b51d215041f5189e0a6a4f9e0/feature_esmx-sanitizer/intel/2023.2.0/g/intelmpi/2023.2.0" target="_blank">7e118f1</a></td>
     </tr>
     
     <tr>
@@ -245,8 +245,8 @@
       <td>mpiuni/None</td>
       <td>g</td>
       <td>4.7.0</td>
-      <td>09-01 15:42</td>
-      <td>09-01 16:06</td>
+      <td>10-06 16:07</td>
+      <td>10-06 16:29</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -261,7 +261,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/5f8047e9d3e258393241810e3b3a28d2b6f2d8b5/fix_esmx-data-internal-state/intel/2023.2.0/g/mpiuni/None" target="_blank">5f8047e</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/fdf33cc6cbe78aa687a34b8846ac300cbb85553b/feature_esmx-sanitizer/intel/2023.2.0/g/mpiuni/None" target="_blank">fdf33cc</a></td>
     </tr>
     
     <tr>
@@ -273,8 +273,8 @@
       <td>mpiuni/None</td>
       <td>O</td>
       <td>4.7.0</td>
-      <td>09-01 15:42</td>
-      <td>09-01 16:10</td>
+      <td>10-06 16:06</td>
+      <td>10-06 16:32</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -289,7 +289,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d946ec6ce602d0eb25183a031f765f9eb7ee45c2/fix_esmx-data-internal-state/intel/2023.2.0/O/mpiuni/None" target="_blank">d946ec6</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/fb97bf19ba62a125b7da30db54c5aed703faf693/feature_esmx-sanitizer/intel/2023.2.0/O/mpiuni/None" target="_blank">fb97bf1</a></td>
     </tr>
     
     <tr>
@@ -301,8 +301,8 @@
       <td>intelmpi/2023.2.0</td>
       <td>g</td>
       <td>4.7.0</td>
-      <td>09-01 15:46</td>
-      <td>09-01 16:11</td>
+      <td>10-06 16:10</td>
+      <td>10-06 16:34</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -317,7 +317,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/348a6700b9a317c89581fa3c9d0661d9000e38ef/fix_esmx-data-internal-state/intel/2023.2.0-oneAPI/g/intelmpi/2023.2.0" target="_blank">348a670</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/1718627646922747d32395f37110fa19ff19ab26/feature_esmx-sanitizer/intel/2023.2.0-oneAPI/g/intelmpi/2023.2.0" target="_blank">1718627</a></td>
     </tr>
     
     <tr>
@@ -329,8 +329,8 @@
       <td>intelmpi/2023.2.0</td>
       <td>O</td>
       <td>4.7.0</td>
-      <td>09-01 15:45</td>
-      <td>09-01 16:13</td>
+      <td>10-06 16:09</td>
+      <td>10-06 16:36</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -345,7 +345,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/cdcf91a049969f000273fa680dd1fcdb8f999f19/fix_esmx-data-internal-state/intel/2023.2.0-oneAPI/O/intelmpi/2023.2.0" target="_blank">cdcf91a</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/166b35c4135d7158eb4ee52e551c6f409c2394a0/feature_esmx-sanitizer/intel/2023.2.0-oneAPI/O/intelmpi/2023.2.0" target="_blank">166b35c</a></td>
     </tr>
     
     <tr>
@@ -357,8 +357,8 @@
       <td>mpiuni/None</td>
       <td>g</td>
       <td>4.7.0</td>
-      <td>09-01 15:45</td>
-      <td>09-01 16:09</td>
+      <td>10-06 16:08</td>
+      <td>10-06 16:32</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -373,7 +373,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/a8e809dfbe828ef90f276742b57cb3b99cf53547/fix_esmx-data-internal-state/intel/2023.2.0-oneAPI/g/mpiuni/None" target="_blank">a8e809d</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/9fca657eb8b9a6329caa1732a8e716df5f04fe35/feature_esmx-sanitizer/intel/2023.2.0-oneAPI/g/mpiuni/None" target="_blank">9fca657</a></td>
     </tr>
     
     <tr>
@@ -385,8 +385,8 @@
       <td>mpiuni/None</td>
       <td>O</td>
       <td>4.7.0</td>
-      <td>09-01 15:44</td>
-      <td>09-01 16:11</td>
+      <td>10-06 16:08</td>
+      <td>10-06 16:34</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -401,7 +401,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/2415a331ae3cc7750f58d0d579fc6161509bac7a/fix_esmx-data-internal-state/intel/2023.2.0-oneAPI/O/mpiuni/None" target="_blank">2415a33</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/b05acbc990329d03fd1f147f33e1349bd7e83092/feature_esmx-sanitizer/intel/2023.2.0-oneAPI/O/mpiuni/None" target="_blank">b05acbc</a></td>
     </tr>
     
     <tr>
@@ -413,8 +413,8 @@
       <td>mpiuni/None</td>
       <td>g</td>
       <td>None</td>
-      <td>09-01 15:48</td>
-      <td>09-01 16:22</td>
+      <td>10-06 16:11</td>
+      <td>10-06 16:44</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -429,7 +429,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/faa6b865fba0218e4ecb0fe3955e488f868fac99/fix_esmx-data-internal-state/nvhpc/24.1/g/mpiuni/None" target="_blank">faa6b86</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/daed9dbd4156af8da703b8e8f09e19a9b8565480/feature_esmx-sanitizer/nvhpc/24.1/g/mpiuni/None" target="_blank">daed9db</a></td>
     </tr>
     
     <tr>
@@ -441,8 +441,8 @@
       <td>mpiuni/None</td>
       <td>O</td>
       <td>None</td>
-      <td>09-01 15:47</td>
-      <td>09-01 16:25</td>
+      <td>10-06 16:11</td>
+      <td>10-06 16:47</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -457,7 +457,7 @@
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/14ae61971118f92a37b65d5d88fab85ce5269dcb/fix_esmx-data-internal-state/nvhpc/24.1/O/mpiuni/None" target="_blank">14ae619</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/de90a4f537c0cdb4ac651a54fc2d8e12a9acfd18/feature_esmx-sanitizer/nvhpc/24.1/O/mpiuni/None" target="_blank">de90a4f</a></td>
     </tr>
     
     <tr>
@@ -469,8 +469,8 @@
       <td>openmpi/None</td>
       <td>g</td>
       <td>None</td>
-      <td>09-01 15:49</td>
-      <td>09-01 16:23</td>
+      <td>10-06 16:12</td>
+      <td>10-06 16:46</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -479,13 +479,13 @@
 ">51/0</td>
       <td class="table-success
 ">81/0</td>
-      <td class="table-danger
-">0/0</td>
+      <td class="table-success
+">65/0</td>
       <td class="table-danger
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/d435981fb6910149aba7af06b27f88d4ee6a308d/fix_esmx-data-internal-state/nvhpc/24.1/g/openmpi/None" target="_blank">d435981</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/70aa945bce7f80550991591ae7beec66368fcd34/feature_esmx-sanitizer/nvhpc/24.1/g/openmpi/None" target="_blank">70aa945</a></td>
     </tr>
     
     <tr>
@@ -497,8 +497,8 @@
       <td>openmpi/None</td>
       <td>O</td>
       <td>None</td>
-      <td>09-01 15:49</td>
-      <td>09-01 16:25</td>
+      <td>10-06 16:11</td>
+      <td>10-06 16:48</td>
       <td class="table-success
 ">PASS</td>
       <td class="table-success
@@ -507,13 +507,13 @@
 ">51/0</td>
       <td class="table-success
 ">81/0</td>
-      <td class="table-danger
-">60/5</td>
+      <td class="table-success
+">65/0</td>
       <td class="table-danger
 ">NONE</td>
       <td class="table-danger
 ">None/None</td>
-      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/f13ee4fa5e42bf7e2eef0252a224ccb0fc487790/fix_esmx-data-internal-state/nvhpc/24.1/O/openmpi/None" target="_blank">f13ee4f</a></td>
+      <td><a href="https://github.com/esmf-org/esmf-test-artifacts/tree/640bc8907313b4c13a910f6f6a86b27329717bd9/feature_esmx-sanitizer/nvhpc/24.1/O/openmpi/None" target="_blank">640bc89</a></td>
     </tr>
     
     </tbody>
